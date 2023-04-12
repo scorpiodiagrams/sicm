@@ -25,29 +25,29 @@ The strategy is to first rewrite the kinetic and potential energies in terms of 
 We consider a rigid body to be made up of a large number of constituent particles with mass /m/_{α}, position ${\overset{\rightarrow}{x}}_{\alpha}$, and velocities
 #page(121)
 ${\dot{\overset{\rightarrow}{x}}}_{\alpha}$, with rigid positional constraints among them. The kinetic energy is
-$$\begin{matrix} {\sum\limits_{\alpha}{\frac{1}{2}m_{\alpha}{\dot{\overset{\rightarrow}{x}}}_{\alpha} \cdot {\dot{\overset{\rightarrow}{x}}}_{\alpha}.}} & {(2.1)} \\ \end{matrix}$$
+$$\begin{matrix} {\sum\limits_{\alpha}{\frac{1}{2}m_{\alpha}{\dot{\overset{\rightarrow}{x}}}_{\alpha} \cdot {\dot{\overset{\rightarrow}{x}}}_{\alpha}.}} \tag{2.1} \\ \end{matrix}$$
 It turns out that the kinetic energy of a rigid body can be separated into two pieces: a kinetic energy of translation and a kinetic energy of rotation. Let's see how this comes about.
 
 The configuration of a rigid body is fully specified given the location of any point in the body and the orientation of the body. This suggests that it would be useful to decompose the position vectors for the constituent particles as the sum of the vector $\overset{\rightarrow}{X}$ to some reference position in the body and the vector ${\overset{\rightarrow}{\xi}}_{\alpha}$ from the reference position to the particular constituent element with index /α/:
-$$\begin{matrix} {{\overset{\rightarrow}{x}}_{\alpha} = \overset{\rightarrow}{X} + {\overset{\rightarrow}{\xi}}_{\alpha}.} & {(2.2)} \\ \end{matrix}$$
+$$\begin{matrix} {{\overset{\rightarrow}{x}}_{\alpha} = \overset{\rightarrow}{X} + {\overset{\rightarrow}{\xi}}_{\alpha}.} \tag{2.2} \\ \end{matrix}$$
 Along paths, the velocities are related by
-$$\begin{matrix} {{\dot{\overset{\rightarrow}{x}}}_{\alpha} = \dot{\overset{\rightarrow}{X}} + {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}.} & {(2.3)} \\ \end{matrix}$$
+$$\begin{matrix} {{\dot{\overset{\rightarrow}{x}}}_{\alpha} = \dot{\overset{\rightarrow}{X}} + {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}.} \tag{2.3} \\ \end{matrix}$$
 So in terms of $\dot{\overset{\rightarrow}{X}}$ and ${\dot{\overset{\rightarrow}{\xi}}}_{\alpha}$ the kinetic energy is
-$$\begin{array}{ll} {\sum\limits_{\alpha}{\frac{1}{2}m_{\alpha}\left( {\dot{\overset{\rightarrow}{X}} + {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}} \right) \cdot \left( {\dot{\overset{\rightarrow}{X}} + {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}} \right)}} & \\ {\qquad = {\sum\limits_{\alpha}{\frac{1}{2}m_{\alpha}}}\left( {\dot{\overset{\rightarrow}{X}} \cdot \dot{\overset{\rightarrow}{X}} + 2\dot{\overset{\rightarrow}{X}} \cdot {\dot{\overset{\rightarrow}{\xi}}}_{\alpha} + {\dot{\overset{\rightarrow}{\xi}}}_{\alpha} \cdot {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}} \right).} & {(2.4)} \\ \end{array}$$
+$$\begin{array}{ll} {\sum\limits_{\alpha}{\frac{1}{2}m_{\alpha}\left( {\dot{\overset{\rightarrow}{X}} + {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}} \right) \cdot \left( {\dot{\overset{\rightarrow}{X}} + {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}} \right)}} & \\ {\qquad = {\sum\limits_{\alpha}{\frac{1}{2}m_{\alpha}}}\left( {\dot{\overset{\rightarrow}{X}} \cdot \dot{\overset{\rightarrow}{X}} + 2\dot{\overset{\rightarrow}{X}} \cdot {\dot{\overset{\rightarrow}{\xi}}}_{\alpha} + {\dot{\overset{\rightarrow}{\xi}}}_{\alpha} \cdot {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}} \right).} \tag{2.4} \\ \end{array}$$
 If we select the reference position in the body to be its /center of mass/,
-$$\begin{matrix} {\overset{\rightarrow}{X} = \frac{1}{M}{\sum\limits_{\alpha}{m_{\alpha}{\overset{\rightarrow}{x}}_{\alpha},}}} & {(2.5)} \\ \end{matrix}$$
+$$\begin{matrix} {\overset{\rightarrow}{X} = \frac{1}{M}{\sum\limits_{\alpha}{m_{\alpha}{\overset{\rightarrow}{x}}_{\alpha},}}} \tag{2.5} \\ \end{matrix}$$
 where $ M = {\sum_{\alpha}m_{\alpha}}$ is the total mass of the body, then
-$$\begin{matrix} {\sum\limits_{\alpha}{m_{\alpha}{\overset{\rightarrow}{\xi}}_{\alpha} = {\sum\limits_{\alpha}{m_{\alpha}\left( {{\overset{\rightarrow}{x}}_{\alpha} - \overset{\rightarrow}{X}} \right) = 0.}}}} & {(2.6)} \\ \end{matrix}$$
+$$\begin{matrix} {\sum\limits_{\alpha}{m_{\alpha}{\overset{\rightarrow}{\xi}}_{\alpha} = {\sum\limits_{\alpha}{m_{\alpha}\left( {{\overset{\rightarrow}{x}}_{\alpha} - \overset{\rightarrow}{X}} \right) = 0.}}}} \tag{2.6} \\ \end{matrix}$$
 #page(122)
 
 So along paths the relative velocities satisfy
-$$\begin{matrix} {\sum\limits_{\alpha}{m_{\alpha}{\dot{\overset{\rightarrow}{\xi}}}_{\alpha} = 0.}} & {(2.7)} \\ \end{matrix}$$
+$$\begin{matrix} {\sum\limits_{\alpha}{m_{\alpha}{\dot{\overset{\rightarrow}{\xi}}}_{\alpha} = 0.}} \tag{2.7} \\ \end{matrix}$$
 The kinetic energy is then
-$$\begin{matrix} {\sum\limits_{\alpha}{\frac{1}{2}m_{\alpha}\dot{\overset{\rightarrow}{X}} \cdot \dot{\overset{\rightarrow}{X}} + {\sum_{\alpha}{\frac{1}{2}m_{\alpha}{\dot{\overset{\rightarrow}{\xi}}}_{\alpha} \cdot {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}.}}}} & {(2.8)} \\ \end{matrix}$$
+$$\begin{matrix} {\sum\limits_{\alpha}{\frac{1}{2}m_{\alpha}\dot{\overset{\rightarrow}{X}} \cdot \dot{\overset{\rightarrow}{X}} + {\sum_{\alpha}{\frac{1}{2}m_{\alpha}{\dot{\overset{\rightarrow}{\xi}}}_{\alpha} \cdot {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}.}}}} \tag{2.8} \\ \end{matrix}$$
 The kinetic energy is the sum of the kinetic energy of the motion of the total mass at the center of mass
-$$\begin{matrix} {\frac{1}{2}M\dot{\overset{\rightarrow}{X}} \cdot \dot{\overset{\rightarrow}{X}},} & {(2.9)} \\ \end{matrix}$$
+$$\begin{matrix} {\frac{1}{2}M\dot{\overset{\rightarrow}{X}} \cdot \dot{\overset{\rightarrow}{X}},} \tag{2.9} \\ \end{matrix}$$
 and the kinetic energy of rotation about the center of mass
-$$\begin{matrix} {\sum\limits_{\alpha}{\frac{1}{2}m_{\alpha}{\dot{\overset{\rightarrow}{\xi}}}_{\alpha} \cdot {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}.}} & {(2.10)} \\ \end{matrix}$$
+$$\begin{matrix} {\sum\limits_{\alpha}{\frac{1}{2}m_{\alpha}{\dot{\overset{\rightarrow}{\xi}}}_{\alpha} \cdot {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}.}} \tag{2.10} \\ \end{matrix}$$
 Written in terms of appropriate generalized coordinates, the kinetic energy is a Lagrangian for a free rigid body. If we choose generalized coordinates so that the center of mass position is entirely specified by some of them and the orientation is entirely specified by others, then the Lagrange equations for a free rigid body will decouple into two groups of equations, one concerned with the motion of the center of mass and one concerned with the orientation.
 
 Such a separation might occur in other problems, such as a rigid body moving in a uniform gravitational field, but in general, potential energies cannot be separated as the kinetic energy separates. So the motion of the center of mass and the rotational motion are usually coupled through the potential. Even in these cases, it is usually an advantage to choose generalized coordinates that separately specify the position of the center of mass and the orientation.
@@ -62,42 +62,42 @@ We can get from any orientation of a body to any other orientation of the body b
 We can specify the orientation of a body by specifying the rotation that takes the body to its actual orientation from some reference orientation. As the body moves, the rotation that does this changes.
 
 Let /q/ be the coordinate path that we will use to describe the motion of the body. Let $\mathcal{M}(q(t))$ be the rotation that takes the body from the reference orientation to the orientation specified by /q/(/t/) (see [figure 2.1](#figure_2.1)). Let ${\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right)$ be the vector to some constituent particle with the body in the orientation specified by /q/(/t/), and let $\overset{\rightarrow}{\xi_{\alpha}^{\prime}}$ be the vector to the same constituent with the body in the reference orientation. Then
-$$\begin{matrix} {{\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right) = \mathcal{M}\left( {q\left( t \right)} \right)\overset{\rightarrow}{\xi_{\alpha}^{\prime}}.} & {(2.11)} \\ \end{matrix}$$
+$$\begin{matrix} {{\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right) = \mathcal{M}\left( {q\left( t \right)} \right)\overset{\rightarrow}{\xi_{\alpha}^{\prime}}.} \tag{2.11} \\ \end{matrix}$$
 The constituent vectors $\overset{\rightarrow}{\xi_{\alpha}^{\prime}}$ do not depend on the configuration, because they are the vectors to the positions of the constituents with the body in a fixed reference orientation.
 
 To compute the kinetic energy we will accumulate the contributions from all of the constituent mass elements. So we need
 #page(124)
 the velocities of the constituents. The positions of the constituent particles, at a given time /t/, are
-$$\begin{matrix} {{\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right) = \mathcal{M}\left( {q\left( t \right)} \right)\overset{\rightarrow}{\xi_{\alpha}^{\prime}} = M\left( t \right)\overset{\rightarrow}{\xi_{\alpha}^{\prime}},} & {(2.12)} \\ \end{matrix}$$
+$$\begin{matrix} {{\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right) = \mathcal{M}\left( {q\left( t \right)} \right)\overset{\rightarrow}{\xi_{\alpha}^{\prime}} = M\left( t \right)\overset{\rightarrow}{\xi_{\alpha}^{\prime}},} \tag{2.12} \\ \end{matrix}$$
 where $ M = \mathcal{M} \circ q $. The velocity is the time derivative
-$$\begin{matrix} {D{\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right) = DM\left( t \right)\overset{\rightarrow}{\xi_{\alpha}^{\prime}}.} & {(2.13)} \\ \end{matrix}$$
+$$\begin{matrix} {D{\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right) = DM\left( t \right)\overset{\rightarrow}{\xi_{\alpha}^{\prime}}.} \tag{2.13} \\ \end{matrix}$$
 Using equation (#Eqn(chapter002,2.12,2.12)), we can write
-$$\begin{matrix} {D{\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right) = DM\left( t \right)\left( {M\left( t \right)} \right)^{- 1}{\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right).} & {(2.14)} \\ \end{matrix}$$
+$$\begin{matrix} {D{\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right) = DM\left( t \right)\left( {M\left( t \right)} \right)^{- 1}{\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right).} \tag{2.14} \\ \end{matrix}$$
 So we have a time-varying linear differential equation that describes the motion of the constituents. Let's look at the multiplier /DM/(/t/)(/M/(/t/))^{−1}. Since /M/(/t/) is a rotation its matrix representation is an orthogonal matrix *M*(/t/), with the property ${(\mathbf{M}(t))}^{- 1} = {(\mathbf{M}(t))}^{\mathcal{T}}$. Because $\mathbf{M}(t){(\mathbf{M}(t))}^{\mathcal{T}} = \mathbf{I}$, its derivative is:
-$$\begin{matrix} {0 = D\left( {\mathbf{M}\mathbf{M}^{\mathcal{T}}} \right) = D\mathbf{M}\,\mathbf{M}^{\mathcal{T}} + \mathbf{M}\, D\mathbf{M}^{\mathcal{T}}.} & {(2.15)} \\ \end{matrix}$$
+$$\begin{matrix} {0 = D\left( {\mathbf{M}\mathbf{M}^{\mathcal{T}}} \right) = D\mathbf{M}\,\mathbf{M}^{\mathcal{T}} + \mathbf{M}\, D\mathbf{M}^{\mathcal{T}}.} \tag{2.15} \\ \end{matrix}$$
 So
-$$\begin{matrix} {D\mathbf{M}\,\mathbf{M}^{\mathcal{T}} = - \left( {D\mathbf{M}\,\mathbf{M}^{\mathcal{T}}} \right)^{\mathcal{T}}.} & {(2.16)} \\ \end{matrix}$$
+$$\begin{matrix} {D\mathbf{M}\,\mathbf{M}^{\mathcal{T}} = - \left( {D\mathbf{M}\,\mathbf{M}^{\mathcal{T}}} \right)^{\mathcal{T}}.} \tag{2.16} \\ \end{matrix}$$
 We can conclude that $ D\mathbf{M}\mathbf{M}^{\mathcal{T}}$ is antisymmetric.
 
 Let *u* have components (/x/, /y/, /z/). Every 3 × 3 antisymmetric matrix is of the following form:
-$$\begin{matrix} {\mathcal{A}\left( \mathbf{u} \right) = \begin{pmatrix} 0 & {- z} & y \\ z & 0 & {- x} \\ {- y} & x & 0 \\ \end{pmatrix}.} & {(2.17)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathcal{A}\left( \mathbf{u} \right) = \begin{pmatrix} 0 & {- z} & y \\ z & 0 & {- x} \\ {- y} & x & 0 \\ \end{pmatrix}.} \tag{2.17} \\ \end{matrix}$$
 Multiplication by this matrix can be interpreted as the operation of cross product with the vector $\overset{\rightarrow}{u}$. The vector $\overset{\rightarrow}{u}$ has a matrix representation *u*.
 
 The inverse of the function $\mathcal{A}$ can be applied to any skew-symmetric matrix: we can use $\mathcal{A}^{- 1}$ to extract the components of *u*.
 
 We can interpret multiplication by $ D\mathbf{M}\,\mathbf{M}^{\mathcal{T}}$ as a cross product with a vector that we call $\overset{\rightarrow}{\omega}$, the /angular velocity vector/ with components */ω/*. So we can write
-$$\begin{matrix} {\mathbf{\omega} = \mathcal{A}^{- 1}\left( {D\mathbf{M}\,\mathbf{M}^{\mathcal{T}}} \right).} & {(2.18)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{\omega} = \mathcal{A}^{- 1}\left( {D\mathbf{M}\,\mathbf{M}^{\mathcal{T}}} \right).} \tag{2.18} \\ \end{matrix}$$
 #page(125)
 
 #Image(Art_P400.jpg,figure_2.1)
 #Caption *Figure 2.1* The rotation ¶ $\mathcal{M}(q(t))$ ¶ rotates the body from a reference orientation to its orientation at time /t/. Vectors attached to the body, such as ¶ $\xi_{\alpha}^{\prime}$ ¶ are rotated with the body to the position /ξ/_{/α/}(/t/). Axes attached to the body, labeled by /â/′, ¶ $\widehat{b}\prime $ ¶ , and /ĉ/′, specify a right-handed orthonormal coordinate system. In the reference orientation the body axes are aligned with the spatial axes, labeled by ¶ $\widehat{x}$ ¶ , /ŷ/, and /ẑ/. At time /t/ the body axes are rotated to /â/(/t/), ¶ $\widehat{b}(t)$ ¶ , and /ĉ/(/t/). #CaptionEnd
 
 In terms of the angular velocity vector, the differential equations for the motion of the constituents (see equation #Eqn(chapter002,2.14,2.14)) are
-$$\begin{matrix} {D{\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right) = \overset{\rightarrow}{\omega}\left( t \right) \times {\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right).} & {(2.19)} \\ \end{matrix}$$
+$$\begin{matrix} {D{\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right) = \overset{\rightarrow}{\omega}\left( t \right) \times {\overset{\rightarrow}{\xi}}_{\alpha}\left( t \right).} \tag{2.19} \\ \end{matrix}$$
 If the angular velocity vector for a body is $\overset{\rightarrow}{\omega}$ then the velocities of the constituent particles are perpendicular to the vectors to the constituent particles and proportional to the rate of rotation of the body and the distance of the constituent particle from the instantaneous rotation axis:
-$$\begin{matrix} {{\dot{\overset{\rightarrow}{\xi}}}_{\alpha} = \overset{\rightarrow}{\omega} \times {\overset{\rightarrow}{\xi}}_{\alpha}.} & {(2.20)} \\ \end{matrix}$$
+$$\begin{matrix} {{\dot{\overset{\rightarrow}{\xi}}}_{\alpha} = \overset{\rightarrow}{\omega} \times {\overset{\rightarrow}{\xi}}_{\alpha}.} \tag{2.20} \\ \end{matrix}$$
 The components */ω/′* of the angular velocity vector on the body axes are $\mathbf{\omega}\prime = \mathbf{M}^{\mathcal{T}}\mathbf{\omega}$, so
-$$\begin{matrix} {\mathbf{\omega}\prime = \mathbf{M}^{\mathcal{T}}\mathcal{A}^{- 1}\left( {D\mathbf{M}\,\mathbf{M}^{\mathcal{T}}} \right).} & {(2.21)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{\omega}\prime = \mathbf{M}^{\mathcal{T}}\mathcal{A}^{- 1}\left( {D\mathbf{M}\,\mathbf{M}^{\mathcal{T}}} \right).} \tag{2.21} \\ \end{matrix}$$
 The relationship of the angular velocity vector to the path is a kinematic relationship; it is valid for any path. Thus we can abstract it to obtain the components of the angular velocity at a moment given the configuration and velocity at that moment.
 
 #page(126)
@@ -125,11 +125,11 @@ The rotational kinetic energy is the sum of the kinetic energy of each of the co
 rotational kinetic energy in terms of the angular velocity vector and certain aggregate quantities determined by the distribution of mass in the rigid body.
 
 Substituting our representation of the relative velocity vectors into the rotational kinetic energy, we obtain
-$$\begin{matrix} {\sum\limits_{\alpha}{\frac{1}{2}m_{\alpha}{\dot{\overset{\rightarrow}{\xi}}}_{\alpha} \cdot {\dot{\overset{\rightarrow}{\xi}}}_{\alpha} = {\sum_{\alpha}{\frac{1}{2}m_{\alpha}\left( {\overset{\rightarrow}{\omega} \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right) \cdot \left( {\overset{\rightarrow}{\omega} \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right).}}}} & {(2.22)} \\ \end{matrix}$$
+$$\begin{matrix} {\sum\limits_{\alpha}{\frac{1}{2}m_{\alpha}{\dot{\overset{\rightarrow}{\xi}}}_{\alpha} \cdot {\dot{\overset{\rightarrow}{\xi}}}_{\alpha} = {\sum_{\alpha}{\frac{1}{2}m_{\alpha}\left( {\overset{\rightarrow}{\omega} \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right) \cdot \left( {\overset{\rightarrow}{\omega} \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right).}}}} \tag{2.22} \\ \end{matrix}$$
 We introduce an arbitrary spatially fixed rectangular coordinate system with origin at the center of rotation and with basis vectors /ê/_{0}, /ê/_{1}, and /ê/_{2}, with the property that /ê/_{0} × /ê/_{1} = /ê/_{2}. The components of $\overset{\rightarrow}{\omega}$ on this coordinate system are /ω/^{0}, /ω/^{1}, and /ω/^{2}. Rewriting $\overset{\rightarrow}{\omega}$ in terms of its components, the rotational kinetic energy becomes
-$$\begin{matrix} \begin{array}{ll} {\sum\limits_{\alpha}{\frac{1}{2}m_{\alpha}\left( {\left( {\sum_{i}{{\widehat{e}}_{i}\omega^{i}}} \right) \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right) \cdot \left( {\left( {\sum_{j}{{\widehat{e}}_{j}\omega^{j}}} \right) \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right)}} & \\ {\,\,\,\,\,\,\,\,\, = \frac{1}{2}{\sum_{ij}{\omega^{i}\omega^{j}}}{\sum_{\alpha}m_{\alpha}}\left( {{\widehat{e}}_{i} \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right) \cdot \left( {{\widehat{e}}_{j} \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right)} & \\ {\,\,\,\,\,\,\,\,\, = \frac{1}{2}{\sum_{ij}{\omega^{i}\omega^{j}I_{ij},}}} & {(2.23)} \\ \end{array} \\ \end{matrix}$$
+$$\begin{matrix} \begin{array}{ll} {\sum\limits_{\alpha}{\frac{1}{2}m_{\alpha}\left( {\left( {\sum_{i}{{\widehat{e}}_{i}\omega^{i}}} \right) \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right) \cdot \left( {\left( {\sum_{j}{{\widehat{e}}_{j}\omega^{j}}} \right) \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right)}} & \\ {\,\,\,\,\,\,\,\,\, = \frac{1}{2}{\sum_{ij}{\omega^{i}\omega^{j}}}{\sum_{\alpha}m_{\alpha}}\left( {{\widehat{e}}_{i} \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right) \cdot \left( {{\widehat{e}}_{j} \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right)} & \\ {\,\,\,\,\,\,\,\,\, = \frac{1}{2}{\sum_{ij}{\omega^{i}\omega^{j}I_{ij},}}} \tag{2.23} \\ \end{array} \\ \end{matrix}$$
 with
-$$\begin{matrix} {I_{ij} = {\sum\limits_{\alpha}{m_{\alpha}\left( {{\widehat{e}}_{i} \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right) \cdot \left( {{\widehat{e}}_{j} \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right).}}} & {(2.24)} \\ \end{matrix}$$
+$$\begin{matrix} {I_{ij} = {\sum\limits_{\alpha}{m_{\alpha}\left( {{\widehat{e}}_{i} \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right) \cdot \left( {{\widehat{e}}_{j} \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right).}}} \tag{2.24} \\ \end{matrix}$$
 The nine time-dependent quantities /I_{ij}/ are the components of the /inertia tensor/ with respect to the chosen coordinate system.
 
 Note what a remarkable form the kinetic energy has taken. All we have done is interchange the order of summations, but now the kinetic energy is written as a sum of products of components of the angular velocity vector, which completely specify how the orientation of the body is changing, and the quantity /I_{ij}/, which depends solely on the distribution of mass in the body relative to the chosen coordinate system.
@@ -137,13 +137,13 @@ Note what a remarkable form the kinetic energy has taken. All we have done is in
 We will deduce a number of properties of the inertia tensor. First, we find a somewhat simpler expression for it. The components of the vector ${\overset{\rightarrow}{\xi}}_{\alpha}$ are $\left( {\xi_{\alpha}^{0},\xi_{\alpha}^{1},\xi_{\alpha}^{2}} \right)$. If we rewrite ${\overset{\rightarrow}{\xi}}_{\alpha}$ as a sum over its components and simplify the elementary vector products of basis vectors, we can obtain the components of the inertia tensor.
 #page(128)
 We can arrange the components of the inertia tensor to form the /inertia matrix/:
-$$\begin{matrix} {\mathbf{I} = \begin{pmatrix} I_{00} & I_{01} & I_{02} \\ I_{10} & I_{11} & I_{12} \\ I_{20} & I_{21} & I_{22} \\ \end{pmatrix}\,\,\,,} & {(2.25)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{I} = \begin{pmatrix} I_{00} & I_{01} & I_{02} \\ I_{10} & I_{11} & I_{12} \\ I_{20} & I_{21} & I_{22} \\ \end{pmatrix}\,\,\,,} \tag{2.25} \\ \end{matrix}$$
 where
-$$\begin{array}{lll} I_{00} & {= {\sum\limits_{\alpha}{m_{\alpha}{({{(\xi_{\alpha}^{1})}^{2} + {(\xi_{\alpha}^{2})}^{2}})}}}} & \\ I_{11} & {= {\sum\limits_{\alpha}{m_{\alpha}{({{(\xi_{\alpha}^{0})}^{2} + {(\xi_{\alpha}^{2})}^{2}})}}}} & \\ I_{22} & {= {\sum\limits_{\alpha}{m_{\alpha}{({{(\xi_{\alpha}^{0})}^{2} + {(\xi_{\alpha}^{1})}^{2}})}}}} & \\ I_{ij} & {= - {\sum\limits_{\alpha}{m_{\alpha}\xi_{\alpha}^{i}\xi_{\alpha}^{j}}}\,\,\,\,\text{for}\,\, i \neq j} & {(2.26)} \\ \end{array}$$
+$$\begin{array}{lll} I_{00} & {= {\sum\limits_{\alpha}{m_{\alpha}{({{(\xi_{\alpha}^{1})}^{2} + {(\xi_{\alpha}^{2})}^{2}})}}}} & \\ I_{11} & {= {\sum\limits_{\alpha}{m_{\alpha}{({{(\xi_{\alpha}^{0})}^{2} + {(\xi_{\alpha}^{2})}^{2}})}}}} & \\ I_{22} & {= {\sum\limits_{\alpha}{m_{\alpha}{({{(\xi_{\alpha}^{0})}^{2} + {(\xi_{\alpha}^{1})}^{2}})}}}} & \\ I_{ij} & {= - {\sum\limits_{\alpha}{m_{\alpha}\xi_{\alpha}^{i}\xi_{\alpha}^{j}}}\,\,\,\,\text{for}\,\, i \neq j} \tag{2.26} \\ \end{array}$$
 Note that the inertia tensor has real components and is symmetric: /I_{jk}/ = /I_{kj}/.
 
 We define the /moment of inertia/ about a line by
-$$\begin{matrix} {{\sum\limits_{\alpha}{m_{\alpha}\left( \xi_{\alpha}^{\bot} \right)^{2}}},} & {(2.27)} \\ \end{matrix}$$
+$$\begin{matrix} {{\sum\limits_{\alpha}{m_{\alpha}\left( \xi_{\alpha}^{\bot} \right)^{2}}},} \tag{2.27} \\ \end{matrix}$$
 where $\xi_{\alpha}^{\bot}$ is the perpendicular distance from the line to the constituent with index /α/. The diagonal components of the inertia tensor /I_{ii}/ are recognized as the moments of inertia about the lines coinciding with the coordinate axes /ê_{i}/. The off-diagonal components of the inertia tensor are called /products of inertia/.
 
 The rotational kinetic energy of a body depends on the distribution of mass of the body solely through the inertia tensor. Remarkably, the inertia tensor involves only second-order moments of the mass distribution with respect to the center of mass. We might have expected the kinetic energy to depend in a complicated way on all the moments of the mass distribution, interwoven in some complicated way with the components of the angular velocity vector, but this is not the case. This fact has a remarkable consequence: for the motion of a free rigid body the detailed shape of the body does not matter. If a book and a banana have the same inertia tensor, that is, the same second-order mass moments,
@@ -153,13 +153,13 @@ then if they are thrown in the same way the subsequent motion will be the same, 
 ### Exercise 2.1: Rotational kinetic energy
 
 Show that the rotational kinetic energy can also be written
-$$\begin{matrix} {T_{R} = \frac{1}{2}I\omega^{2},} & {(2.28)} \\ \end{matrix}$$
+$$\begin{matrix} {T_{R} = \frac{1}{2}I\omega^{2},} \tag{2.28} \\ \end{matrix}$$
 where /I/ is the moment of inertia about the line through the center of mass with direction $\widehat{\omega}$, and /ω/ is the instantaneous rate of rotation.
 
 ### Exercise 2.2: Steiner's theorem
 
 Let /I/ be the moment of inertia of a body with respect to some given line through the center of mass. Show that the moment of inertia /I/′ with respect to a second line parallel to the first is
-$$\begin{matrix} {I\prime = I + MR^{2}} & {(2.29)} \\ \end{matrix}$$
+$$\begin{matrix} {I\prime = I + MR^{2}} \tag{2.29} \\ \end{matrix}$$
 where /M/ is the total mass of the body and /R/ is the distance between the lines.
 
 ### Exercise 2.3: Some useful moments of inertia
@@ -194,30 +194,30 @@ Alternatively, we can rotate the coordinate system by rotating the basis vectors
 the vector $\overset{\rightarrow}{x}$ along the rotated basis ${\widehat{e}}_{i}^{\prime}$ are $\left( x\prime \right)^{i} = \overset{\rightarrow}{x} \cdot {\widehat{e}}_{i}^{\prime} = \overset{\rightarrow}{x} \cdot \left( {R{\widehat{e}}_{i}} \right) = \left( {R^{- 1}\overset{\rightarrow}{x}} \right) \cdot {\widehat{e}}_{i}$.#Footnote(4) Thus the components with respect to the rotated basis elements are the same as the components of the rotated vector $ R^{- 1}\overset{\rightarrow}{x}$ with respect to the original basis. In terms of components, if the vector $\overset{\rightarrow}{x}$ has components *x* with respect to the original basis vectors /ê_{i}/, then the components *x′* of the same vector with respect to the rotated basis vectors ${\widehat{e}}_{i}^{\prime}$ are *x′* = *R*^{−1}*x*, or equivalently *x* = *Rx′*. A rotation that actively rotates the basis vectors, leaving other vectors unchanged, is called a /passive/ rotation. For a passive rotation the components of a fixed vector change as if the vector were actively rotated by the inverse rotation.
 
 With respect to the rectangular basis /ê_{i}/ the rotational kinetic energy is written
-$$\begin{matrix} {\frac{1}{2}{\sum_{ij}{\omega^{i}\omega^{j}I_{ij}.}}} & {(2.30)} \\ \end{matrix}$$
+$$\begin{matrix} {\frac{1}{2}{\sum_{ij}{\omega^{i}\omega^{j}I_{ij}.}}} \tag{2.30} \\ \end{matrix}$$
 In terms of matrix representations, the kinetic energy is
-$$\begin{matrix} {\frac{1}{2}\mathbf{\omega}^{\mathcal{T}}\mathbf{I}\mathbf{\omega},} & {(2.31)} \\ \end{matrix}$$
+$$\begin{matrix} {\frac{1}{2}\mathbf{\omega}^{\mathcal{T}}\mathbf{I}\mathbf{\omega},} \tag{2.31} \\ \end{matrix}$$
 where */ω/* is the column of components representing $\overset{\rightarrow}{\omega}$.#Footnote(5) If we rotate the coordinate system by the passive rotation /R/ about the center of rotation, the new basis vectors are ${\widehat{e}}_{i}^{\prime} = R{\widehat{e}}_{i}$. The components */ω/′* of the vector $\overset{\rightarrow}{\omega}$ with respect to the rotated coordinate system satisfy
-$$\begin{matrix} {\mathbf{\omega} = \mathbf{R}\mathbf{\omega}\prime,} & {(2.32)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{\omega} = \mathbf{R}\mathbf{\omega}\prime,} \tag{2.32} \\ \end{matrix}$$
 where *R* is the matrix representation of /R/. The kinetic energy is
-$$\begin{matrix} {\frac{1}{2}\left( \mathbf{\omega}\prime \right)^{\mathcal{T}}\mathbf{R}^{\mathcal{T}}\mathbf{IR}\mathbf{\omega}\prime.} & {(2.33)} \\ \end{matrix}$$
+$$\begin{matrix} {\frac{1}{2}\left( \mathbf{\omega}\prime \right)^{\mathcal{T}}\mathbf{R}^{\mathcal{T}}\mathbf{IR}\mathbf{\omega}\prime.} \tag{2.33} \\ \end{matrix}$$
 However, if we had started with the basis ${\widehat{e}}_{i}^{\prime}$, we would have written the kinetic energy directly as
-$$\begin{matrix} {\frac{1}{2}\left( \mathbf{\omega}\prime \right)^{\mathcal{T}}\mathbf{I\prime}\mathbf{\omega}\prime,} & {(2.34)} \\ \end{matrix}$$
+$$\begin{matrix} {\frac{1}{2}\left( \mathbf{\omega}\prime \right)^{\mathcal{T}}\mathbf{I\prime}\mathbf{\omega}\prime,} \tag{2.34} \\ \end{matrix}$$
 #page(132)
 
 where the components are taken with respect to the ${\widehat{e}}_{i}^{\prime}$ basis. Comparing the two expressions, we see that
-$$\begin{matrix} {\mathbf{I\prime} = \mathbf{R}^{\mathcal{T}}\mathbf{IR}.} & {(2.35)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{I\prime} = \mathbf{R}^{\mathcal{T}}\mathbf{IR}.} \tag{2.35} \\ \end{matrix}$$
 Thus the inertia matrix transforms by a similarity transformation.#Footnote(6)
 
 ### 2.5 Principal Moments of Inertia
 We can use the transformation properties of the inertia tensor (#Eqn(chapter002,2.35,2.35)) to show that there are special rectangular coordinate systems for which the inertia tensor /I/′ is diagonal, that is,$ I_{ij}^{\prime} = 0 $ for /i/ ≠ /j/. Let's assume that *I′* is diagonal and solve for the rotation matrix *R* that does the job. Multiplying both sides of (#Eqn(chapter002,2.35,2.35)) on the left by *R*, we have
-$$\begin{matrix} {\mathbf{RI\prime} = \mathbf{IR}.} & {(2.36)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{RI\prime} = \mathbf{IR}.} \tag{2.36} \\ \end{matrix}$$
 We can examine pieces of this matrix equation by multiplying on the right by a trivial column vector that picks out a particular column. So we multiply on the right by the column matrix representation /e_{i}/ of each of the coordinate unit vectors /ê_{i}/. These column matrices have a one in the /i/th row and zeros otherwise. Using $\mathbf{e}_{i}^{\prime} = \mathbf{R}\mathbf{e}_{i}$, we find
-$$\begin{matrix} {\mathbf{RI\prime}\mathbf{e}_{i} = \mathbf{IR}\mathbf{e}_{i} = \mathbf{I}\mathbf{e}_{i}^{\prime}.} & {(2.37)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{RI\prime}\mathbf{e}_{i} = \mathbf{IR}\mathbf{e}_{i} = \mathbf{I}\mathbf{e}_{i}^{\prime}.} \tag{2.37} \\ \end{matrix}$$
 On the other hand, the matrix *I′* is diagonal, so
-$$\begin{matrix} {\mathbf{RI\prime}\mathbf{e}_{i} = \mathbf{R}\mathbf{e}_{i}I_{ii}^{\prime} = I_{ii}^{\prime}\mathbf{e}_{i}^{\prime}.} & {(2.38)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{RI\prime}\mathbf{e}_{i} = \mathbf{R}\mathbf{e}_{i}I_{ii}^{\prime} = I_{ii}^{\prime}\mathbf{e}_{i}^{\prime}.} \tag{2.38} \\ \end{matrix}$$
 So, from equations (#Eqn(chapter002,2.37,2.37)) and (#Eqn(chapter002,2.38,2.38)), we have
-$$\begin{matrix} {\mathbf{I}\mathbf{e}_{i}^{\prime} = I_{ii}^{\prime}\mathbf{e}_{i}^{\prime},} & {(2.39)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{I}\mathbf{e}_{i}^{\prime} = I_{ii}^{\prime}\mathbf{e}_{i}^{\prime},} \tag{2.39} \\ \end{matrix}$$
 which we recognize as an equation for the eigenvalue $ I_{ii}^{\prime}$ and $\mathbf{e}_{i}^{\prime}$, the column matrix of components of the associated eigenvector.
 
 #page(133)
@@ -233,13 +233,13 @@ For convenience, we often label the principal moments of inertia according to th
 #page(134)
 
 Let *x* represent the matrix of components of a vector $\overset{\rightarrow}{x}$ with respect to the basis vectors /ê_{i}/. Recall that the components *x′* of a vector $\overset{\rightarrow}{x}$ with respect to the principal axis unit vectors ${\widehat{e}}_{i}^{\prime}$ satisfy
-$$\begin{matrix} {\mathbf{x\prime} = \mathbf{R}^{\mathcal{T}}\mathbf{x}.} & {(2.40)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{x\prime} = \mathbf{R}^{\mathcal{T}}\mathbf{x}.} \tag{2.40} \\ \end{matrix}$$
 The components of a vector on the principal axis basis are sometimes called the /body components/ of the vector.
 
 If we choose the reference orientation of the body so that the principal axes are aligned with the spatial axes $\widehat{x}$, /ŷ/, /ẑ/, then the rotation *R* that diagonalizes the inertia matrix becomes the rotation *M* shown in [[chapter002!figure_2.1][figure 2.1]]. The axes /â/′,$\widehat{b}\prime $, /ĉ/′ then become the principal axes. The rotation matrix *M* multiplies the column of components of a vector on the principal axes to make a column of components of the vector in space.
 
 Now let's rewrite the kinetic energy in terms of the principal moments of inertia. If we choose our rectangular coordinate system so that it coincides with the principal axes then the calculation is simple. Let the components of the angular velocity vector on the principal axes be (/ω^{a}/, /ω^{b}/, /ω^{c}/). Then, keeping in mind that the inertia tensor is diagonal with respect to the principal axis basis, the kinetic energy is just
-$$\begin{matrix} {T_{R} = \frac{1}{2}\left\lbrack {A{(\omega^{a})}^{2} + B{(\omega^{b})}^{2} + C{(\omega^{c})}^{2}} \right\rbrack.} & {(2.41)} \\ \end{matrix}$$
+$$\begin{matrix} {T_{R} = \frac{1}{2}\left\lbrack {A{(\omega^{a})}^{2} + B{(\omega^{b})}^{2} + C{(\omega^{c})}^{2}} \right\rbrack.} \tag{2.41} \\ \end{matrix}$$
 Or as a program:
 ```Scheme
 (define ((T-body A B C) omega-body) (* 1/2 (+ (* A (square (ref omega-body 0))) (* B (square (ref omega-body 1))) (* C (square (ref omega-body 2)))))) 
@@ -270,29 +270,29 @@ Measure this book. You will admit that it is pretty dense. Don't worry, you will
 The vector angular momentum of a particle is the cross product of its position vector and its linear momentum vector. For a rigid body the vector angular momentum is the sum of the vector angular momentum of each of the constituents. Here we find an expression for the vector angular momentum of a rigid body in terms of the inertia tensor and the angular velocity vector.
 
 The vector angular momentum of a rigid body is
-$$\begin{matrix} {\sum\limits_{\alpha}{{\overset{\rightarrow}{x}}_{\alpha} \times \left( {m_{\alpha}{\dot{\overset{\rightarrow}{x}}}_{\alpha}} \right),}} & {(2.42)} \\ \end{matrix}$$
+$$\begin{matrix} {\sum\limits_{\alpha}{{\overset{\rightarrow}{x}}_{\alpha} \times \left( {m_{\alpha}{\dot{\overset{\rightarrow}{x}}}_{\alpha}} \right),}} \tag{2.42} \\ \end{matrix}$$
 where ${\overset{\rightarrow}{x}}_{\alpha}$,${\dot{\overset{\rightarrow}{x}}}_{\alpha}$, and /m_{α}/ are the positions, velocities, and masses of the constituent particles. It turns out that the vector angular momentum decomposes into the sum of the angular momentum of the center of mass and the rotational angular momentum about the center of mass, just as the kinetic energy separates into the kinetic energy of the center of mass and the kinetic energy of rotation. As in the kinetic energy demonstration ([section 2.1](#section_2.1)), decompose the position into the vector to the center of mass $\overset{\rightarrow}{X}$ and the vectors from the center of mass to the constituent mass elements ${\overset{\rightarrow}{\xi}}_{\alpha}$:
-$$\begin{matrix} {{\overset{\rightarrow}{x}}_{\alpha} = \overset{\rightarrow}{X} + {\overset{\rightarrow}{\xi}}_{\alpha},} & {(2.43)} \\ \end{matrix}$$
+$$\begin{matrix} {{\overset{\rightarrow}{x}}_{\alpha} = \overset{\rightarrow}{X} + {\overset{\rightarrow}{\xi}}_{\alpha},} \tag{2.43} \\ \end{matrix}$$
 with velocities
-$$\begin{matrix} {{\dot{\overset{\rightarrow}{x}}}_{\alpha} = \dot{\overset{\rightarrow}{X}} + {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}.} & {(2.44)} \\ \end{matrix}$$
+$$\begin{matrix} {{\dot{\overset{\rightarrow}{x}}}_{\alpha} = \dot{\overset{\rightarrow}{X}} + {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}.} \tag{2.44} \\ \end{matrix}$$
 #page(136)
 
 Substituting, the angular momentum is
-$$\begin{matrix} {\sum\limits_{\alpha}{m_{\alpha}\left( {\overset{\rightarrow}{X} + {\overset{\rightarrow}{\xi}}_{\alpha}} \right) \times \left( {\dot{\overset{\rightarrow}{X}} + {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}} \right).}} & {(2.45)} \\ \end{matrix}$$
+$$\begin{matrix} {\sum\limits_{\alpha}{m_{\alpha}\left( {\overset{\rightarrow}{X} + {\overset{\rightarrow}{\xi}}_{\alpha}} \right) \times \left( {\dot{\overset{\rightarrow}{X}} + {\dot{\overset{\rightarrow}{\xi}}}_{\alpha}} \right).}} \tag{2.45} \\ \end{matrix}$$
 Multiplying out the product, and using the fact that $\overset{\rightarrow}{X}$ is the center of mass and $ M = {\sum_{\alpha}m_{\alpha}}$ is the total mass of the body, the angular momentum is
-$$\begin{matrix} {\overset{\rightarrow}{X} \times \left( {M\,\dot{\overset{\rightarrow}{X}}} \right) + {\sum\limits_{\alpha}{{\overset{\rightarrow}{\xi}}_{\alpha} \times \left( {m_{\alpha}{\dot{\overset{\rightarrow}{\xi}}}_{\alpha}} \right).}}} & {(2.46)} \\ \end{matrix}$$
+$$\begin{matrix} {\overset{\rightarrow}{X} \times \left( {M\,\dot{\overset{\rightarrow}{X}}} \right) + {\sum\limits_{\alpha}{{\overset{\rightarrow}{\xi}}_{\alpha} \times \left( {m_{\alpha}{\dot{\overset{\rightarrow}{\xi}}}_{\alpha}} \right).}}} \tag{2.46} \\ \end{matrix}$$
 The angular momentum of the center of mass is
-$$\begin{matrix} {\overset{\rightarrow}{X} \times \left( {M\,\dot{\overset{\rightarrow}{X}}} \right),} & {(2.47)} \\ \end{matrix}$$
+$$\begin{matrix} {\overset{\rightarrow}{X} \times \left( {M\,\dot{\overset{\rightarrow}{X}}} \right),} \tag{2.47} \\ \end{matrix}$$
 and the rotational angular momentum is
-$$\begin{matrix} {\sum\limits_{\alpha}{{\overset{\rightarrow}{\xi}}_{\alpha} \times \left( {m_{\alpha}{\dot{\overset{\rightarrow}{\xi}}}_{\alpha}} \right).}} & {(2.48)} \\ \end{matrix}$$
+$$\begin{matrix} {\sum\limits_{\alpha}{{\overset{\rightarrow}{\xi}}_{\alpha} \times \left( {m_{\alpha}{\dot{\overset{\rightarrow}{\xi}}}_{\alpha}} \right).}} \tag{2.48} \\ \end{matrix}$$
 Using ${\dot{\overset{\rightarrow}{\xi}}}_{\alpha} = \overset{\rightarrow}{\omega} \times {\overset{\rightarrow}{\xi}}_{\alpha}$, we get the rotational angular momentum vector
-$$\begin{matrix} {\overset{\rightarrow}{L} = {\sum\limits_{\alpha}{m_{\alpha}{\overset{\rightarrow}{\xi}}_{\alpha} \times \left( {\overset{\rightarrow}{\omega} \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right).}}} & {(2.49)} \\ \end{matrix}$$
+$$\begin{matrix} {\overset{\rightarrow}{L} = {\sum\limits_{\alpha}{m_{\alpha}{\overset{\rightarrow}{\xi}}_{\alpha} \times \left( {\overset{\rightarrow}{\omega} \times {\overset{\rightarrow}{\xi}}_{\alpha}} \right).}}} \tag{2.49} \\ \end{matrix}$$
 We can also reexpress the rotational angular momentum in terms of the angular velocity vector and the inertia tensor, as we did for the kinetic energy. In terms of components with respect to the basis {/ê/_{0}, /ê/_{1}, /ê/_{2}}, this is
-$$\begin{matrix} {L_{j} = {\sum\limits_{k}{I_{jk}\omega^{k}}},} & {(2.50)} \\ \end{matrix}$$
+$$\begin{matrix} {L_{j} = {\sum\limits_{k}{I_{jk}\omega^{k}}},} \tag{2.50} \\ \end{matrix}$$
 where /I_{jk}/ are the components of the inertia tensor (#Eqn(chapter002,2.24,2.24)). The angular momentum and the kinetic energy are expressed in terms of the same inertia tensor.
 
 With respect to the principal-axis basis, the components of the angular momentum have a particularly simple form:
-$$\begin{array}{lll} L_{a} & {= A\omega^{a}} & \\ L_{b} & {= B\omega^{b}} & \\ L_{c} & {= C\omega^{c}} & {(2.51)} \\ \end{array}$$
+$$\begin{array}{lll} L_{a} & {= A\omega^{a}} & \\ L_{b} & {= B\omega^{b}} & \\ L_{c} & {= C\omega^{c}} \tag{2.51} \\ \end{array}$$
 #page(137)
 
 Since the angular momenta are the partial derivatives of /T_{R}/ (see equation #Eqn(chapter002,2.41,2.41)) with respect to the angular velocities, they must be grouped as a down tuple (in matrix language, a row matrix): /L/′ = [/L_{a}/, /L_{b}/, /L_{c}/]. As a program:
@@ -302,7 +302,7 @@ Since the angular momenta are the partial derivatives of /T_{R}/ (see equation #
 If *M* is the matrix representation of the rotation that takes an angular-velocity vector $\overset{\rightarrow}{\omega}\prime $ to a rotated vector $\overset{\rightarrow}{\omega}$, the components transform as */ω/* = *M/ω/′*.
 
 When working with matrices it is more convenient to work with a column matrix of the angular momentum components, so we introduce $\mathbf{\overline{L}} = \mathbf{L}^{\mathcal{T}}$. Using */ω/* = *M/ω/′* and equation (#Eqn(chapter002,2.35,2.35)) with *R* replaced by *M* we derive an expression for the angular momentum
-$$\begin{matrix} {\mathbf{\overline{L}} = \mathbf{I}\mathbf{\omega} = \mathbf{MI\prime}\mathbf{\omega}\prime = \mathbf{M\overline{L}\prime}.} & {(2.52)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{\overline{L}} = \mathbf{I}\mathbf{\omega} = \mathbf{MI\prime}\mathbf{\omega}\prime = \mathbf{M\overline{L}\prime}.} \tag{2.52} \\ \end{matrix}$$
 Transposing this result, we see that the angular momentum components must transform as $\mathbf{L} = \mathbf{L\prime}\mathbf{M}^{\mathcal{T}}$:
 ```Scheme
 (define (((L-space M) A B C) omega-body) (* ((L-body A B C) omega-body) (transpose M))) 
@@ -319,7 +319,7 @@ We are using an intermediate representation of the orientation in terms of the f
 #page(138)
 
 We define the Euler angles in terms of simple rotations about the coordinate axes. Let /R_{x}/(/ψ/) be a right-handed rotation about the $\widehat{x}$ axis by the angle /ψ/, and let /R_{z}/(/ψ/) be a right-handed rotation about the /ẑ/ axis by the angle /ψ/. The function $\mathcal{M}$ for Euler angles is written as a composition of three of these simple coordinate axis rotations:
-$$\begin{matrix} {\mathcal{M}\left( {\theta,\varphi,\psi} \right) = R_{z}\left( \varphi \right) \circ R_{x}\left( \theta \right) \circ R_{z}\left( \psi \right),} & {(2.53)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathcal{M}\left( {\theta,\varphi,\psi} \right) = R_{z}\left( \varphi \right) \circ R_{x}\left( \theta \right) \circ R_{z}\left( \psi \right),} \tag{2.53} \\ \end{matrix}$$
 for the Euler angles /θ/, /φ/, /ψ/.
 
 The Euler angles can specify any orientation of the body, but the orientation does not always correspond to a unique set of Euler angles. In particular, if /θ/ = 0 then the orientation is dependent only on the sum /φ/ + /ψ/, so the orientation does not uniquely determine either /φ/ or /ψ/.
@@ -331,17 +331,17 @@ It is not immediately obvious that all orientations can be represented in terms 
 Though the Euler angles allow us to specify all orientations and thus can be used as generalized coordinates, the definition of Euler angles is pretty arbitrary. In fact no reasoning has led us to them. This is reflected in our presentation of them by just saying “here they are.” Euler angles are well suited for some problems, but cumbersome for others.
 
 There are other ways of defining similar sets of angles. For instance, we could also take our generalized coordinates to satisfy
-$$\begin{matrix} {\mathcal{M}\prime\left( {\theta,\varphi,\psi} \right) = R_{x}\left( \varphi \right) \circ R_{y}\left( \theta \right) \circ R_{z}\left( \psi \right).} & {(2.54)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathcal{M}\prime\left( {\theta,\varphi,\psi} \right) = R_{x}\left( \varphi \right) \circ R_{y}\left( \theta \right) \circ R_{z}\left( \psi \right).} \tag{2.54} \\ \end{matrix}$$
 Such alternatives to the Euler angles sometimes come in handy.
 
 Each of the fundamental rotations can be represented as a matrix. The rotation matrix representing a right-handed rotation about the /ẑ/ axis by the angle /ψ/ is
-$$\begin{matrix} {\mathbf{R}_{z}\left( \psi \right) = \begin{pmatrix} {\cos\psi} & {- \sin\,\psi} & 0 \\ {\sin\,\psi} & {\cos\,\psi} & 0 \\ 0 & 0 & 1 \\ \end{pmatrix}} & {(2.55)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{R}_{z}\left( \psi \right) = \begin{pmatrix} {\cos\psi} & {- \sin\,\psi} & 0 \\ {\sin\,\psi} & {\cos\,\psi} & 0 \\ 0 & 0 & 1 \\ \end{pmatrix}} \tag{2.55} \\ \end{matrix}$$
 #page(139)
 
 and a right-handed rotation about the /x/ axis by the angle /ψ/ is represented by the matrix
-$$\begin{matrix} {\mathbf{R}_{x}\left( \psi \right) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & {\cos\psi} & {- \sin\psi} \\ 0 & {\sin\psi} & {\cos\psi} \\ \end{pmatrix}.} & {(2.56)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{R}_{x}\left( \psi \right) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & {\cos\psi} & {- \sin\psi} \\ 0 & {\sin\psi} & {\cos\psi} \\ \end{pmatrix}.} \tag{2.56} \\ \end{matrix}$$
 The matrix that represents the rotation that carries the body from its reference orientation to the actual orientation is
-$$\begin{matrix} {\mathbf{M}\left( {\theta,\varphi,\psi} \right) = \mathbf{R}_{z}\left( \varphi \right)\mathbf{R}_{x}\left( \theta \right)\mathbf{R}_{z}\left( \psi \right).} & {(2.57)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{M}\left( {\theta,\varphi,\psi} \right) = \mathbf{R}_{z}\left( \varphi \right)\mathbf{R}_{x}\left( \theta \right)\mathbf{R}_{z}\left( \psi \right).} \tag{2.57} \\ \end{matrix}$$
 The rotation matrices and their product can be constructed by simple programs:
 ```Scheme
 (define (Rz-matrix angle) (matrix-by-rows (list (cos angle) (- (sin angle)) 0) (list (sin angle) (cos angle) 0) (list 0 0 1))) (define (Rx-matrix angle) (matrix-by-rows (list 1 0 0) (list 0 (cos angle) (- (sin angle))) (list 0 (sin angle) (cos angle)))) (define (Euler->M angles) (let ((theta (ref angles 0)) (phi (ref angles 1)) (psi (ref angles 2))) (* (Rz-matrix phi) (Rx-matrix theta) (Rz-matrix psi))))
@@ -491,15 +491,15 @@ and one on the back side. The curve that is the union of these trajectories is c
 What is going on? The state space for a free rigid body is six-dimensional: the three Euler angles and their time derivatives. We know four constants of the motion---the three spatial components of the angular momentum, /L_{x}/, /L_{y}/, and /L_{z}/, and the energy, /E/. Thus, the motion is restricted to a two-dimensional region of the state space.#Footnote(8) Our experiment shows that the components of the angular momentum trace one-dimensional closed curves in the angular-momentum subspace, so there is something more going on here.
 
 The total angular momentum is conserved if all of the components are, so we also have the constant
-$$\begin{matrix} {L^{2} = L_{x}^{2} + L_{y}^{2} + L_{z}^{2}.} & {(2.58)} \\ \end{matrix}$$
+$$\begin{matrix} {L^{2} = L_{x}^{2} + L_{y}^{2} + L_{z}^{2}.} \tag{2.58} \\ \end{matrix}$$
 #page(148)
 
 The spatial components of the angular momentum do not change, but of course the projections of the angular momentum onto the principal axes do change because the axes move as the body moves. However, the magnitude of the angular momentum vector is the same whether it is computed from components on the fixed basis or components on the principal axis basis. So, the combination
-$$\begin{matrix} {L^{2} = L_{a}^{2} + L_{b}^{2} + L_{c}^{2},} & {(2.59)} \\ \end{matrix}$$
+$$\begin{matrix} {L^{2} = L_{a}^{2} + L_{b}^{2} + L_{c}^{2},} \tag{2.59} \\ \end{matrix}$$
 is conserved.
 
 Using the expressions (#Eqn(chapter002,2.51,2.51)) for the components of the angular momentum in terms of the components of the angular velocity vector on the principal axes, the kinetic energy (#Eqn(chapter002,2.41,2.41)) can be rewritten in terms of the angular momentum components on the principal axes:
-$$\begin{matrix} {E = \frac{1}{2}\left( {\frac{L_{a}^{2}}{A} + \frac{L_{b}^{2}}{B} + \frac{L_{c}^{2}}{C}} \right).} & {(2.60)} \\ \end{matrix}$$
+$$\begin{matrix} {E = \frac{1}{2}\left( {\frac{L_{a}^{2}}{A} + \frac{L_{b}^{2}}{B} + \frac{L_{c}^{2}}{C}} \right).} \tag{2.60} \\ \end{matrix}$$
 The two conserved quantities (#Eqn(chapter002,2.59,2.59) and #Eqn(chapter002,2.60,2.60)) provide constraints on how the components of the angular momentum vector on the principal axes can change. We recognize the conservation of angular momentum constraint (#Eqn(chapter002,2.59,2.59)) as the equation of a sphere, and the conservation of kinetic energy constraint (#Eqn(chapter002,2.60,2.60)) as the equation for a triaxial ellipsoid. For every trajectory both constraints are satisfied, so the components of the angular momentum move on the intersection of these two surfaces, the energy ellipsoid and the angular momentum sphere. The intersection of an ellipsoid and a sphere with the same center is typically two closed curves, so an orbit is confined to one of these curves. This sheds light on the puzzle posed at the beginning of this section.
 
 Because of our ordering /A/ ≤ /B/ ≤ /C/, the longest axis of this triaxial ellipsoid coincides with the /ĉ/ direction (all the angular momentum is along the axis of largest principal moment of inertia) and the shortest axis of the energy ellipsoid coincides with the /â/ axis (all the angular momentum is along the smallest moment of inertia). Without actually solving the Lagrange equations, we have found strong constraints on the evolution of the components of the angular momentum on the principal axes.
@@ -526,43 +526,43 @@ on the bottle, it will reorient itself so that the axis of the largest moment of
 For a free rigid body we have seen that the components of the angular momentum on the principal axes comprise a self-contained dynamical system: the variation of the principal axis components depends only on the principal axis components. Here we derive equations that govern the evolution of these components.
 
 The starting point for the derivation is the conservation of the vector angular momentum. The components of the angular momentum on the principal axes are#Footnote(11)
-$$\begin{matrix} {\mathbf{\overline{L}\prime} = \mathbf{I\prime}\mathbf{\omega}\prime,} & {(2.61)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{\overline{L}\prime} = \mathbf{I\prime}\mathbf{\omega}\prime,} \tag{2.61} \\ \end{matrix}$$
 where */ω/′* is composed of the components of the angular velocity vector on the principal axes and *I′* is the matrix representation of the inertia tensor with respect to the principal axis basis:
 
 #page(152)
-$$\begin{matrix} {\mathbf{I\prime} = \begin{pmatrix} A & 0 & 0 \\ 0 & B & 0 \\ 0 & 0 & C \\ \end{pmatrix}.} & {(2.62)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{I\prime} = \begin{pmatrix} A & 0 & 0 \\ 0 & B & 0 \\ 0 & 0 & C \\ \end{pmatrix}.} \tag{2.62} \\ \end{matrix}$$
 The body components of the angular momentum *L′* are related to the components *L* on the fixed rectangular basis /ê_{i}/ by
-$$\begin{matrix} {\mathbf{\overline{L}} = \mathbf{M}\mathbf{\overline{L}\prime},} & {(2.63)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{\overline{L}} = \mathbf{M}\mathbf{\overline{L}\prime},} \tag{2.63} \\ \end{matrix}$$
 where *M* is the matrix representation of the rotation that carries the body and all vectors attached to the body from the reference orientation of the body to the actual orientation.
 
 The vector angular momentum is conserved for free rigid-body motion, and so are its components on a fixed rectangular basis. So, along solution paths,
-$$\begin{matrix} {0 = D\mathbf{\overline{L}} = D\mathbf{M}\,\mathbf{\overline{L}\prime} + \mathbf{M}\, D\mathbf{\overline{L}\prime}.} & {(2.64)} \\ \end{matrix}$$
+$$\begin{matrix} {0 = D\mathbf{\overline{L}} = D\mathbf{M}\,\mathbf{\overline{L}\prime} + \mathbf{M}\, D\mathbf{\overline{L}\prime}.} \tag{2.64} \\ \end{matrix}$$
 Solving, we find
-$$\begin{matrix} {D\mathbf{\overline{L}\prime} = - \mathbf{M}^{\mathcal{T}}D\mathbf{M}\,\mathbf{\overline{L}\prime}.} & {(2.65)} \\ \end{matrix}$$
+$$\begin{matrix} {D\mathbf{\overline{L}\prime} = - \mathbf{M}^{\mathcal{T}}D\mathbf{M}\,\mathbf{\overline{L}\prime}.} \tag{2.65} \\ \end{matrix}$$
 In terms of */ω/′* this is
-$$\begin{array}{lll} {\mathbf{I\prime}D\mathbf{\omega}\prime} & {= - \mathbf{M}^{\mathcal{T}}D\mathbf{M}\,\mathbf{I\prime}\mathbf{\omega}\prime} & \\  & {= - \mathbf{M}^{\mathcal{T}}\mathcal{A}\left( {\mathbf{M}\mathbf{\omega}\prime} \right)\,\mathbf{M\, I\prime}\mathbf{\omega}\prime,} & {(2.66)} \\ \end{array}$$
+$$\begin{array}{lll} {\mathbf{I\prime}D\mathbf{\omega}\prime} & {= - \mathbf{M}^{\mathcal{T}}D\mathbf{M}\,\mathbf{I\prime}\mathbf{\omega}\prime} & \\  & {= - \mathbf{M}^{\mathcal{T}}\mathcal{A}\left( {\mathbf{M}\mathbf{\omega}\prime} \right)\,\mathbf{M\, I\prime}\mathbf{\omega}\prime,} \tag{2.66} \\ \end{array}$$
 where we have used equation (#Eqn(chapter002,2.21,2.21)) to write /D/*M* in terms of $\mathcal{A}$. The function $\mathcal{A}$ has the property#Footnote(12)
-$$\begin{matrix} {\mathbf{R}^{\mathcal{T}}\,\mathcal{A}\left( \mathbf{Rv} \right)\mathbf{R} = \mathcal{A}\left( \mathbf{v} \right)} & {(2.67)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{R}^{\mathcal{T}}\,\mathcal{A}\left( \mathbf{Rv} \right)\mathbf{R} = \mathcal{A}\left( \mathbf{v} \right)} \tag{2.67} \\ \end{matrix}$$
 for any vector with components *v* and any rotation with matrix representation *R*. Using this property of $\mathcal{A}$, we find /Euler's equations/:
-$$\begin{matrix} {\mathbf{I\prime}D\mathbf{\omega}\prime = - \mathcal{A}\left( \mathbf{\omega}\prime \right)\mathbf{I\prime}\mathbf{\omega}\prime.} & {(2.68)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{I\prime}D\mathbf{\omega}\prime = - \mathcal{A}\left( \mathbf{\omega}\prime \right)\mathbf{I\prime}\mathbf{\omega}\prime.} \tag{2.68} \\ \end{matrix}$$
 Euler's equations give the time derivative of the body components of the angular velocity vector entirely in terms of the angular
 #page(153)
 velocity components and the principal moments of inertia. Let /ω^{a}/, /ω^{b}/, and /ω^{c}/ denote the components of the angular velocity vector on the principal axes. Then Euler's equations can be written as the component equations
-$$\begin{array}{ll} {A\, D\omega^{a} = \left( {B - C} \right)\omega^{b}w^{c}} & \\ {B\, D\omega^{b} = \left( {C - A} \right)\omega^{c}\omega^{a}} & \\ {C\, D\omega^{c} = \left( {A - B} \right)\omega^{a}\omega^{b}.} & {(2.69)} \\ \end{array}$$
+$$\begin{array}{ll} {A\, D\omega^{a} = \left( {B - C} \right)\omega^{b}w^{c}} & \\ {B\, D\omega^{b} = \left( {C - A} \right)\omega^{c}\omega^{a}} & \\ {C\, D\omega^{c} = \left( {A - B} \right)\omega^{a}\omega^{b}.} \tag{2.69} \\ \end{array}$$
 Alternatively, we can rewrite Euler's equations in terms of the components of the angular momentum on the principal axes
-$$\begin{array}{ll} {D\, L_{a} = \left( {\frac{1}{C} - \frac{1}{B}} \right)L_{b}L_{c}} & \\ {D\, L_{b} = \left( {\frac{1}{A} - \frac{1}{C}} \right)L_{a}L_{c}} & \\ {D\, L_{a} = \left( {\frac{1}{B} - \frac{1}{A}} \right)L_{a}L_{b}.} & {(2.70)} \\ \end{array}$$
+$$\begin{array}{ll} {D\, L_{a} = \left( {\frac{1}{C} - \frac{1}{B}} \right)L_{b}L_{c}} & \\ {D\, L_{b} = \left( {\frac{1}{A} - \frac{1}{C}} \right)L_{a}L_{c}} & \\ {D\, L_{a} = \left( {\frac{1}{B} - \frac{1}{A}} \right)L_{a}L_{b}.} \tag{2.70} \\ \end{array}$$
 These equations confirm that the time derivatives of the components of the angular momentum on the principal axes depend only on the components of the angular momentum on the principal axes.
 
 Euler's equations are very simple, but they do not completely determine the evolution of a rigid body---they do not give the spatial orientation of the body. However, equation (#Eqn(chapter002,2.21,2.21)) and property (#Eqn(chapter002,2.67,2.67)) can be used to relate the derivative of the orientation matrix to the body components of the angular velocity vector:
-$$\begin{matrix} {D\mathbf{M} = \mathbf{M}\mathcal{A}\left( \mathbf{\omega}\prime \right).} & {(2.71)} \\ \end{matrix}$$
+$$\begin{matrix} {D\mathbf{M} = \mathbf{M}\mathcal{A}\left( \mathbf{\omega}\prime \right).} \tag{2.71} \\ \end{matrix}$$
 A straightforward method of using these equations is to integrate them componentwise as a set of nine first-order ordinary differential equations, with initial conditions determining the initial configuration matrix. Together with Euler's equations, which describe how the body components of the angular velocity vector change with time, this system of equations governing the motion of a rigid body is complete. However, the reader will no doubt have noticed that this approach is rather wasteful. The fact that the orientation matrix can be specified with only three parameters has not been taken into account. We should be integrating three
 #page(154)
 equations for the orientation, given */ω/′*, not nine. To accomplish this we once again need to parameterize the configuration matrix.
 
 For example, we can use Euler angles to parameterize the orientation:
-$$\begin{matrix} {\mathcal{M}\left( {\theta,\varphi,\psi} \right) = \mathbf{R}_{z}\left( \varphi \right)\mathbf{R}_{x}\left( \theta \right)\mathbf{R}_{z}\left( \psi \right).} & {(2.72)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathcal{M}\left( {\theta,\varphi,\psi} \right) = \mathbf{R}_{z}\left( \varphi \right)\mathbf{R}_{x}\left( \theta \right)\mathbf{R}_{z}\left( \psi \right).} \tag{2.72} \\ \end{matrix}$$
 We form *M* by composing $\mathcal{M}$ with an Euler coordinate path. Equation (#Eqn(chapter002,2.71,2.71)) can then be used to solve for /Dθ/, /Dφ/, and /Dψ/. We find
-$$\begin{matrix} {\left( \begin{array}{l} {D\theta} \\ {D\varphi} \\ {D\psi} \\ \end{array} \right) = \frac{1}{\sin\theta}\begin{pmatrix} {\cos\psi\sin\theta} & {- \sin\psi\sin\theta} & 0 \\ {\sin\psi} & {\cos\psi} & 0 \\ {- \sin\psi\cos\theta} & {- \cos\psi\cos\theta} & {\sin\theta} \\ \end{pmatrix}\,\,\,\begin{pmatrix} \omega^{a} \\ \omega^{b} \\ \omega^{c} \\ \end{pmatrix}.} & {(2.73)} \\ \end{matrix}$$
+$$\begin{matrix} {\left( \begin{array}{l} {D\theta} \\ {D\varphi} \\ {D\psi} \\ \end{array} \right) = \frac{1}{\sin\theta}\begin{pmatrix} {\cos\psi\sin\theta} & {- \sin\psi\sin\theta} & 0 \\ {\sin\psi} & {\cos\psi} & 0 \\ {- \sin\psi\cos\theta} & {- \cos\psi\cos\theta} & {\sin\theta} \\ \end{pmatrix}\,\,\,\begin{pmatrix} \omega^{a} \\ \omega^{b} \\ \omega^{c} \\ \end{pmatrix}.} \tag{2.73} \\ \end{matrix}$$
 This gives us the desired equation for the orientation. Note that it is singular for /θ/ = 0, as are Lagrange's equations. So Euler's equations using Euler angles for the configuration have the same problem as did the Lagrange equations using Euler angles. Again, this is a manifestation of the fact that for /θ/ = 0 the orientation depends only on /φ/+/ψ/. The singularity in the equations of motion for /θ/ = 0 does not correspond to anything funny in the motion of the rigid body. A practical solution to the singularity problem is to choose another set of Euler-like angles that have a singularity in a different place, and switch from one to the other when the going gets tough.
 
 ### Exercise 2.12:
@@ -577,27 +577,27 @@ We derive the vector torque in a manner analogous to the derivation of the vecto
 #page(155)
 
 Suppose we have a rigid body subject to some potential energy that depends only on time and the configuration. A Lagrangian is /L/ = /T/ − /V/. If we use the Euler angles as generalized coordinates, the last of the three active Euler rotations that define the orientation is a rotation about the /ẑ/ axis by the angle /φ/. The Lagrange equation for /φ/ gives#Footnote(13)
-$$\begin{matrix} {Dp_{\varphi}{(t)} = - \partial_{1,1}V{({t;\theta{(t)},\varphi{(t)},\psi{(t)}})}.} & {(2.74)} \\ \end{matrix}$$
+$$\begin{matrix} {Dp_{\varphi}{(t)} = - \partial_{1,1}V{({t;\theta{(t)},\varphi{(t)},\psi{(t)}})}.} \tag{2.74} \\ \end{matrix}$$
 If we define /T_{z}/, the component of the torque about the /z/ axis, to be minus the derivative of the potential energy with respect to the angle of rotation of the body about the /z/ axis,
-$$\begin{matrix} {T_{z}\left( t \right) = - \partial_{1,1}V\left( {t;\theta\left( t \right),\varphi\left( t \right),\psi\left( t \right)} \right),} & {(2.75)} \\ \end{matrix}$$
+$$\begin{matrix} {T_{z}\left( t \right) = - \partial_{1,1}V\left( {t;\theta\left( t \right),\varphi\left( t \right),\psi\left( t \right)} \right),} \tag{2.75} \\ \end{matrix}$$
 then we see that
-$$\begin{matrix} {Dp_{\varphi}\left( t \right) = T_{z}\left( t \right).} & {(2.76)} \\ \end{matrix}$$
+$$\begin{matrix} {Dp_{\varphi}\left( t \right) = T_{z}\left( t \right).} \tag{2.76} \\ \end{matrix}$$
 We have already identified the momentum conjugate to /φ/ as one component, /L_{z}/, of the vector angular momentum $\overset{\rightarrow}{L}$(see [section 2.8](#section_2.8)), so
-$$\begin{matrix} {DL_{z}\left( t \right) = T_{z}.} & {(2.77)} \\ \end{matrix}$$
+$$\begin{matrix} {DL_{z}\left( t \right) = T_{z}.} \tag{2.77} \\ \end{matrix}$$
 Since the orientation of the reference rectangular basis vectors is arbitrary, we may choose them any way that we please. Thus if we want any component of the vector torque, we may choose the /z/-axis so that we can compute it in this way. We can conclude that the vector torque gives the rate of change of the vector angular momentum
-$$\begin{matrix} {D\overset{\rightarrow}{L} = \overset{\rightarrow}{T}.} & {(2.78)} \\ \end{matrix}$$
+$$\begin{matrix} {D\overset{\rightarrow}{L} = \overset{\rightarrow}{T}.} \tag{2.78} \\ \end{matrix}$$
 Having obtained a general prescription for the vector torque, we address how the vector torque may be included in Euler's equations. Euler's equations expressed the fact that the vector angular
 #page(156)
 momentum is conserved. Let's return to that calculation, but now include a torque with components *T* arranged as a column matrix:
-$$\begin{matrix} {D\mathbf{\overline{L}} = \mathbf{\overline{T}} = D\mathbf{M}\,\mathbf{\overline{L}\prime} + \mathbf{M}\, D\mathbf{\overline{L}\prime}.} & {(2.79)} \\ \end{matrix}$$
+$$\begin{matrix} {D\mathbf{\overline{L}} = \mathbf{\overline{T}} = D\mathbf{M}\,\mathbf{\overline{L}\prime} + \mathbf{M}\, D\mathbf{\overline{L}\prime}.} \tag{2.79} \\ \end{matrix}$$
 Carrying out the same steps as before, we find
-$$\begin{array}{ll} {T_{a} = D\, L_{a} - \left( {\frac{1}{C} - \frac{1}{B}} \right)L_{b}L_{c}} & \\ {T_{b} = D\, L_{b} - \left( {\frac{1}{A} - \frac{1}{C}} \right)L_{a}L_{c}} & \\ {T_{c} = D\, L_{a} - \left( {\frac{1}{B} - \frac{1}{A}} \right)L_{a}L_{b},} & {(2.80)} \\ \end{array}$$
+$$\begin{array}{ll} {T_{a} = D\, L_{a} - \left( {\frac{1}{C} - \frac{1}{B}} \right)L_{b}L_{c}} & \\ {T_{b} = D\, L_{b} - \left( {\frac{1}{A} - \frac{1}{C}} \right)L_{a}L_{c}} & \\ {T_{c} = D\, L_{a} - \left( {\frac{1}{B} - \frac{1}{A}} \right)L_{a}L_{b},} \tag{2.80} \\ \end{array}$$
 where the components of the torque on the principal axes are
-$$\begin{matrix} {\mathbf{\overline{T}\prime} = \mathbf{M}^{- 1}\mathbf{\overline{T}}.} & {(2.81)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{\overline{T}\prime} = \mathbf{M}^{- 1}\mathbf{\overline{T}}.} \tag{2.81} \\ \end{matrix}$$
 In terms of */ω/′* this is
-$$\begin{matrix} {\mathbf{I\prime}D\mathbf{\omega}\prime + \mathcal{A}\left( \mathbf{\omega}\prime \right)\mathbf{I\prime}\mathbf{\omega}\prime = \mathbf{\overline{T}\prime};} & {(2.82)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{I\prime}D\mathbf{\omega}\prime + \mathcal{A}\left( \mathbf{\omega}\prime \right)\mathbf{I\prime}\mathbf{\omega}\prime = \mathbf{\overline{T}\prime};} \tag{2.82} \\ \end{matrix}$$
 in components,
-$$\begin{array}{ll} {A\, D\omega^{a} - \left( {B - C} \right)\omega^{b}\omega^{c} = T_{a}} & \\ {B\, D\omega^{b} - \left( {C - A} \right)\omega^{c}\omega^{a} = T_{b}} & \\ {C\, D\omega^{c} - \left( {A - B} \right)\omega^{a}\omega^{b} = T_{c}.} & {(2.83)} \\ \end{array}$$
+$$\begin{array}{ll} {A\, D\omega^{a} - \left( {B - C} \right)\omega^{b}\omega^{c} = T_{a}} & \\ {B\, D\omega^{b} - \left( {C - A} \right)\omega^{c}\omega^{a} = T_{b}} & \\ {C\, D\omega^{c} - \left( {A - B} \right)\omega^{a}\omega^{b} = T_{c}.} \tag{2.83} \\ \end{array}$$
 Note that the torque entered only the equations for the body angular momentum and for the body angular velocity vector. The equations that relate the derivative of the orientation to the angular velocity vector are not modified by the torque. In a sense, Euler's equations contain the dynamics, and the equations governing the orientation are kinematic. Of course, Lagrange's equations must be modified by the potential that gives rise to the torques; in this sense Lagrange's equations contain both dynamics and kinematics.
 
 ### Exercise 2.13: Bicycle wheel
@@ -612,9 +612,9 @@ Note that the torque entered only the equations for the body angular momentum an
 We have all played with a top at one time or another. For the purposes of analysis we will consider an idealized top that does not wander around. Thus, an ideal top is a rotating rigid body, one point of which is fixed in space. Furthermore, the center of mass of the top is not at the fixed point, which is the center of rotation, and there is a uniform gravitational acceleration.
 
 For our top we can take the Lagrangian to be the difference of the kinetic energy and the potential energy. We already know how to write the kinetic energy---what is new here is that we must express the potential energy in terms of the configuration. In the case of a body in a uniform gravitational field this is easy. The potential energy is the sum of “/mgh/” for all the constituent particles:
-$$\begin{matrix} {\sum\limits_{\alpha}{m_{\alpha}gh_{\alpha},}} & {(2.84)} \\ \end{matrix}$$
+$$\begin{matrix} {\sum\limits_{\alpha}{m_{\alpha}gh_{\alpha},}} \tag{2.84} \\ \end{matrix}$$
 where /g/ is the gravitational acceleration, /h_{α}/ =${\overset{\rightarrow}{x}}_{\alpha}$· /ẑ/, and the unit vector /ẑ/ indicates which way is up. Rewriting the vector to the constituents in terms of the vector $\overset{\rightarrow}{X}$ to the center of mass, the potential energy is
-$$\begin{array}{ll} {\sum\limits_{\alpha}{m_{\alpha}g\left( {\overset{\rightarrow}{X} + {\overset{\rightarrow}{\xi}}_{\alpha}} \right) \cdot \widehat{z}}} & \\ {\,\,\,\,\,\,\,\, = gM\,\overset{\rightarrow}{X} \cdot \widehat{z} + g\left( {\sum\limits_{\alpha}{m_{\alpha}{\overset{\rightarrow}{\xi}}_{\alpha}}} \right) \cdot \widehat{z}} & \\ {\,\,\,\,\,\,\,\, = gM\,\overset{\rightarrow}{X} \cdot \widehat{z},} & {(2.85)} \\ \end{array}$$
+$$\begin{array}{ll} {\sum\limits_{\alpha}{m_{\alpha}g\left( {\overset{\rightarrow}{X} + {\overset{\rightarrow}{\xi}}_{\alpha}} \right) \cdot \widehat{z}}} & \\ {\,\,\,\,\,\,\,\, = gM\,\overset{\rightarrow}{X} \cdot \widehat{z} + g\left( {\sum\limits_{\alpha}{m_{\alpha}{\overset{\rightarrow}{\xi}}_{\alpha}}} \right) \cdot \widehat{z}} & \\ {\,\,\,\,\,\,\,\, = gM\,\overset{\rightarrow}{X} \cdot \widehat{z},} \tag{2.85} \\ \end{array}$$
 where the last sum is zero because the center of mass is the origin of ${\overset{\rightarrow}{\xi}}_{\alpha}$. So the potential energy of a body in a gravitational field with uniform acceleration is very simple: it is just /M gh/, where /M/ is the total mass and $ h = \overset{\rightarrow}{X} \cdot \widehat{z}$ is the height of the center of mass.
 
 #page(158)
@@ -638,27 +638,27 @@ First, we develop the Lagrangian explicitly. The general form of the kinetic ene
 ```
 $$\frac{1}{2}\left( {\sin\left( \theta \right)} \right)^{2}A{\dot{\varphi}}^{2} + \cos\left( \theta \right)\left( {\frac{1}{2}\cos\left( \theta \right)C{\dot{\varphi}}^{2} + C\dot{\varphi}\dot{\psi}} \right) + \frac{1}{2}A{\dot{\theta}}^{2} + \frac{1}{2}C{\dot{\psi}}^{2}$$
 We can rearrange this a bit to get
-$$\begin{array}{ll} {T\left( {t;\theta,\varphi,\psi;\dot{\theta},\dot{\varphi},\dot{\psi}} \right)} & \\ {\,\,\,\,\,\,\,\,\,\,\, = \frac{1}{2}A\left( {{\dot{\theta}}^{2} + {\dot{\varphi}}^{2}\sin^{2}\theta} \right) + \frac{1}{2}C\left( {\dot{\psi} + \dot{\varphi}\cos\theta} \right)^{2}.} & {(2.86)} \\ \end{array}$$
+$$\begin{array}{ll} {T\left( {t;\theta,\varphi,\psi;\dot{\theta},\dot{\varphi},\dot{\psi}} \right)} & \\ {\,\,\,\,\,\,\,\,\,\,\, = \frac{1}{2}A\left( {{\dot{\theta}}^{2} + {\dot{\varphi}}^{2}\sin^{2}\theta} \right) + \frac{1}{2}C\left( {\dot{\psi} + \dot{\varphi}\cos\theta} \right)^{2}.} \tag{2.86} \\ \end{array}$$
 #page(160)
 
 In terms of Euler angles, the potential energy is
-$$\begin{matrix} {V\left( {t;\theta,\varphi,\psi;\dot{\theta},\dot{\varphi},\dot{\psi}} \right) = M\, gR\cos\theta,} & {(2.87)} \\ \end{matrix}$$
+$$\begin{matrix} {V\left( {t;\theta,\varphi,\psi;\dot{\theta},\dot{\varphi},\dot{\psi}} \right) = M\, gR\cos\theta,} \tag{2.87} \\ \end{matrix}$$
 where /R/ is the distance of the center of mass from the pivot. The Lagrangian is /L/ = /T/ − /V/. We see that the Lagrangian is indeed independent of /ψ/ and /φ/, as expected.
 
 There is no particular reason to look at the Lagrange equations. We can assign that job to the computer when needed. However, we have already seen that it may be useful to examine the conserved quantities associated with the symmetries.
 
 The energy is conserved, because the Lagrangian has no explicit time dependence. Also, the energy is the sum of the kinetic and potential energy /E/ = /T/ + /V/, because the kinetic energy is a homogeneous quadratic form in the generalized velocities. The energy is
-$$\begin{matrix} {E = \frac{1}{2}A\left( {{\dot{\theta}}^{2} + {\dot{\varphi}}^{2}\sin^{2}\theta} \right) + \frac{1}{2}C\left( {\dot{\psi} + \dot{\varphi}\cos\theta} \right)^{2} + M\, gR\cos\theta.} & {(2.88)} \\ \end{matrix}$$
+$$\begin{matrix} {E = \frac{1}{2}A\left( {{\dot{\theta}}^{2} + {\dot{\varphi}}^{2}\sin^{2}\theta} \right) + \frac{1}{2}C\left( {\dot{\psi} + \dot{\varphi}\cos\theta} \right)^{2} + M\, gR\cos\theta.} \tag{2.88} \\ \end{matrix}$$
 Two of the generalized coordinates do not appear in the Lagrangian, so there are two conserved momenta. The momentum conjugate to /φ/ is
-$$\begin{matrix} {p_{\varphi} = \left( {A\left( {\sin\theta} \right)^{2} + C\left( {\cos\theta} \right)^{2}} \right)\,\,\dot{\varphi} + C\dot{\psi}\cos\theta.} & {(2.89)} \\ \end{matrix}$$
+$$\begin{matrix} {p_{\varphi} = \left( {A\left( {\sin\theta} \right)^{2} + C\left( {\cos\theta} \right)^{2}} \right)\,\,\dot{\varphi} + C\dot{\psi}\cos\theta.} \tag{2.89} \\ \end{matrix}$$
 The momentum conjugate to /ψ/ is
-$$\begin{matrix} {p_{\psi} = C\left( {\dot{\psi} + \dot{\varphi}\cos\theta} \right).} & {(2.90)} \\ \end{matrix}$$
+$$\begin{matrix} {p_{\psi} = C\left( {\dot{\psi} + \dot{\varphi}\cos\theta} \right).} \tag{2.90} \\ \end{matrix}$$
 The state of the system at a moment is specified by the tuple $\left( {t;\theta,\varphi,\psi;\dot{\theta},\dot{\varphi},\dot{\psi}} \right)$. Because the two coordinates /φ/ and /ψ/ do not appear in the Lagrangian, they do not appear in the Lagrange equations or the conserved momenta. So the evolution of the remaining four state variables, /θ/,$\dot{\theta}$,$\dot{\varphi}$, and $\dot{\psi}$, depends only on those remaining state variables. This subsystem for the top has a four-dimensional state space. The variables that did not appear in the Lagrangian can be determined by integrating the derivatives of these variables, which are determined separately by solving the independent subsystem.
 
 #page(161)
 
 The evolution of the top is described by a four-dimensional subsystem and two auxiliary quadratures.#Footnote(16) This subdivision is a consequence of choosing generalized coordinates that incorporate the symmetries. However, the choice of generalized coordinates that incorporate the symmetries also gives conserved momenta. We can make use of these momenta to simplify the formulation of the problem further. Each conserved quantity can be used to locally eliminate one dimension of the subsystem. In this case the subsystem has four dimensions and there are three conserved quantities, so the system can be completely reduced to quadratures. For the top, this can be done analytically, but we think it is a waste of time to do so. Rather, we are interested in extracting interesting features of the motion. We concentrate on the energy and use the two conserved momenta to eliminate $\dot{\varphi}$ and $\dot{\psi}$. After a bit of algebra we find:
-$$\begin{matrix} {E = \frac{1}{2}A{\dot{\theta}}^{2} + \frac{\left( {p_{\varphi} - p_{\psi}\cos\theta} \right)^{2}}{2A\left( {\sin\theta} \right)^{2}} + \frac{p_{\psi}^{2}}{2C} + M\, gR\cos\theta.} & {(2.91)} \\ \end{matrix}$$
+$$\begin{matrix} {E = \frac{1}{2}A{\dot{\theta}}^{2} + \frac{\left( {p_{\varphi} - p_{\psi}\cos\theta} \right)^{2}}{2A\left( {\sin\theta} \right)^{2}} + \frac{p_{\psi}^{2}}{2C} + M\, gR\cos\theta.} \tag{2.91} \\ \end{matrix}$$
 Along a path /θ/, where /Dθ/(/t/) is substituted for $\dot{\theta}$, this is an ordinary differential equation for /θ/. This differential equation involves various constants, some of which are set by the initial conditions of the other state variables. The solution of the differential equation for /θ/ involves no more than ordinary integrals. So the top is essentially solved. We could continue this argument to obtain the qualitative behavior of /θ/: Using the energy (#Eqn(chapter002,2.91,2.91)), we can plot the trajectories in the plane of $\dot{\theta}$ versus /θ/ and see that the motion of /θ/ is simply periodic. However, we will defer this until chapter 3, when we have developed more tools for analysis.
 
 Let's get real. Let's make a top out of an aluminum disk with a steel rod through the center to make the pivot. Measuring the top very carefully, we find that the moment of inertia of the top about the symmetry axis is about 1.32 × 10^{−4} kg m^{2}, and the moment of inertia about the pivot point is about 6.96 × 10^{−4} kg m^{2}. The combination /gM R/ is about 0.112kg m^{2} s^{−2}. We spin the top up with an initial angular velocity of $\dot{\psi}$= 200 rad s^{−1} (about 1910 rpm).
@@ -725,33 +725,33 @@ The first task is to develop convenient expressions for the gravitational potent
 #Caption *Figure 2.9* The gravitational potential energy of a point mass and a rigid body is the sum of the gravitational potential energy of the point mass with each constituent mass element of the rigid body. #CaptionEnd
 
 The gravitational potential energy of a point mass and a rigid body (see [figure 2.9](#figure_2.9)) is the sum of the potential energy of the point mass with each mass element of the body:
-$$\begin{matrix} {- {\sum\limits_{\alpha}\frac{GM\prime m_{\alpha}}{r_{\alpha}}},} & {(2.92)} \\ \end{matrix}$$
+$$\begin{matrix} {- {\sum\limits_{\alpha}\frac{GM\prime m_{\alpha}}{r_{\alpha}}},} \tag{2.92} \\ \end{matrix}$$
 where /M/′ is the mass of the external point mass, /r_{α}/ is the distance between the point mass and the constituent mass element with index /α/, /m_{α}/ is the mass of this constituent element, and /G/ is the gravitational constant. Let /R/ be the distance of the center of mass of the rigid body from the point mass. The distance from the center of mass to the constituent with index /α/ is /ξ_{α}/. The distance /r_{α}/ is then given by the law of cosines as $ r_{\alpha}^{2} = R^{2} + \xi_{\alpha}^{2} - 2\xi_{\alpha}R\cos\theta_{\alpha}$, where /θ_{α}/ is the angle between the lines from the center of mass to the constituent and to the point mass.
 
 Because this is a three-dimensional body the distance /ξ_{α}/ and angle /θ_{α}/ do not completely specify the position of the constituent mass element; to do that one must also specify the angle of rotation about the line between the center of mass and the external point mass. But the potential energy does not depend on this angle.
 
 The potential energy is then
-$$\begin{matrix} {- GM\prime{\sum\limits_{\alpha}{\frac{m_{\alpha}}{\left( {R^{2} + \xi_{\alpha}^{2} - 2\xi_{\alpha}R\cos\,\theta_{\alpha}} \right)^{1/2}}.}}} & {(2.93)} \\ \end{matrix}$$
+$$\begin{matrix} {- GM\prime{\sum\limits_{\alpha}{\frac{m_{\alpha}}{\left( {R^{2} + \xi_{\alpha}^{2} - 2\xi_{\alpha}R\cos\,\theta_{\alpha}} \right)^{1/2}}.}}} \tag{2.93} \\ \end{matrix}$$
 #page(167)
 
 This is complete, but we need to find a representation that does not mention each constituent.
 
 Typically, the size of celestial bodies is small compared to the distance between them. We can make use of this to find a more compact representation of the potential energy. If we expand the potential energy in the small ratio /ξ_{α}///R/ we find
-$$\begin{matrix} {- GM\prime{\sum\limits_{\alpha}{m_{\alpha}\frac{1}{R}{\sum\limits_{l}{\frac{\xi_{\alpha}^{l}}{R^{l}}P_{l}\left( {\cos\theta_{\alpha}} \right),}}}}} & {(2.94)} \\ \end{matrix}$$
+$$\begin{matrix} {- GM\prime{\sum\limits_{\alpha}{m_{\alpha}\frac{1}{R}{\sum\limits_{l}{\frac{\xi_{\alpha}^{l}}{R^{l}}P_{l}\left( {\cos\theta_{\alpha}} \right),}}}}} \tag{2.94} \\ \end{matrix}$$
 where /P_{l}/ is the /l/th Legendre polynomial.#Footnote(17) Interchanging the order of the summations yields:
-$$\begin{matrix} {- \frac{GM\prime}{R}{\sum\limits_{l}{{\sum\limits_{\alpha}m_{\alpha}}\frac{\xi_{\alpha}^{l}}{R^{l}}P_{l}\left( {\cos\theta_{\alpha}} \right).}}} & {(2.95)} \\ \end{matrix}$$
+$$\begin{matrix} {- \frac{GM\prime}{R}{\sum\limits_{l}{{\sum\limits_{\alpha}m_{\alpha}}\frac{\xi_{\alpha}^{l}}{R^{l}}P_{l}\left( {\cos\theta_{\alpha}} \right).}}} \tag{2.95} \\ \end{matrix}$$
 Successive terms in this expansion of the potential energy typically decrease very rapidly because celestial bodies are small compared to the distance between them. We can compute an upper bound to the size of these terms by replacing each factor in the sum over /α/ by an upper bound. The Legendre polynomials all have magnitudes less than one for arguments in the range −1 to 1. The distances /ξ_{α}/ are all less than some maximum extent of the body /ξ/_{max}. The sum over /m_{α}/ times these upper bounds is just the total mass /M/ times the upper bounds. Thus
-$$\begin{matrix} {\left| {\sum\limits_{\alpha}{m_{\alpha}\frac{\xi_{\alpha}^{l}}{R^{l}}P_{l}\left( {\cos\theta_{\alpha}} \right)}} \right| \leq M\frac{\xi_{\max}^{l}}{R^{l}}.} & {(2.96)} \\ \end{matrix}$$
+$$\begin{matrix} {\left| {\sum\limits_{\alpha}{m_{\alpha}\frac{\xi_{\alpha}^{l}}{R^{l}}P_{l}\left( {\cos\theta_{\alpha}} \right)}} \right| \leq M\frac{\xi_{\max}^{l}}{R^{l}}.} \tag{2.96} \\ \end{matrix}$$
 We see that the upper bound on successive terms decreases by a factor /ξ/_{max}//R/. Successive terms may be smaller still. For large bodies the gravitational force is strong enough to overcome the
 #page(168)
 internal material strength of the body, so the body, over time, becomes nearly spherical. Successive terms in the expansion of the potential are measures of the deviation of the mass distribution from a spherical mass distribution. Thus for large bodies the higher-order terms are small because the bodies are nearly spherical.
 
 Consider the first few terms in /l/. For /l/ = 0 the sum over /α/ just gives the total mass /M/ of the rigid body. For /l/ = 1 the sum over /α/ is zero, as a consequence of choosing the origin of the ${\overset{\rightarrow}{\xi}}_{\alpha}$ to be the center of mass. For /l/ = 2 we have to do a little more work. The sum involves second moments of the mass distribution, and can be written in terms of moments of inertia of the rigid body:
-$$\begin{array}{lll} {\sum\limits_{\alpha}{m_{\alpha}\xi_{\alpha}^{2}P_{2}\left( {\cos\theta_{\alpha}} \right)}} & {= {\sum\limits_{\alpha}{m_{\alpha}\xi_{\alpha}^{2}\left( {\frac{3}{2}\left( {\cos\theta_{\alpha}} \right)^{2} - \frac{1}{2}} \right)}}} & \\  & {= {\sum\limits_{\alpha}{m_{\alpha}\xi_{\alpha}^{2}\left( {1 - \frac{3}{2}\left( {\sin\theta_{\alpha}} \right)^{2}} \right)}}} & \\  & {= \frac{1}{2}\left( {A + B + C - 3I} \right),} & {(2.97)} \\ \end{array}$$
+$$\begin{array}{lll} {\sum\limits_{\alpha}{m_{\alpha}\xi_{\alpha}^{2}P_{2}\left( {\cos\theta_{\alpha}} \right)}} & {= {\sum\limits_{\alpha}{m_{\alpha}\xi_{\alpha}^{2}\left( {\frac{3}{2}\left( {\cos\theta_{\alpha}} \right)^{2} - \frac{1}{2}} \right)}}} & \\  & {= {\sum\limits_{\alpha}{m_{\alpha}\xi_{\alpha}^{2}\left( {1 - \frac{3}{2}\left( {\sin\theta_{\alpha}} \right)^{2}} \right)}}} & \\  & {= \frac{1}{2}\left( {A + B + C - 3I} \right),} \tag{2.97} \\ \end{array}$$
 where /A/, /B/, and /C/ are the principal moments of inertia, and /I/ is the moment of inertia of the rigid body about the line between the center of mass of the body and the external point mass. The moment /I/ depends on the orientation of the rigid body relative to the line between the bodies. The contributions to the potential energy up to /l/ = 2 are then#Footnote(18)
-$$\begin{matrix} {- \frac{GM\, M\prime}{R} - \frac{G\, M\prime}{2R^{3}}\left( {A + B + C - 3I} \right).} & {(2.98)} \\ \end{matrix}$$
+$$\begin{matrix} {- \frac{GM\, M\prime}{R} - \frac{G\, M\prime}{2R^{3}}\left( {A + B + C - 3I} \right).} \tag{2.98} \\ \end{matrix}$$
 Let /c_{a}/ = cos /θ_{a}/, /c_{b}/ = cos /θ_{b}/, and /c_{c}/ = cos /θ_{c}/ be the direction cosines of the angles /θ_{a}/, /θ_{b}/ and /θ_{c}/ between the principal axes /â/,$\widehat{b}$, and /ĉ/ and the line between the center of mass and the point mass. (See [figure 2.10](#figure_2.10).) A little algebra shows that $ I = c_{a}^{2}A + c_{b}^{2}B + c_{c}^{2}C $. The potential energy is then
-$$\begin{matrix} {- \frac{GM\, M\prime}{R} - \frac{G\, M\prime}{2R^{3}}\left\lbrack {\left( {1 - 3c_{a}^{2}} \right)A + \left( {1 - 3c_{b}^{2}} \right)B + \left( {1 - 3c_{c}^{2}} \right)C} \right\rbrack.} & {(2.99)} \\ \end{matrix}$$
+$$\begin{matrix} {- \frac{GM\, M\prime}{R} - \frac{G\, M\prime}{2R^{3}}\left\lbrack {\left( {1 - 3c_{a}^{2}} \right)A + \left( {1 - 3c_{b}^{2}} \right)B + \left( {1 - 3c_{c}^{2}} \right)C} \right\rbrack.} \tag{2.99} \\ \end{matrix}$$
 #page(169)
 
 #Image(Art_P533.jpg,figure_2.10)
@@ -781,25 +781,25 @@ We are assuming that the orbit does not change or precess. The orbit is an ellip
 angle /f/ and the distance /R/ are periodic functions of time, with period equal to the orbit period. With the spin axis constrained to be perpendicular to the orbit plane, the orientation of the rigid body is specified by a single degree of freedom: the orientation of the body about the spin axis. We specify this orientation by the generalized coordinate /θ/ that measures the angle to the /â/ principal axis from the same line from which we measure /f/, the line through the point of closest approach.
 
 Having specified the coordinate system, we can work out the details of the kinetic and potential energies, and thus find the Lagrangian. The kinetic energy is
-$$\begin{matrix} {T\left( {t,\theta,\dot{\theta}} \right) = \frac{1}{2}C{\dot{\theta}}^{2},} & {(2.100)} \\ \end{matrix}$$
+$$\begin{matrix} {T\left( {t,\theta,\dot{\theta}} \right) = \frac{1}{2}C{\dot{\theta}}^{2},} \tag{2.100} \\ \end{matrix}$$
 where /C/ is the moment of inertia about the spin axis and the angular velocity of the body about the /ĉ/ axis is $\dot{\theta}$. There is no component of angular velocity on the other principal axes.
 
 To get an explicit expression for the potential energy, write the direction cosines in terms of /θ/ and /f/: cos /θ_{a}/ = − cos(/θ/ − /f/), cos /θ_{b}/ = sin(/θ/ − /f/), and cos /θ_{c}/ = 0 because the /ĉ/ axis is perpendicular to the orbit plane. The potential energy is then
 $$\begin{array}{l} {- \frac{GMM\prime}{R}} \\ {\,\,\,\,\,\,\, - \frac{1}{2}\frac{GM\prime}{R^{3}}\left\lbrack {\left( {1 - 3\,\cos^{2}\left( {\theta - f} \right)} \right)A + \left( {1 - 3\,\sin^{2}\left( {\theta - f} \right)} \right)B + C} \right\rbrack.} \\ \end{array}$$
 Since we are assuming that the orbit is given, we need keep only terms that depend on /θ/. Expanding the squares of the cosine and the sine in terms of the double angles and dropping all the terms that do not depend on /θ/, we find the potential energy for the orientation#Footnote(20)
-$$\begin{matrix} {V\left( {t,\theta,\dot{\theta}} \right) = - \frac{3}{4}\frac{GM\prime}{R^{3}\left( t \right)}\left( {B - A} \right)\cos\, 2\left( {\theta - f\left( t \right)} \right).} & {(2.101)} \\ \end{matrix}$$
+$$\begin{matrix} {V\left( {t,\theta,\dot{\theta}} \right) = - \frac{3}{4}\frac{GM\prime}{R^{3}\left( t \right)}\left( {B - A} \right)\cos\, 2\left( {\theta - f\left( t \right)} \right).} \tag{2.101} \\ \end{matrix}$$
 #page(173)
 
 A Lagrangian for the model spin-orbit coupling problem is then /L/ = /T/ − /V/ :
-$$\begin{matrix} {L\left( {t,\theta,\dot{\theta}} \right) = \frac{1}{2}C{\dot{\theta}}^{2} + \frac{3}{4}\frac{GM\prime}{R^{3}\left( t \right)}\left( {B - A} \right)\cos\, 2\left( {\theta - f\left( t \right)} \right).} & {(2.102)} \\ \end{matrix}$$
+$$\begin{matrix} {L\left( {t,\theta,\dot{\theta}} \right) = \frac{1}{2}C{\dot{\theta}}^{2} + \frac{3}{4}\frac{GM\prime}{R^{3}\left( t \right)}\left( {B - A} \right)\cos\, 2\left( {\theta - f\left( t \right)} \right).} \tag{2.102} \\ \end{matrix}$$
 We introduce the dimensionless “out-of-roundness” parameter
-$$\begin{matrix} {\mathit{\epsilon} = \sqrt{\frac{3\left( {B - A} \right)}{C},}} & {(2.103)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathit{\epsilon} = \sqrt{\frac{3\left( {B - A} \right)}{C},}} \tag{2.103} \\ \end{matrix}$$
 and use the fact that the orbital frequency /n/ and the semimajor axis /a/ satisfy Kepler's third law, /n/^{2}/a/^{3} = /G/(/M/ + /M/′), which is approximately /n/^{2}/a/^{3} = /GM/′ for a small body in orbit around a much more massive one (/M/ ≪ /M/′). In terms of /ϵ/ and /n/ the spin-orbit Lagrangian is
-$$\begin{matrix} {L\left( {t,\theta,\dot{\theta}} \right) = \frac{1}{2}C{\dot{\theta}}^{2} + \frac{n^{2}\mathit{\epsilon}^{2}C}{4}\frac{a^{3}}{R^{3}\left( t \right)}\cos\, 2\left( {\theta - f\left( t \right)} \right).} & {(2.104)} \\ \end{matrix}$$
+$$\begin{matrix} {L\left( {t,\theta,\dot{\theta}} \right) = \frac{1}{2}C{\dot{\theta}}^{2} + \frac{n^{2}\mathit{\epsilon}^{2}C}{4}\frac{a^{3}}{R^{3}\left( t \right)}\cos\, 2\left( {\theta - f\left( t \right)} \right).} \tag{2.104} \\ \end{matrix}$$
 This is a problem with one degree of freedom with terms that vary periodically with time.
 
 The Lagrange equations are derived in the usual manner:
-$$\begin{matrix} {C\, D^{2}\theta\left( t \right) = - \frac{n^{2}\mathit{\epsilon}^{2}C}{2}\frac{a^{3}}{R^{3}\left( t \right)}\sin\, 2\left( {\theta\left( t \right) - f\left( t \right)} \right).} & {(2.105)} \\ \end{matrix}$$
+$$\begin{matrix} {C\, D^{2}\theta\left( t \right) = - \frac{n^{2}\mathit{\epsilon}^{2}C}{2}\frac{a^{3}}{R^{3}\left( t \right)}\sin\, 2\left( {\theta\left( t \right) - f\left( t \right)} \right).} \tag{2.105} \\ \end{matrix}$$
 The equation of motion is very similar to that of the periodically driven pendulum. The main difference here is that not only is the strength of the acceleration changing periodically, but in the spin-orbit problem the center of attraction is also varying periodically.
 
 We can give a physical interpretation of this equation of motion. It states that the rate of change of the angular momentum is equal to the applied torque. The torque on the body arises because the body is out of round and the gravitational force varies as the inverse square of the distance. Thus the force per unit mass on the near side of the body is a little more than the acceleration of the body as a whole, and the force per unit mass on the far side of the body is a little less than the acceleration of the body as a whole. Thus, relative to the acceleration of the body as a
@@ -814,13 +814,13 @@ To compute the evolution requires a lot of detailed preparation similar to what 
 #Caption *Figure 2.12* The angle /θ/ − /f/ versus time for 50 orbit periods. The ordinate scale is ±1 radian. The Moon has been kicked so that the initial rotational angular velocity is 1.01 times the orbital frequency. The trace with fewer wiggles was computed with zero lunar orbital eccentricity; the other trace was computed with lunar orbital eccentricity of 0.05. The period of the rapid oscillations is the lunar orbit period. These oscillations are due mostly to the nonuniform motion of /f/. #CaptionEnd
 
 The oscillation period of the free libration is easily calculated. We see that the eccentricity of the orbit does not substantially affect the period, so we consider the special case of zero eccentricity. In this case /R/ = /a/, a constant, and /f/(/t/) = /nt/, where /n/ is the orbital frequency.#Footnote(21) The equation of motion becomes
-$$\begin{matrix} {D^{2}\theta\left( t \right) = - \frac{n^{2}\mathit{\epsilon}^{2}}{2}\sin\, 2\left( {\theta\left( t \right) - nt} \right).} & {(2.106)} \\ \end{matrix}$$
+$$\begin{matrix} {D^{2}\theta\left( t \right) = - \frac{n^{2}\mathit{\epsilon}^{2}}{2}\sin\, 2\left( {\theta\left( t \right) - nt} \right).} \tag{2.106} \\ \end{matrix}$$
 #page(176)
 
 Let /φ/(/t/) = /θ/(/t/) − /nt/, and consequently /Dφ/(/t/) = /Dθ/(/t/) − /n/, and /D/^{2}/φ/ = /D/^{2}/θ/. Substituting these, the equation governing the evolution of /φ/ is
-$$\begin{matrix} {D^{2}\varphi = - \frac{n^{2}\mathit{\epsilon}^{2}}{2}\sin\, 2\varphi.} & {(2.107)} \\ \end{matrix}$$
+$$\begin{matrix} {D^{2}\varphi = - \frac{n^{2}\mathit{\epsilon}^{2}}{2}\sin\, 2\varphi.} \tag{2.107} \\ \end{matrix}$$
 For small deviations from synchronous rotation (small /φ/) this is
-$$\begin{matrix} {D^{2}\varphi = - n^{2}\mathit{\epsilon}^{2}\varphi,} & {(2.108)} \\ \end{matrix}$$
+$$\begin{matrix} {D^{2}\varphi = - n^{2}\mathit{\epsilon}^{2}\varphi,} \tag{2.108} \\ \end{matrix}$$
 so we see that the small-amplitude oscillation frequency of /φ/ is /nϵ/. For the Moon, /ϵ/ is about 0.026, so the period is about 1/0.026 orbit periods or about 40 lunar orbit periods, which is what we observed.
 
 It is perhaps more fun to see what happens if the out-of-roundness parameter is large. After our experience with the driven pendulum it is no surprise that we find abundant chaos in the spin-orbit problem when the system is strongly driven by having large /ϵ/ and significant orbital eccentricity /e/. There is indeed one body in the solar system that exhibits chaotic rotation---Hyperion, a small satellite of Saturn. Though our toy model is not adequate for a complete account of Hyperion, we can show that it exhibits chaotic behavior for parameters appropriate for Hyperion. We take /ϵ/ = 0.89 and /e/ = 0.1. [[#figure_2.13][Figure 2.13]] shows /θ/ − /f/ for 50 orbits, starting with /θ/ = 0 and $\dot{\theta}$= 1.05. We see that sometimes one face of the body oscillates facing the planet, sometimes the other face oscillates facing the planet, and sometimes the body rotates relative to the planet in either direction.
@@ -840,24 +840,24 @@ that the orbit of the Earth is circular and the Earth is axisymmetric. Determine
 Consider the motion of the Moon in synchronous rotation. We have seen that if we give the Moon a kick so that it is not exactly pointing one face to the Earth, then the face will oscillate back and forth relative to the direction to the Earth. If we give it a really big kick, then instead of oscillating it will spin relative to the direction to the Earth. How do we understand this?
 
 Let's look again at the equations of motion for the rotation of the Moon when the orbit is circular (equation #Eqn(chapter002,2.106,2.106)):
-$$\begin{matrix} {C\, D^{2}\theta(t) = - \frac{C}{2}n^{2}\mathit{\epsilon}^{2}\,\sin\, 2(\theta(t) - n)t).} & {(2.109)} \\ \end{matrix}$$
+$$\begin{matrix} {C\, D^{2}\theta(t) = - \frac{C}{2}n^{2}\mathit{\epsilon}^{2}\,\sin\, 2(\theta(t) - n)t).} \tag{2.109} \\ \end{matrix}$$
 Changing variables to /φ/(/t/) = /θ/(/t/) − /nt/ this equation becomes
-$$\begin{matrix} {C\, D^{2}\varphi\left( t \right) = - \frac{C}{2}n^{2}\mathit{\epsilon}^{2}\,\sin\, 2\varphi\left( t \right).} & {(2.110)} \\ \end{matrix}$$
+$$\begin{matrix} {C\, D^{2}\varphi\left( t \right) = - \frac{C}{2}n^{2}\mathit{\epsilon}^{2}\,\sin\, 2\varphi\left( t \right).} \tag{2.110} \\ \end{matrix}$$
 #page(178)
 
 #Image(Art_P553.jpg,figure_2.14)
 #Caption *Figure 2.14* Trajectories of /φ/ and ¶ $\dot{\varphi}$ ¶ in the spin-orbit problem when the orbital eccentricity is zero. #CaptionEnd
 
 This equation can be solved; it has an “energy-like” conserved quantity
-$$\begin{matrix} {E\left( {\varphi,\dot{\varphi}} \right) = \frac{C}{2}{\dot{\varphi}}^{2} - \frac{C}{4}n^{2}\mathit{\epsilon}^{2}\,\cos\left( {2\varphi} \right).} & {(2.111)} \\ \end{matrix}$$
+$$\begin{matrix} {E\left( {\varphi,\dot{\varphi}} \right) = \frac{C}{2}{\dot{\varphi}}^{2} - \frac{C}{4}n^{2}\mathit{\epsilon}^{2}\,\cos\left( {2\varphi} \right).} \tag{2.111} \\ \end{matrix}$$
 The solutions are just contours of this conserved quantity (see [figure 2.14](#figure_2.14)). There are two centers of oscillation corresponding to the two different faces of the Moon that could point towards Earth. There are also trajectories that rotate relative to the Earth. And there are separating trajectories that divided the oscillating trajectories from the circulating trajectories. Where these separating trajectories appear to cross, the system is at an unstable equilibrium. The separating trajectories are asymptotic to the unstable equilibria (a system on that trajectory takes an infinite time to get to the equilibrium point). These asymptotic trajectories are analogous to the trajectories of the simple pendulum that are asymptotic to the vertical.
 
 #page(179)
 
 The extent of the oscillation region can be evaluated with the help of the conserved quantity /E/. Let's evaluate it on the separating trajectory:
-$$\begin{array}{lll} {E\left( {\pi/2,0} \right)} & {= \frac{C}{4}n^{2}\mathit{\epsilon}^{2},} & \\ {E\left( {0,\Delta\dot{\varphi}} \right)} & {= \frac{C}{2}\Delta{\dot{\varphi}}^{2} - \frac{C}{4}n^{2}\mathit{\epsilon}^{2}.} & {(2.112)} \\ \end{array}$$
+$$\begin{array}{lll} {E\left( {\pi/2,0} \right)} & {= \frac{C}{4}n^{2}\mathit{\epsilon}^{2},} & \\ {E\left( {0,\Delta\dot{\varphi}} \right)} & {= \frac{C}{2}\Delta{\dot{\varphi}}^{2} - \frac{C}{4}n^{2}\mathit{\epsilon}^{2}.} \tag{2.112} \\ \end{array}$$
 Equating these and solving, we find the maximum extent of the oscillating region:
-$$\begin{matrix} {\Delta\dot{\varphi} = n\mathit{\epsilon}.} & {(2.113)} \\ \end{matrix}$$
+$$\begin{matrix} {\Delta\dot{\varphi} = n\mathit{\epsilon}.} \tag{2.113} \\ \end{matrix}$$
 So we see that the out-of-roundness parameter /ϵ/ not only gives the frequency of small-amplitude oscillations, but also gives the extent of the oscillation region.
 
 Mercury rotates exactly three times for every two times it goes around the Sun, as discovered by Pettengill and Dyce in 1965, using Arecibo radar. We can understand this spin-orbit resonance using our simple spin-orbit model problem.
@@ -867,25 +867,25 @@ Let's first use qualitative reasoning to understand how the resonance comes abou
 #page(180)
 
 We can also understand this spin-orbit resonance analytically. The right-hand side of the equation of motion (equation #Eqn(chapter002,2.105,2.105)) has factors that vary periodically with the orbit period:
-$$\begin{matrix} {C\, D^{2}\theta\left( t \right) = - \frac{C}{2}n^{2}\mathit{\epsilon}^{2}\left( \frac{a}{R\left( t \right)} \right)^{3}\sin\, 2\left( {\theta\left( t \right) - f\left( t \right)} \right),} & {(2.114)} \\ \end{matrix}$$
+$$\begin{matrix} {C\, D^{2}\theta\left( t \right) = - \frac{C}{2}n^{2}\mathit{\epsilon}^{2}\left( \frac{a}{R\left( t \right)} \right)^{3}\sin\, 2\left( {\theta\left( t \right) - f\left( t \right)} \right),} \tag{2.114} \\ \end{matrix}$$
 where both /f/(/t/) and /R/(/t/) are periodic with period 2/π///n/. We can expand this as a Fourier series:
-$$\begin{matrix} {C\, D^{2}\theta\left( t \right) = - \frac{C}{2}n^{2}\mathit{\epsilon}^{2}{\sum\limits_{m = - \infty}^{\infty}{A_{m}\left( e \right)\sin\left( {2\theta\left( t \right) - mnt} \right),}}} & {(2.115)} \\ \end{matrix}$$
+$$\begin{matrix} {C\, D^{2}\theta\left( t \right) = - \frac{C}{2}n^{2}\mathit{\epsilon}^{2}{\sum\limits_{m = - \infty}^{\infty}{A_{m}\left( e \right)\sin\left( {2\theta\left( t \right) - mnt} \right),}}} \tag{2.115} \\ \end{matrix}$$
 where the coefficients /A_{m}/(/e/) are functions of the orbital eccentricity /e/. The coefficients are proportional to /e/^{|/m/−2|} and so for small eccentricity we need to consider only a few of them.#Footnote(22) We have
-$$\begin{array}{lll} {A_{1}{(e)}} & {= - \frac{e}{2} + o{(e^{3})}} & \\ {A_{2}{(e)}} & {= 1 - \frac{5e^{2}}{2} + o{(e^{4})}} & \\ {A_{3}{(e)}} & {= \frac{7e}{2} + o{(e^{3})}.} & {(2.116)} \\ \end{array}$$
+$$\begin{array}{lll} {A_{1}{(e)}} & {= - \frac{e}{2} + o{(e^{3})}} & \\ {A_{2}{(e)}} & {= 1 - \frac{5e^{2}}{2} + o{(e^{4})}} & \\ {A_{3}{(e)}} & {= \frac{7e}{2} + o{(e^{3})}.} \tag{2.116} \\ \end{array}$$
 All other terms are of higher order in /e/. With just the terms of order /e/ or less, the equation of motion becomes
-$$\begin{array}{lll} {C\, D^{2}\theta\left( t \right)} & {= - \frac{C}{2}n^{2}\mathit{\epsilon}^{2}\lbrack\sin\left( {2\theta\left( t \right) - 2nt} \right)} & \\  & {\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, + \frac{7e}{2}\sin\left( {2\theta\left( t \right) - 3nt} \right)} & \\  & {\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, - \frac{e}{2}\sin\left( {2\theta\left( t \right) - nt} \right)} & \\  & {\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, + \cdots\rbrack.} & {(2.117)} \\ \end{array}$$
+$$\begin{array}{lll} {C\, D^{2}\theta\left( t \right)} & {= - \frac{C}{2}n^{2}\mathit{\epsilon}^{2}\lbrack\sin\left( {2\theta\left( t \right) - 2nt} \right)} & \\  & {\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, + \frac{7e}{2}\sin\left( {2\theta\left( t \right) - 3nt} \right)} & \\  & {\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, - \frac{e}{2}\sin\left( {2\theta\left( t \right) - nt} \right)} & \\  & {\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, + \cdots\rbrack.} \tag{2.117} \\ \end{array}$$
 Suppose we are close to the 3:2 Mercury resonance. Then $\dot{\theta}$ is close to (3/2)/n/. So the combination /θ/(/t/) − (3/2)/nt/ is slowly varying compared to the other two arguments: /θ/(/t/)−/nt/ and /θ/(/t/)− (1/2)/nt/. The rapidly varying torques due to these other terms
 #page(181)
 tend to average out, leaving a slowly varying torque that controls the motion.#Footnote(23) The averaged equation of motion for motion near the 3:2 resonance is then
-$$\begin{matrix} {C\, D^{2}\theta\left( t \right) = - \frac{C}{2}n^{2}\mathit{\epsilon}^{2}\left( \frac{7e}{2} \right)\,\sin(2\theta(t) - 3nt).} & {(2.118)} \\ \end{matrix}$$
+$$\begin{matrix} {C\, D^{2}\theta\left( t \right) = - \frac{C}{2}n^{2}\mathit{\epsilon}^{2}\left( \frac{7e}{2} \right)\,\sin(2\theta(t) - 3nt).} \tag{2.118} \\ \end{matrix}$$
 We can solve this by changing variables to
-$$\begin{matrix} {\varphi\left( t \right) = \theta\left( t \right) - \left( {3/2} \right)nt.} & {(2.119)} \\ \end{matrix}$$
+$$\begin{matrix} {\varphi\left( t \right) = \theta\left( t \right) - \left( {3/2} \right)nt.} \tag{2.119} \\ \end{matrix}$$
 The equation of motion becomes
-$$\begin{matrix} {C\, D^{2}\varphi\left( t \right) = \frac{C}{2}n^{2}\mathit{\epsilon}^{2}\left( \frac{7e}{2} \right)\sin\left( {2\varphi\left( t \right)} \right).} & {(2.120)} \\ \end{matrix}$$
+$$\begin{matrix} {C\, D^{2}\varphi\left( t \right) = \frac{C}{2}n^{2}\mathit{\epsilon}^{2}\left( \frac{7e}{2} \right)\sin\left( {2\varphi\left( t \right)} \right).} \tag{2.120} \\ \end{matrix}$$
 This has the “energy-like” conserved quantity
-$$\begin{matrix} {E\left( {\varphi,\dot{\varphi}} \right) = \frac{C}{2}{\dot{\varphi}}^{2} - \frac{C}{4}n^{2}\mathit{\epsilon}^{2}\left( \frac{7e}{2} \right)\cos\left( {2\varphi} \right),} & {(2.121)} \\ \end{matrix}$$
+$$\begin{matrix} {E\left( {\varphi,\dot{\varphi}} \right) = \frac{C}{2}{\dot{\varphi}}^{2} - \frac{C}{4}n^{2}\mathit{\epsilon}^{2}\left( \frac{7e}{2} \right)\cos\left( {2\varphi} \right),} \tag{2.121} \\ \end{matrix}$$
 which is very similar to the conserved quantity we found for the zero-eccentricity synchronous rotation case considered earlier; see equation (#Eqn(chapter002,2.111,2.111)). Indeed the trajectories are contours of the conserved quantity and look just like those in [figure 2.14](#figure_2.14). Using analogous reasoning we can determine the extent of the oscillation region and find
-$$\begin{matrix} {\Delta\dot{\varphi} = n\mathit{\epsilon}\sqrt{\frac{7e}{2}.}} & {(2.122)} \\ \end{matrix}$$
+$$\begin{matrix} {\Delta\dot{\varphi} = n\mathit{\epsilon}\sqrt{\frac{7e}{2}.}} \tag{2.122} \\ \end{matrix}$$
 This gives the approximate range of rotation rate over which Mercury can oscillate stably in the 3:2 resonance.
 
 ### 2.12 Nonsingular Coordinates and Quaternions
@@ -900,7 +900,7 @@ We can think of several ways of specifying a rotation. One way would be to speci
 of half the angle of rotation. (Actually we need to know only the sign of the cosine, but the cosine is convenient.) Wrapping this all up into 4-tuples gives us Hamilton's /quaternions/.
 
 Let /θ/ be the angle of rotation about the axis $\widehat{n}$. The components of a quaternion representing this rotation are:
-$$\begin{matrix} {{({\cos{({\theta/2})},\,\,\sin{({\theta/2})}{\widehat{n}}_{x},\,\,\sin{({\theta/2})}{\widehat{n}}_{y},\,\,\sin{({\theta/2})}{\widehat{n}}_{z}})},} & {(2.123)} \\ \end{matrix}$$
+$$\begin{matrix} {{({\cos{({\theta/2})},\,\,\sin{({\theta/2})}{\widehat{n}}_{x},\,\,\sin{({\theta/2})}{\widehat{n}}_{y},\,\,\sin{({\theta/2})}{\widehat{n}}_{z}})},} \tag{2.123} \\ \end{matrix}$$
 where $\left( {{\widehat{n}}_{x},{\widehat{n}}_{y},{\widehat{n}}_{z}} \right)$ are rectangular components of $\widehat{n}$. The sum of the squares of the components of this quaternion is 1: it is a /unit quaternion/. So there is a unit quaternion associated with every rotation.
 
 We can invert this: given a quaternion we can compute the angle and the axis. Let (/r/, /x/, /y/, /z/) be the components of a quaternion /q/. We separate the first component (called the /real part/) and the tuple /v/ = (/x/, /y/, /z/) (called the /3-vector/) of the remaining components. The Euclidean norm of the tuple ‖/v/‖ = | sin(/θ//2)|. The first component /r/ = cos(/θ//2). So the angle /θ/ = 2 arctan(‖/v/‖, /r/) and the axis is /v//‖/v/‖. This process is independent of the scale of the quaternion.
@@ -908,7 +908,7 @@ We can invert this: given a quaternion we can compute the angle and the axis. Le
 By taking the absolute value of sin(/θ//2) we have lost information about the quadrant, but this is not a real problem because the rotation represented by a quaternion is not changed by reversing the sign of all its components: changing the sign of /v/ reverses the axis but does not change the angle; changing the sign of the first component changes the angle /θ/ to 2/π/ − /θ/, so the actual rotation is unchanged.
 
 Given the four elements of a quaternion, we need to find the corresponding rotation matrix. We can get the angle and axis given a quaternion. We can get a rotation matrix given the angle /θ/ and the axis given by a unit vector $\widehat{n}$. We rotate by /θ/ around the /ẑ/ axis, and then transform this rotation to the axis specified by colatitude /φ/ and longitude /λ/:
-$$\begin{matrix} {\mathbf{R}{({\theta,\widehat{n}})} = \mathbf{R}_{z}{(\lambda)}\mathbf{R}_{y}{(\varphi)}\mathbf{R}_{z}{(\theta)}{({\mathbf{R}_{y}{(\varphi)}})}^{\mathcal{T}}{({\mathbf{R}_{z}{(\lambda)}})}^{\mathcal{T}},} & {(2.124)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{R}{({\theta,\widehat{n}})} = \mathbf{R}_{z}{(\lambda)}\mathbf{R}_{y}{(\varphi)}\mathbf{R}_{z}{(\theta)}{({\mathbf{R}_{y}{(\varphi)}})}^{\mathcal{T}}{({\mathbf{R}_{z}{(\lambda)}})}^{\mathcal{T}},} \tag{2.124} \\ \end{matrix}$$
 where /φ/ = arccos(${\widehat{n}}_{z}$) and /λ/ = arctan(${\widehat{n}}_{y},{\widehat{n}}_{x}$).
 
 A procedure for making the rotation matrix is:
@@ -946,9 +946,9 @@ The result is simple (ignoring the denominators, which have value 1 for unit qua
 quaternion is representing the orientation of a rotating body it is a function of time. So the time derivative of the quaternion must scale as the quaternion scales: in this sense the formula is independent of scale.
 
 But we can write this in an even simpler way. Notice that the numerators are linear in both the ${\dot{q}}_{i}$ and /q_{j}/. We can invent matrices that perform the relevant combinations. Introduce
-$$\begin{array}{ll} {\mathbf{i} = \left( \begin{array}{llll} 0 & {+ 1} & 0 & 0 \\ {- 1} & 0 & 0 & 0 \\ 0 & 0 & 0 & {- 1} \\ 0 & 0 & {+ 1} & 0 \\ \end{array} \right)} & \\ {\mathbf{j} = \left( \begin{array}{llll} 0 & 0 & {+ 1} & 0 \\ 0 & 0 & 0 & {+ 1} \\ {- 1} & 0 & 0 & 0 \\ 0 & {- 1} & 0 & 0 \\ \end{array} \right)} & \\ {\mathbf{k} = \left( \begin{array}{llll} 0 & 0 & 0 & {+ 1} \\ 0 & 0 & {- 1} & 0 \\ 0 & {+ 1} & 0 & 0 \\ {- 1} & 0 & 0 & 0 \\ \end{array} \right).} & {(2.125)} \\ \end{array}$$
+$$\begin{array}{ll} {\mathbf{i} = \left( \begin{array}{llll} 0 & {+ 1} & 0 & 0 \\ {- 1} & 0 & 0 & 0 \\ 0 & 0 & 0 & {- 1} \\ 0 & 0 & {+ 1} & 0 \\ \end{array} \right)} & \\ {\mathbf{j} = \left( \begin{array}{llll} 0 & 0 & {+ 1} & 0 \\ 0 & 0 & 0 & {+ 1} \\ {- 1} & 0 & 0 & 0 \\ 0 & {- 1} & 0 & 0 \\ \end{array} \right)} & \\ {\mathbf{k} = \left( \begin{array}{llll} 0 & 0 & 0 & {+ 1} \\ 0 & 0 & {- 1} & 0 \\ 0 & {+ 1} & 0 & 0 \\ {- 1} & 0 & 0 & 0 \\ \end{array} \right).} \tag{2.125} \\ \end{array}$$
 In terms of these matrices, we can write the angular velocity on the body more simply, given a unit quaternion
-$$\begin{array}{ll} {\omega^{a} = {{2\mathcal{q}^{\mathcal{T}}\mathbf{i}\dot{\mathcal{q}}}/\left\| \mathcal{q} \right\|^{2}}} & \\ {\omega^{b} = {{2\mathcal{q}^{\mathcal{T}}\mathbf{j}\dot{\mathcal{q}}}/\left\| \mathcal{q} \right\|^{2}}} & \\ {\omega^{c} = {{2\mathcal{q}^{\mathcal{T}}\mathbf{k}\dot{\mathcal{q}}}/{\left\| \mathcal{q} \right\|^{2},}}} & {(2.126)} \\ \end{array}$$
+$$\begin{array}{ll} {\omega^{a} = {{2\mathcal{q}^{\mathcal{T}}\mathbf{i}\dot{\mathcal{q}}}/\left\| \mathcal{q} \right\|^{2}}} & \\ {\omega^{b} = {{2\mathcal{q}^{\mathcal{T}}\mathbf{j}\dot{\mathcal{q}}}/\left\| \mathcal{q} \right\|^{2}}} & \\ {\omega^{c} = {{2\mathcal{q}^{\mathcal{T}}\mathbf{k}\dot{\mathcal{q}}}/{\left\| \mathcal{q} \right\|^{2},}}} \tag{2.126} \\ \end{array}$$
 where $\mathcal{q}$ is a column matrix of the components of /q/. As a program:
 ```Scheme
 (define (quaternion-state->omega-body s) (let ((q (coordinates s)) (qdot (velocities s))) (let ((m^2 (dot-product q q))) (let ((omega^a (/ (* 2 (dot-product q (* q:i qdot))) m^2)) (omega^b (/ (* 2 (dot-product q (* q:j qdot))) m^2)) (omega^c (/ (* 2 (dot-product q (* q:k qdot))) m^2))) (up omega^a omega^b omega^c))))) 
@@ -958,7 +958,7 @@ where q:i, q:j, and q:k implement *i*, *j*, and *k*.
 #page(187)
 
 The antisymmetric matrices *i*, *j*, and *k* have interesting algebraic properties:
-$$\begin{matrix} {\mathbf{i}^{2} = \mathbf{j}^{2} = \mathbf{k}^{2} = \mathbf{ijk} = - \mathbf{1},} & {(2.127)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{i}^{2} = \mathbf{j}^{2} = \mathbf{k}^{2} = \mathbf{ijk} = - \mathbf{1},} \tag{2.127} \\ \end{matrix}$$
 where *1* is the 4 × 4 unit matrix.
 
 If we forget that these are matrices, and just use the algebraic properties of *i*, *j*, and *k* we get the “imaginary number” representation invented by Hamilton.
@@ -969,19 +969,19 @@ What is the quaternion that represents the composition of two rotations?
 (let ((q (quaternion 'q_0 'q_1 'q_2 'q_3)) (p (quaternion 'p_0 'p_1 'p_2 'p_3))) (let ((Mq (quaternion->rotation-matrix q)) (Mp (quaternion->rotation-matrix p))) (rotation-matrix->quaternion (* Mq Mp)))) 
 ```
 Unfortunately, the result is messy because each component is scaled by a factor of ‖/q/‖‖/p/‖, which is 1 for unit quaternions. For each rotation matrix there are many quaternions that can represent it. Indeed, a quaternion scaled by any nonzero number represents the same rotation matrix. So the process of choosing a quaternion to represent that matrix picks a unit quaternion. Here are the components of the chosen quaternion, eliminating the normalizing factor ‖/q/‖‖/p/‖:
-$$\begin{matrix} {\left( \begin{array}{l} {p_{0}q_{0} - p_{1}q_{1} - p_{2}q_{2} - p_{3}q_{3}} \\ {p_{0}q_{1} + p_{1}q_{0} - p_{2}q_{3} + p_{3}q_{2}} \\ {p_{0}q_{2} + p_{1}q_{3} + p_{2}q_{0} - p_{3}q_{1}} \\ {p_{0}q_{3} - p_{1}q_{2} + p_{2}q_{1} + p_{3}q_{0}} \\ \end{array} \right).} & {(2.128)} \\ \end{matrix}$$
+$$\begin{matrix} {\left( \begin{array}{l} {p_{0}q_{0} - p_{1}q_{1} - p_{2}q_{2} - p_{3}q_{3}} \\ {p_{0}q_{1} + p_{1}q_{0} - p_{2}q_{3} + p_{3}q_{2}} \\ {p_{0}q_{2} + p_{1}q_{3} + p_{2}q_{0} - p_{3}q_{1}} \\ {p_{0}q_{3} - p_{1}q_{2} + p_{2}q_{1} + p_{3}q_{0}} \\ \end{array} \right).} \tag{2.128} \\ \end{matrix}$$
 The first component, the real part of the resulting quaternion, can be interpreted as
-$$\begin{matrix} {r_{0} = q_{0}p_{0} - \upsilon_{q} \cdot \upsilon_{p},} & {(2.129)} \\ \end{matrix}$$
+$$\begin{matrix} {r_{0} = q_{0}p_{0} - \upsilon_{q} \cdot \upsilon_{p},} \tag{2.129} \\ \end{matrix}$$
 where /v_{p}/ = (/p/_{1}, /p/_{2}, /p/_{3}) and /v_{q}/ = (/q/_{1}, /q/_{2}, /q/_{3}) are the 3-vector parts of the quaternions /p/ and /q/. The remaining three components can be interpreted as:
-$$\begin{matrix} {v_{r} = q_{0}v_{p} + p_{0}v_{q} + v_{q} \times v_{p}.} & {(2.130)} \\ \end{matrix}$$
+$$\begin{matrix} {v_{r} = q_{0}v_{p} + p_{0}v_{q} + v_{q} \times v_{p}.} \tag{2.130} \\ \end{matrix}$$
 #page(188)
 
 We take this to specify the product of two quaternions, whether or not they are unit quaternions. This extension of multiplicaton to non-unit quaternions works because we did not include the normalization factors.
 
 Each quaternion has a matrix representation in terms of the matrices *i*, *j*, *k*, and *1*, the /quaternion units/:
-$$\begin{matrix} {\mathbf{q} = q_{0}1 + q_{1}\mathbf{i} + q_{2}\mathbf{j} + q_{3}\mathbf{k}.} & {(2.131)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{q} = q_{0}1 + q_{1}\mathbf{i} + q_{2}\mathbf{j} + q_{3}\mathbf{k}.} \tag{2.131} \\ \end{matrix}$$
 We can use this representation to write our result as a matrix product:
-$$\begin{matrix} {\mathbf{r} = \mathbf{qp}.} & {(2.132)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{r} = \mathbf{qp}.} \tag{2.132} \\ \end{matrix}$$
 The elements of the top row of the matrix *r* are the components of the quaternion /r/.
 
 It turns out that the rotation matrix corresponding to a unit quaternion can also be written in terms of *i*, *j*, and *k*. Let *M* be a rotation matrix corresponding to the unit quaternion /p/. A vector with component 3-tuple *w* can be rotated by multiplication by *M* on the left. We can perform the same operation using the quaternion units. Let /q_{w}/ be the quaternion whose real part is 0 and whose 3-vector part is *w*, then the product /pq_{w}p/^{∗} is a quaternion whose 3-vector part is the rotated vector and whose real part is zero. The conjugate /p/^{∗} is obtained from /p/ by reversing the sign of the 3-vector part. As an equation:$\mathbf{Mw} = \upsilon_{pq_{w}p*}.$### Exercise 2.19: Quaternions*
@@ -994,7 +994,7 @@ Quaternions give us nice coordinates that do not suffer from the singularities o
 We have computed the body components of the angular velocities from a state consisting of quaternion components and the rates of change of those components (see equation #Eqn(chapter002,2.126,2.126)). We can invert
 #page(189)
 these to find the rates of change of the quaternion components in terms of the angular velocities and the quaternion components. The result of this inversion is:
-$$\begin{matrix} {\dot{q} = - \frac{1}{2}\left( {\omega^{a}\mathbf{i} + \omega^{b}\mathbf{j} + \omega^{c}\mathbf{k}} \right)\mathcal{q}.} & {(2.133)} \\ \end{matrix}$$
+$$\begin{matrix} {\dot{q} = - \frac{1}{2}\left( {\omega^{a}\mathbf{i} + \omega^{b}\mathbf{j} + \omega^{c}\mathbf{k}} \right)\mathcal{q}.} \tag{2.133} \\ \end{matrix}$$
 This set of differential equations is driven by Euler's equations for the motion of the body components of the angular velocity (see equations #Eqn(chapter002,2.69,2.69) on [page 153](chapter002!p153)).#Footnote(24)
 
 We construct a system derivative for the free rigid body with mixed coordinates. The configuration is represented by a quaternion that specifies the rotation that takes the body from the reference orientation to the actual orientation. The rate of change of the configuration is specified by the components of the angular velocities on the body.
@@ -1051,9 +1051,9 @@ Write and demonstrate a program that reproduces diagrams like [figure 2.3](#figu
 In the '60s it was discovered that Mercury has a rotation period that is precisely 2/3 times its orbital period. We can see this resonant behavior in the spin-orbit model problem, and we can also play with nudging Mercury a bit to see how far off the rotation rate can be and still be trapped in this spin-orbit resonance. If the mismatch in angular velocity is too great, Mercury's rotation is no longer resonantly locked to its orbit. Set /ϵ/ = 0.026 and /e/ = 0.2.
 
 *a.* Write a program for the spin-orbit problem so this resonance dynamics can be investigated numerically. You will need to know (or, better, show!) that /f/ satisfies the equation
-$$\begin{matrix} {Df\left( t \right) = n\left( {1 - e^{2}} \right)^{1/2}\left( \frac{a}{R\left( t \right)} \right)^{2},} & {(2.134)} \\ \end{matrix}$$
+$$\begin{matrix} {Df\left( t \right) = n\left( {1 - e^{2}} \right)^{1/2}\left( \frac{a}{R\left( t \right)} \right)^{2},} \tag{2.134} \\ \end{matrix}$$
 with
-$$\begin{matrix} {\frac{a}{R\left( t \right)} = \frac{1 + e\,\cos\, f\left( t \right)}{1 - e^{2}}.} & {(2.135)} \\ \end{matrix}$$
+$$\begin{matrix} {\frac{a}{R\left( t \right)} = \frac{1 + e\,\cos\, f\left( t \right)}{1 - e^{2}}.} \tag{2.135} \\ \end{matrix}$$
 Notice that /n/ disappears from the equations if they are written in terms of a new independent variable /τ/ = /nt/. Also notice that /a/ and /R/(/t/) appear only in the combination /a/R/(/t/).
 
 *b.* Show that the 3:2 resonance is stable by numerically integrating the system when the rotation is not exactly in resonance and observing that the angle $\theta - \frac{3}{2}nt $ oscillates.

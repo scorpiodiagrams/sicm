@@ -72,37 +72,37 @@ Consider first the case of an equilibrium of a system of differential equations.
 of systems near equilibrium. The first step is to investigate the evolution of a linear approximation to the differential equations near the equilibrium. This part is easy, and is the subject of linear stability analysis. Later, we will address what the linear analysis implies for the actual problem.
 
 Consider a system of ordinary differential equations
-$$\begin{matrix} {Dz(t) = F(t,z(t))} & {(4.1)} \\ \end{matrix}$$
+$$\begin{matrix} {Dz(t) = F(t,z(t))} \tag{4.1} \\ \end{matrix}$$
 with components
-$$\begin{matrix} {Dz^{i}(t) = F^{i}(t,z^{0}(t),\ldots,z^{n - 1}(t)),} & {(4.2)} \\ \end{matrix}$$
+$$\begin{matrix} {Dz^{i}(t) = F^{i}(t,z^{0}(t),\ldots,z^{n - 1}(t)),} \tag{4.2} \\ \end{matrix}$$
 where /n/ is the dimension. An equilibrium point of this system of equations is a point /z_{e}/ for which the state derivative is zero:
-$$\begin{matrix} {0 = F(t,z_{e}).} & {(4.3)} \\ \end{matrix}$$
+$$\begin{matrix} {0 = F(t,z_{e}).} \tag{4.3} \\ \end{matrix}$$
 That this is zero at all moments for the equilibrium solution implies ∂_{0}/F/ (/t/, /z_{e}/) = 0.
 
 Next consider a path /z/′ that passes near the equilibrium point. The path displacement /ζ/ is defined so that at time /t/
-$$\begin{matrix} {z\prime(t) = z_{e} + \zeta(t).} & {(4.4)} \\ \end{matrix}$$
+$$\begin{matrix} {z\prime(t) = z_{e} + \zeta(t).} \tag{4.4} \\ \end{matrix}$$
 We have
-$$\begin{matrix} {D\zeta(t) = Dz\prime(t) = F(t,z_{e} + \zeta(t)).} & {(4.5)} \\ \end{matrix}$$
+$$\begin{matrix} {D\zeta(t) = Dz\prime(t) = F(t,z_{e} + \zeta(t)).} \tag{4.5} \\ \end{matrix}$$
 If /ζ/ is small we can write the right-hand side as a Taylor series in /ζ/:
-$$\begin{matrix} {D\zeta(t) = F(t,z_{e}) + \partial_{1}F(t,z_{e})\zeta(t) + \cdots,} & {(4.6)} \\ \end{matrix}$$
+$$\begin{matrix} {D\zeta(t) = F(t,z_{e}) + \partial_{1}F(t,z_{e})\zeta(t) + \cdots,} \tag{4.6} \\ \end{matrix}$$
 but the first term is zero because /z_{e}/ is an equilibrium point, so
-$$\begin{matrix} {D\zeta(t) = \partial_{1}F(t,z_{e})\zeta(t) + \cdots.} & {(4.7)} \\ \end{matrix}$$
+$$\begin{matrix} {D\zeta(t) = \partial_{1}F(t,z_{e})\zeta(t) + \cdots.} \tag{4.7} \\ \end{matrix}$$
 If /ζ/ is small the evolution is approximated by the linear terms. Linear stability analysis investigates the evolution of the approximate equation
-$$\begin{matrix} {D\zeta(t) = \partial_{1}F(t,z_{e})\zeta(t).} & {(4.8)} \\ \end{matrix}$$
+$$\begin{matrix} {D\zeta(t) = \partial_{1}F(t,z_{e})\zeta(t).} \tag{4.8} \\ \end{matrix}$$
 #page(293)
 
 These are the variational equations (#Eqn(chapter003,3.145,3.145)) with the equilibrium solution substituted for the reference trajectory. The relationship of the solutions of this linearized system to the full system is a difficult mathematical problem, which has not been fully resolved.
 
 If we restrict attention to autonomous systems (∂_{0}/F/ = 0), then the variational equations at an equilibrium are a linear system of ordinary differential equations with constant coefficients.#Footnote(2) Such systems can be solved analytically. To simplify the notation, let /M/ = ∂_{1}/F/(/t/, /z_{e}/), so
-$$\begin{matrix} {D\zeta(t) = M\zeta(t).} & {(4.9)} \\ \end{matrix}$$
+$$\begin{matrix} {D\zeta(t) = M\zeta(t).} \tag{4.9} \\ \end{matrix}$$
 We seek a solution of the form
-$$\begin{matrix} {\zeta(t) = \alpha e^{\lambda t},} & {(4.10)} \\ \end{matrix}$$
+$$\begin{matrix} {\zeta(t) = \alpha e^{\lambda t},} \tag{4.10} \\ \end{matrix}$$
 where /α/ is a structured constant with the same number of components as /ζ/, and /λ/ is a complex number called a /characteristic exponent/. Substituting, we find
-$$\begin{matrix} {\lambda\alpha e^{\lambda t} = M\alpha e^{\lambda t}.} & {(4.11)} \\ \end{matrix}$$
+$$\begin{matrix} {\lambda\alpha e^{\lambda t} = M\alpha e^{\lambda t}.} \tag{4.11} \\ \end{matrix}$$
 The exponential factor is not zero, so we find
-$$\begin{matrix} {M\alpha = \lambda\alpha,} & {(4.12)} \\ \end{matrix}$$
+$$\begin{matrix} {M\alpha = \lambda\alpha,} \tag{4.12} \\ \end{matrix}$$
 which is an equation for the eigenvalue /λ/ and (normalized) eigen-vector /α/. In general, there are /n/ eigenvalues and /n/ eigenvectors, so we must add a subscript to both /α/ and /λ/ indicating the particular solution. The general solution is an arbitrary linear combination of these individual solutions. The eigenvalues are solutions of the characteristic equation
-$$\begin{matrix} {0 = \det(\mathbf{M} - \lambda\mathbf{I})} & {(4.13)} \\ \end{matrix}$$
+$$\begin{matrix} {0 = \det(\mathbf{M} - \lambda\mathbf{I})} \tag{4.13} \\ \end{matrix}$$
 where *M* is the matrix representation of /M/, and *I* is the identity matrix of the same dimension. The elements of *M* are real, so we know that the eigenvalues /λ/ either are real or come in complex-conjugate pairs. We assume the eigenvalues are all distinct.#Footnote(3)
 
 #page(294)
@@ -110,13 +110,13 @@ where *M* is the matrix representation of /M/, and *I* is the identity matrix of
 If the eigenvalue is real then the solution is exponential, as assumed. If the eigenvalue /λ/ > 0 then the solution expands exponentially along the direction /α/; if /λ/ < 0 then the solution contracts exponentially along the direction /α/.
 
 If the eigenvalue is complex we can form real solutions by combining the two solutions for the complex-conjugate pair of eigenvalues. Let /λ/ = /a/ + /ib/, with real /a/ and /b/, be one such complex eigenvalue. Let /α/ = /u/ + /iv/, where /u/ and /v/ are real, be the eigen-vector corresponding to it. So there is a complex solution of the form
-$$\begin{array}{lll} {\zeta_{c}(t)} & {= (u + iv)e^{(a + ib)t}} & \\ & {= (u + iv)e^{at}(\cos\, bt + i\,\sin\, bt)} & \\ & {= e^{at}(u\,\cos\, bt - v\,\sin\, bt) + ie^{at}(u\,\sin\, bt + v\,\cos\, bt).} & {(4.14)} \\ \end{array}$$
+$$\begin{array}{lll} {\zeta_{c}(t)} & {= (u + iv)e^{(a + ib)t}} & \\ & {= (u + iv)e^{at}(\cos\, bt + i\,\sin\, bt)} & \\ & {= e^{at}(u\,\cos\, bt - v\,\sin\, bt) + ie^{at}(u\,\sin\, bt + v\,\cos\, bt).} \tag{4.14} \\ \end{array}$$
 The complex conjugate of this solution is also a solution, because the ordinary differential equation is linear with real linear coefficients. This complex-conjugate solution is associated with the eigenvalue that is the complex conjugate of the original complex eigenvalue. So the real and imaginary parts of /ζ_{c}/ are real solutions:
-$$\begin{array}{lll} {\zeta_{a}(t)} & {= e^{at}(u\,\cos\, bt - v\,\sin\, bt)} & \\ {\zeta_{b}(t)} & {= e^{at}(u\,\sin\, bt + v\,\cos\, bt).} & {(4.15)} \\ \end{array}$$
+$$\begin{array}{lll} {\zeta_{a}(t)} & {= e^{at}(u\,\cos\, bt - v\,\sin\, bt)} & \\ {\zeta_{b}(t)} & {= e^{at}(u\,\sin\, bt + v\,\cos\, bt).} \tag{4.15} \\ \end{array}$$
 These two solutions reside in the plane containing the vectors /u/ and /v/. If /a/ is positive both solutions spiral outwards exponentially, and if /a/ is negative they both spiral inwards. If /a/ is zero, both solutions trace the same ellipse, but with different phases.
 
 Again, the general solution is an arbitrary linear combination of the particular real solutions corresponding to the various eigenvalues. So if we denote the /k/th real eigensolution /ζ_{k}/(/t/), then the general solution is
-$$\begin{array}{ll} {\zeta(t) = {\sum\limits_{k}{A_{k}\zeta_{k}(t),}}} & {(4.16)} \\ \end{array}$$
+$$\begin{array}{ll} {\zeta(t) = {\sum\limits_{k}{A_{k}\zeta_{k}(t),}}} \tag{4.16} \\ \end{array}$$
 where /A_{k}/ may be determined by the initial conditions (the state at a given time).
 
 ### Exercise 4.1: Pendulum
@@ -131,43 +131,43 @@ Fixed points on a surface of section correspond either to equilibrium points of 
 Let /T/ be a map of the state space onto itself, as might be generated by a surface of section. A trajectory sequence is generated by successive iteration of the map /T/. Let /x/(/n/) be the /n/th point of the sequence. The map carries one point of the trajectory sequence to the next: /x/(/n/ + 1) = /T/(/x/(/n/)). We can represent successive iterations of the map by a superscript, so that /T ^{i}/ indicates /T/ composed /i/ times. For example, /T/^{2}(/x/) = /T/ (/T/(/x/)). Thus /x/(/n/) = /T^{n}/(/x/(0)).#Footnote(4)
 
 A /fixed point x/_{0} of the map /T/ satisfies
-$$\begin{array}{ll} {x_{0} = T(x_{0}).} & {(4.17)} \\ \end{array}$$
+$$\begin{array}{ll} {x_{0} = T(x_{0}).} \tag{4.17} \\ \end{array}$$
 A /periodic point/ of the map /T/ is a point that is visited every /k/ iterations of /T/. Thus it is a fixed point of the map /T^{k}/. So the behavior near a periodic point can be ascertained by looking at the behavior near an associated fixed point of /T^{k}/.
 
 Let /x/ be some trajectory initially near the fixed point /x/_{0} of /T/, and /ξ/ be the deviation from /x/_{0}: /x/(/n/) = /x/_{0} + /ξ/(/n/). The trajectory satisfies
-$$\begin{array}{ll} {x_{0} + \xi(n + 1) = T(x_{0} + \xi(n)).} & {(4.18)} \\ \end{array}$$
+$$\begin{array}{ll} {x_{0} + \xi(n + 1) = T(x_{0} + \xi(n)).} \tag{4.18} \\ \end{array}$$
 Expanding the right-hand side as a Taylor series, we obtain
-$$\begin{array}{ll} {x_{0} + \xi(n + 1) = T(x_{0}) + DT(x_{0})\xi(n) + \cdots,} & {(4.19)} \\ \end{array}$$
+$$\begin{array}{ll} {x_{0} + \xi(n + 1) = T(x_{0}) + DT(x_{0})\xi(n) + \cdots,} \tag{4.19} \\ \end{array}$$
 but /x/_{0} = /T/(/x/_{0}) so
-$$\begin{array}{ll} {\xi(n + 1) = DT(x_{0})\xi(n) + \cdots.} & {(4.20)} \\ \end{array}$$
+$$\begin{array}{ll} {\xi(n + 1) = DT(x_{0})\xi(n) + \cdots.} \tag{4.20} \\ \end{array}$$
 #page(296)
 
 Linear stability analysis considers the evolution of the system truncated to the linear terms
-$$\begin{array}{ll} {\xi(n + 1) = DT(x_{0})\xi(n).} & {(4.21)} \\ \end{array}$$
+$$\begin{array}{ll} {\xi(n + 1) = DT(x_{0})\xi(n).} \tag{4.21} \\ \end{array}$$
 This is a system of linear difference equations, with constant coefficients /DT/(/x/_{0}).
 
 We assume there are solutions of the form
-$$\begin{array}{ll} {\xi(n) = \rho^{n}\alpha,} & {(4.22)} \\ \end{array}$$
+$$\begin{array}{ll} {\xi(n) = \rho^{n}\alpha,} \tag{4.22} \\ \end{array}$$
 where /ρ/ is some (complex) number, called a /characteristic multiplier/.#Footnote(5) Substituting this solution into the linearized evolution equation, we find
-$$\begin{array}{ll} {\rho\alpha = DT(x_{0})\alpha,} & {(4.23)} \\ \end{array}$$
+$$\begin{array}{ll} {\rho\alpha = DT(x_{0})\alpha,} \tag{4.23} \\ \end{array}$$
 or
-$$\begin{array}{ll} {(DT(x_{0}) - \rho I)\alpha = 0,} & {(4.24)} \\ \end{array}$$
+$$\begin{array}{ll} {(DT(x_{0}) - \rho I)\alpha = 0,} \tag{4.24} \\ \end{array}$$
 where /I/ is the identity multiplier. We see that /ρ/ is an eigenvalue of the linear transformation /DT/(/x/_{0}) and /α/ is the associated (normalized) eigenvector. Let /M/ = /DT/(/x/_{0}), and *M* be its matrix representation. The eigenvalues are determined by
-$$\begin{array}{ll} {\det(\mathbf{M} - \rho\mathbf{I}) = 0.} & {(4.25)} \\ \end{array}$$
+$$\begin{array}{ll} {\det(\mathbf{M} - \rho\mathbf{I}) = 0.} \tag{4.25} \\ \end{array}$$
 The elements of *M* are real, so the eigenvalues /ρ/ are either real or come in complex-conjugate pairs.#Footnote(6)
 
 For the real eigenvalues the solutions are just exponential expansion or contraction along the associated eigenvector /α/:
-$$\begin{array}{ll} {\xi(n) = \rho^{n}\alpha.} & {(4.26)} \\ \end{array}$$
+$$\begin{array}{ll} {\xi(n) = \rho^{n}\alpha.} \tag{4.26} \\ \end{array}$$
 The solution is expanding if |/ρ/| > 1 and contracting if |/ρ/| < 1.
 
 If the eigenvalues are complex, then the solution is complex, but the complex solutions corresponding to the complex-conjugate pair of eigenvalues can be combined to form two real solutions, as was done for the equilibrium solutions. Let /ρ/ = /e/^{A+/iB/} with real
 #page(297)
 /A/ and /B/, and /α/ = /u/ + /iv/. A calculation similar to that for the equilibrium case shows that there are two real solutions
-$$\begin{array}{lll} {\xi_{a}(n)} & {= \text{e}^{An}\,(u\,\cos\, Bn - v\,\sin\, Bn)} & \\ {\xi_{b}(n)} & {= \text{e}^{An}\,(u\,\sin\, Bn + v\,\cos\, Bn).} & {(4.27)} \\ \end{array}$$
+$$\begin{array}{lll} {\xi_{a}(n)} & {= \text{e}^{An}\,(u\,\cos\, Bn - v\,\sin\, Bn)} & \\ {\xi_{b}(n)} & {= \text{e}^{An}\,(u\,\sin\, Bn + v\,\cos\, Bn).} \tag{4.27} \\ \end{array}$$
 We see that if /A/ > 0 then the solution exponentially expands, and if /A/ < 0 the solution exponentially contracts. Exponential expansion, /A/ > 0, corresponds to |/ρ/| > 1; exponential contraction, /A/ < 0, corresponds to |/ρ/| < 1. If /A/ = 0 then the two real solutions trace an ellipse and any linear combination of them traces an ellipse.
 
 The general solution is an arbitrary linear combination of the eigensolutions. Let /ξ_{k}/ be the /k/th real eigensolution. The general solution is
-$$\begin{array}{ll} {\xi(n) = {\sum\limits_{k}{A_{k}\xi_{k}(n),}}} & {(4.28)} \\ \end{array}$$
+$$\begin{array}{ll} {\xi(n) = {\sum\limits_{k}{A_{k}\xi_{k}(n),}}} \tag{4.28} \\ \end{array}$$
 where /A_{k}/ may be determined by the initial conditions.
 
 ### Exercise 4.2: Elliptical oscillation
@@ -215,19 +215,19 @@ The edge case of a double root of the characteristic equation is called /parabol
 For two-dimensional Hamiltonian maps these are the only possibilities. For higher-dimensional Hamiltonian maps, we can get combinations of these: some characteristic multipliers can be real and others complex-conjugate pairs. We might imagine that in addition there would be many other types of fixed points that occur in higher dimensions. In fact, there is only one additional type, shown in [figure 4.5](#figure_4.5). For Hamiltonian systems of arbitrary dimensions it is still the case that for each eigenvalue the complex conjugate and the inverse are also eigenvalues. We can prove this starting from a result in chapter 5. Consider the map /T_{β}/ of the phase space onto itself that is generated by time evolution of a Hamiltonian system by time increment /β/. Let /z/ = (/q/, /p/); then the map /T_{β}/ satisfies /z/(/t/ + /β/) = /T_{β}/(/z/(/t/)) for solutions /z/ of Hamilton's equations. We will show in chapter 5 that the derivative of the
 #page(301)
 map /T_{β}/ is symplectic, whether or not the starting point is at a fixed point. A 2/n/ × 2/n/ matrix *M* is /symplectic/ if it satisfies
-$$\begin{array}{ll} {\mathbf{MJ}\mathbf{M}^{\mathcal{T}} = \mathbf{J},} & {(4.29)} \\ \end{array}$$
+$$\begin{array}{ll} {\mathbf{MJ}\mathbf{M}^{\mathcal{T}} = \mathbf{J},} \tag{4.29} \\ \end{array}$$
 where *J* is the 2/n/-dimensional symplectic unit:
-$$\begin{matrix} {\mathbf{J} = \left( \begin{array}{ll} \mathbf{0}_{n \times n} & \mathbf{1}_{n \times n} \\ {\mathbf{-}\mathbf{1}_{n \times n}} & \mathbf{0}_{n \times n} \\ \end{array} \right),} & {(4.30)} \\ \end{matrix}$$
+$$\begin{matrix} {\mathbf{J} = \left( \begin{array}{ll} \mathbf{0}_{n \times n} & \mathbf{1}_{n \times n} \\ {\mathbf{-}\mathbf{1}_{n \times n}} & \mathbf{0}_{n \times n} \\ \end{array} \right),} \tag{4.30} \\ \end{matrix}$$
 with the /n/ × /n/ unit matrix *1*_{n×n} and the /n/ × /n/ zero matrix *0*_{n×n}.
 
 Using the symplectic property, we can show that in general for each eigenvalue its inverse is also an eigenvalue. Assume /ρ/ is an eigenvalue, so that /ρ/ satisfies det(*M* − /ρ/*I*) = 0. This equation is unchanged if *M* is replaced by its transpose, so /ρ/ is also an eigenvalue of $\mathbf{M}^{\mathcal{T}}$:
-$$\begin{array}{ll} {\mathbf{M}^{\mathcal{T}}\mathbf{\alpha}\prime = \rho\mathbf{\alpha}\prime.} & {(4.31)} \\ \end{array}$$
+$$\begin{array}{ll} {\mathbf{M}^{\mathcal{T}}\mathbf{\alpha}\prime = \rho\mathbf{\alpha}\prime.} \tag{4.31} \\ \end{array}$$
 From this we can see that
-$$\begin{array}{ll} {\frac{1}{\rho}\mathbf{\alpha}\prime = {(\mathbf{M}^{\mathcal{T}})}^{- 1}\mathbf{\alpha}\prime.} & {(4.32)} \\ \end{array}$$
+$$\begin{array}{ll} {\frac{1}{\rho}\mathbf{\alpha}\prime = {(\mathbf{M}^{\mathcal{T}})}^{- 1}\mathbf{\alpha}\prime.} \tag{4.32} \\ \end{array}$$
 Now, from the symplectic property we have
-$$\begin{array}{ll} {\mathbf{MJ} = \mathbf{J}{(\mathbf{M}^{\mathcal{T}})}^{- 1}.} & {(4.33)} \\ \end{array}$$
+$$\begin{array}{ll} {\mathbf{MJ} = \mathbf{J}{(\mathbf{M}^{\mathcal{T}})}^{- 1}.} \tag{4.33} \\ \end{array}$$
 So
-$$\begin{array}{ll} {\mathbf{MJ}\mathbf{\alpha}\prime = \mathbf{J}{(\mathbf{M}^{\mathcal{T}})}^{- 1}\mathbf{\alpha}\prime = \frac{1}{\rho}\mathbf{J}\mathbf{\alpha}\prime,} & {(4.34)} \\ \end{array}$$
+$$\begin{array}{ll} {\mathbf{MJ}\mathbf{\alpha}\prime = \mathbf{J}{(\mathbf{M}^{\mathcal{T}})}^{- 1}\mathbf{\alpha}\prime = \frac{1}{\rho}\mathbf{J}\mathbf{\alpha}\prime,} \tag{4.34} \\ \end{array}$$
 and we can conclude that 1//ρ/ is an eigenvalue of *M* with the eigenvector *J/α/′*. From the fact that for every eigenvalue its inverse is also an eigenvalue we deduce that the determinant of the transformation *M*, which is the product of the eigenvalues, is one.
 
 Thus the constraints that the eigenvalues must be associated with inverses and complex conjugates yields exactly one new pattern of eigenvalues in higher dimensions. [Figure 4.5](#figure_4.5) shows the only new pattern that is possible.
@@ -346,13 +346,13 @@ If an /n/-degree-of-freedom system has /n/ independent conserved quantities then
 
 #### Orbit types in integrable systems
 Suppose we have a time-independent /n/-degree-of-freedom system that is reducible to quadratures. For each region of phase space there is a local formulation of the system so that the evolution of the system is described by a time-independent Hamiltonian that depends only on the momenta. Suppose further that the coordinates are all angles. Let /θ/ be the tuple of angles and /J/ be the tuple of conjugate momenta. The Hamiltonian is
-$$\begin{array}{ll} {H(t,\theta,J) = f(J).} & {(4.35)} \\ \end{array}$$
+$$\begin{array}{ll} {H(t,\theta,J) = f(J).} \tag{4.35} \\ \end{array}$$
 Hamilton's equations are simply
-$$\begin{array}{ll} {DJ(t) = - \partial_{1}H(t,\theta(t),J(t)) = 0} & \\ {D\theta(t) = \,\,\,\,\,\partial_{2}H(t,\theta(t),J(t)) = \omega(J(t)),} & {(4.36)} \\ \end{array}$$
+$$\begin{array}{ll} {DJ(t) = - \partial_{1}H(t,\theta(t),J(t)) = 0} & \\ {D\theta(t) = \,\,\,\,\,\partial_{2}H(t,\theta(t),J(t)) = \omega(J(t)),} \tag{4.36} \\ \end{array}$$
 where /ω/(/J/) = /Df/(/J/) is a tuple of frequencies with a component for each degree of freedom. The momenta are all constant because
 #page(312)
 the Hamiltonian does not depend on any of the coordinates. The motion of the coordinate angles is uniform; the rates of change of the angles are the frequencies /ω/, which depend only on the constant momenta. Given initial values /θ/(/t/_{0}) and /J/(/t/_{0}) at time /t/_{0}, the solutions are simple:
-$$\begin{array}{ll} {J(t) = J(t_{0})} & \\ {\theta(t) = \omega(J(t_{0}))(t - t_{0}) + \theta(t_{0}).} & {(4.37)} \\ \end{array}$$
+$$\begin{array}{ll} {J(t) = J(t_{0})} & \\ {\theta(t) = \omega(J(t_{0}))(t - t_{0}) + \theta(t_{0}).} \tag{4.37} \\ \end{array}$$
 Though the solutions are simple, there are two distinct orbit types: periodic orbits and quasiperiodic orbits, depending on the frequency ratios.
 
 A solution is /periodic/ if all the coordinates (and momenta) of the system return to their initial values at some later time. Each coordinate /θ^{i}/ with nonzero frequency /ω^{i}/(/J/(/t/_{0})) is periodic with a period /τ_{i}/ = 2/π///ω^{i}/(/J/(/t/_{0})). The period of the system must therefore be an integer multiple /k_{i}/ of each of the individual coordinate periods /τ_{i}/. If the system is periodic with some set of integer multiples, then it is also periodic with any common factors divided out. Thus the period of the system is /τ/ = (/k_{i}///d/)/τ_{i}/ where /d/ is the greatest common divisor of the integers /k_{i}/.
@@ -381,9 +381,9 @@ For definiteness, let the plane of the surface of section be the (/θ/^{0}, /J/_
 #page(315)
 
 The time between section points is the period of /θ/^{1}: Δ/t/ = 2/π///ω/^{1}(/J/(/t/_{0})) because a section point is generated for every cycle of /θ/^{1}. The angle between successive points on the section is /ω/^{0}(/J/(/t/_{0}))Δ/t/ = /ω/^{0}(/J/(/t/_{0}))2/π///ω/^{1}(/J/(/t/_{0})) = 2/πν/(/J/(/t/_{0})), where /ν/(/J/) = /ω/^{0}(/J/)//ω/^{1}(/J/) is called the /rotation number/ of the trajectory. Let $\widehat{\theta}\left( i \right)$ and /Ĵ/(/i/) be the /i/th point (/i/ is an integer) in a sequence of points on the surface of section generated by a solution trajectory:
-$$\begin{array}{ll} {\widehat{\theta}(i) = \theta^{0}(i\Delta t + t_{0})} & \\ {\widehat{J}(i) = J_{0}(i\Delta t + t_{0}),} & {(4.38)} \\ \end{array}$$
+$$\begin{array}{ll} {\widehat{\theta}(i) = \theta^{0}(i\Delta t + t_{0})} & \\ {\widehat{J}(i) = J_{0}(i\Delta t + t_{0}),} \tag{4.38} \\ \end{array}$$
 where the system is assumed to be on the section at /t/ = /t/_{0}. Along a trajectory, the map from one section point $(\widehat{\theta}\left( i \right),\widehat{J}\left( i \right))$ to the next $\left( {\widehat{\theta}\left( {i + 1} \right),\widehat{J}\left( {i + 1} \right)} \right)$ is of the form:#Footnote(12)
-$$\begin{array}{ll} {\left( \begin{array}{l} {\widehat{\theta}(i + 1)} \\ {\widehat{J}(i + 1)} \\ \end{array} \right) = T\left( \begin{array}{l} {\widehat{\theta}(i)} \\ {\widehat{J}(i)} \\ \end{array} \right) = \left( \begin{array}{l} {\widehat{\theta}(i) + 2\pi\widehat{\nu}(\widehat{J}(i))} \\ {\widehat{J}(i)} \\ \end{array} \right).} & {(4.39)} \\ \end{array}$$
+$$\begin{array}{ll} {\left( \begin{array}{l} {\widehat{\theta}(i + 1)} \\ {\widehat{J}(i + 1)} \\ \end{array} \right) = T\left( \begin{array}{l} {\widehat{\theta}(i)} \\ {\widehat{J}(i)} \\ \end{array} \right) = \left( \begin{array}{l} {\widehat{\theta}(i) + 2\pi\widehat{\nu}(\widehat{J}(i))} \\ {\widehat{J}(i)} \\ \end{array} \right).} \tag{4.39} \\ \end{array}$$
 As a function of the action on the section, the rotation number is $\widehat{v}\left( {\widehat{J}{(0)}} \right) = v\left( {\widehat{J}{(0)},J_{1}\left( t_{0} \right)} \right)$, where /J/_{1}(/t/_{0}) has the value required to be on the section, as for example by giving the correct energy. If the rotation number function $\widehat{\nu}$ is strictly monotonic in the action coordinate on the section then the map is called a /twist map/.#Footnote(13)
 
 On a surface of section the different types of orbits generate different patterns. If the two frequencies are commensurate, then the trajectory is periodic and only a finite number of points are generated on the surface of section. Each of the periodic solutions illustrated in [figure 4.10](#figure_4.10) generates two points on the surface of section defined by /θ/^{1} = 0. If the frequencies are commensurate they satisfy a relation of the form /kω/^{0}(/J/(/t/_{0})) = /jω/^{1}(/J/(/t/_{0})), where /J/(/t/_{0}) = (/Ĵ/(0), /J/_{1}(/t/_{0})) is the initial and constant value of the momentum tuple. The motion is periodic with frequency /ω/^{0}(/J/(/t/_{0}))//j/ = /ω/^{1}(/J/(/t/_{0}))//k/, so the period is 2/πj///ω/^{0}(/J/(/t/_{0})) = 2/πk///ω/^{1}(/J/(/t/_{0})). Thus this periodic orbit generates /k/ points on this
@@ -398,15 +398,15 @@ How does this picture change if we add additional effects?
 One peculiar feature of the orbits in integrable systems is that there are continuous families of periodic orbits. The initial angles do not matter; the frequencies depend only on the actions. Contrast this with our earlier experience with surfaces of section in which periodic points are isolated, and associated with island chains. Henri Poincaré and George Birkhoff investigated periodic orbits of near-integrable systems, and found that typically for each rational rotation number there are a finite number of periodic points, half of which are linearly stable and half linearly unstable. Here we show how to construct the Poincaré--Birkhoff periodic points.
 
 Consider an integrable system described in action-angle coordinates by the Hamiltonian /H/_{0}(/t/, /θ/, /J/) = /f/(/J/). We add some small additional effect described by the term /H/_{1} in the Hamiltonian
-$$\begin{matrix} {H = H_{0} + \mathit{\epsilon}H_{1}.} & {(4.40)} \\ \end{matrix}$$
+$$\begin{matrix} {H = H_{0} + \mathit{\epsilon}H_{1}.} \tag{4.40} \\ \end{matrix}$$
 An example of such a system is the periodically driven pendulum with small-amplitude drive. For zero-amplitude drive the driven
 #page(317)
 pendulum is integrable, but not for small drive. Unfortunately, we do not yet have the tools to develop action-angle coordinates for the pendulum. A simpler problem that is already in action-angle form is the driven rotor, which is just the driven pendulum with gravity turned off. We can implement this by turning our driven pendulum on its side, making the plane of the pendulum horizontal. A Hamiltonian for the driven rotor is
-$$\begin{matrix} {H(t,\theta,p_{\theta}) = \frac{p_{\theta}^{2}}{2ml^{2}} + mlA\omega^{2}\,\cos\,\omega t\,\cos\,\theta,} & {(4.41)} \\ \end{matrix}$$
+$$\begin{matrix} {H(t,\theta,p_{\theta}) = \frac{p_{\theta}^{2}}{2ml^{2}} + mlA\omega^{2}\,\cos\,\omega t\,\cos\,\theta,} \tag{4.41} \\ \end{matrix}$$
 where /A/ is the amplitude of the drive with frequency /ω/, /m/ is the mass of the bob, and /l/ is the length of the rotor. For zero amplitude, the Hamiltonian is already in action-angle form in that it depends only on the momentum /p_{θ}/ and the coordinate is an angle.
 
 For an integrable system, the map generated on the surface of section is of the twist map form (#Eqn(chapter004,4.39,4.39)). With the addition of a small perturbation to the Hamiltonian, small corrections are added to the map
-$$\begin{array}{lll} \left( \begin{array}{l} {\widehat{\theta}(i + 1)} \\ {\widehat{J}(i + 1)} \\ \end{array} \right) & {= T_{\mathit{\epsilon}}\left( \begin{array}{l} {\widehat{\theta}(i)} \\ {\widehat{J}(i)} \\ \end{array} \right)} & \\ & {= \left( \begin{array}{l} {\widehat{\theta}(i) + 2\pi\widehat{\nu}(\widehat{J}(i)) + \mathit{\epsilon}f(\widehat{\theta}(i),\widehat{J}(i))} \\ {\widehat{J}(i) + \mathit{\epsilon}g(\widehat{\theta}(i),\widehat{J}(i))} \\ \end{array} \right).} & {(4.42)} \\ \end{array}$$
+$$\begin{array}{lll} \left( \begin{array}{l} {\widehat{\theta}(i + 1)} \\ {\widehat{J}(i + 1)} \\ \end{array} \right) & {= T_{\mathit{\epsilon}}\left( \begin{array}{l} {\widehat{\theta}(i)} \\ {\widehat{J}(i)} \\ \end{array} \right)} & \\ & {= \left( \begin{array}{l} {\widehat{\theta}(i) + 2\pi\widehat{\nu}(\widehat{J}(i)) + \mathit{\epsilon}f(\widehat{\theta}(i),\widehat{J}(i))} \\ {\widehat{J}(i) + \mathit{\epsilon}g(\widehat{\theta}(i),\widehat{J}(i))} \\ \end{array} \right).} \tag{4.42} \\ \end{array}$$
 Both the map /T/ and the perturbed map /T_{ϵ}/ are area preserving because the maps are generated as surfaces of section for Hamiltonian systems.
 
 Suppose we are interested in determining whether periodic orbits of a particular rational rotation number $\widehat{v}\left( {\widehat{J}{(0)}} \right) = j/k $ exist in some interval of the action /α/ < /Ĵ/(0) < /β/. If the rotation number is strictly monotonic in this interval and orbits with the rotation number $\widehat{v}\left( {\widehat{J}{(0)}} \right)$ occur in this interval for the unperturbed map /T/, then by a simple construction we can show that periodic orbits with this rotation number also exist for /T_{ϵ}/ for sufficiently small /ϵ/.
@@ -500,7 +500,7 @@ The fact that the size of the islands decreases with the size of the denominator
 Any irrational can be approximated by a sequence of rationals, and for each of these rationals we expect there to be stable and unstable periodic orbits with stable islands and homoclinic tangles. An invariant curve for a given rotation number has the best chance of surviving if the size of the islands associated with each rational approximation to the rotation number is smaller than the separation of the islands from that invariant curve.
 
 For any particular size denominator, the best rational approximation to an irrational number is given by an initial segment of a simple continued fraction. If the approximating continued fraction converges slowly to the irrational number, then that number is not near rationals with small denominators. Thus, we will look for invariant curves with rotation numbers that have slowly converging continued-fraction approximations. The continued fractions that converge most slowly have tails that are all one. Such a number is called a /golden number/. For example, the golden ratio,
-$$\begin{matrix} {\phi = \frac{1 + \sqrt{5}}{2} = 1 + \frac{1}{1 + \frac{1}{1 + \frac{1}{1 + \cdots}}},} & {(4.43)} \\ \end{matrix}$$
+$$\begin{matrix} {\phi = \frac{1 + \sqrt{5}}{2} = 1 + \frac{1}{1 + \frac{1}{1 + \frac{1}{1 + \cdots}}},} \tag{4.43} \\ \end{matrix}$$
 is just such a number.
 
 #page(326)

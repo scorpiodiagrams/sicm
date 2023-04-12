@@ -25,67 +25,67 @@ The momenta are given by momentum state functions of the time, the coordinates, 
 We present three derivations of Hamilton's equations. The first derivation is guided by the strategy outlined above and uses nothing more complicated than implicit functions and the chain rule. The second derivation ([section 3.1.1](#section_3.1.1)) first abstracts a key part of the first derivation and then applies the more abstract machinery to derive Hamilton's equations. The third ([section 3.1.2](#section_3.1.2)) uses the action principle.
 
 Lagrange's equations give us the time derivative of the momentum /p/ on a path /q/:
-$$\begin{array}{ll} {Dp(t) = \partial_{1}L(t,q(t),\, Dq(t)),} & {(3.1)} \\ \end{array}$$
+$$\begin{array}{ll} {Dp(t) = \partial_{1}L(t,q(t),\, Dq(t)),} \tag{3.1} \\ \end{array}$$
 where
-$$\begin{array}{ll} {p(t) = \partial_{2}L(t,q(t),\, Dq(t)).} & {(3.2)} \\ \end{array}$$
+$$\begin{array}{ll} {p(t) = \partial_{2}L(t,q(t),\, Dq(t)).} \tag{3.2} \\ \end{array}$$
 To eliminate /Dq/ we need to solve equation (#Eqn(chapter003,3.2,3.2)) for /Dq/ in terms of /p/.
 
 #page(198)
 
 Let $\mathcal{V}$ be the function that gives the velocities in terms of the time, coordinates, and momenta. Defining $\mathcal{V}$ is a problem of functional inverses. To prevent confusion we use names for the variables that have no mnemonic significance. Let
-$$\begin{array}{ll} {a = \partial_{2}L(b,c,d);} & {(3.3)} \\ \end{array}$$
+$$\begin{array}{ll} {a = \partial_{2}L(b,c,d);} \tag{3.3} \\ \end{array}$$
 then $\mathcal{V}$ satisfies
-$$\begin{array}{ll} {d = \mathcal{V}(b,c,a).} & {(3.4)} \\ \end{array}$$
+$$\begin{array}{ll} {d = \mathcal{V}(b,c,a).} \tag{3.4} \\ \end{array}$$
 So $\mathcal{V}$ and ∂_{2}/L/ are inverses on the third argument position:
-$$\begin{array}{ll} {d = \mathcal{V}(b,c,\partial_{2}L(b,c,d))} & {(3.5)} \\ \end{array}$$
-$$\begin{array}{ll} {a = \partial_{2}L(b,c,\mathcal{V}(b,c,a)).} & {(3.6)} \\ \end{array}$$
+$$\begin{array}{ll} {d = \mathcal{V}(b,c,\partial_{2}L(b,c,d))} \tag{3.5} \\ \end{array}$$
+$$\begin{array}{ll} {a = \partial_{2}L(b,c,\mathcal{V}(b,c,a)).} \tag{3.6} \\ \end{array}$$
 The Lagrange equation (#Eqn(chapter003,3.1,3.1)) can be rewritten in terms of /p/ using $\mathcal{V}$:
-$$\begin{array}{ll} {Dp(t) = \partial_{1}L(t,q(t),\,\mathcal{V}(t,q(t),p(t))).} & {(3.7)} \\ \end{array}$$
+$$\begin{array}{ll} {Dp(t) = \partial_{1}L(t,q(t),\,\mathcal{V}(t,q(t),p(t))).} \tag{3.7} \\ \end{array}$$
 We can also use $\mathcal{V}$ to rewrite equation (#Eqn(chapter003,3.2,3.2)) as an equation for /Dq/ in terms of /t/, /q/ and /p/:
-$$\begin{array}{ll} {Dq(t) = \mathcal{V}(t,q(t),p(t)).} & {(3.8)} \\ \end{array}$$
+$$\begin{array}{ll} {Dq(t) = \mathcal{V}(t,q(t),p(t)).} \tag{3.8} \\ \end{array}$$
 Equations (#Eqn(chapter003,3.7,3.7)) and (#Eqn(chapter003,3.8,3.8)) give the rate of change of /q/ and /p/ along realizable paths as functions of /t/, /q/, and /p/ along the paths.
 
 Though these equations fulfill our goal of expressing the equations of motion entirely in terms of coordinates and momenta, we can find a better representation. Define the function
-$$\begin{array}{ll} {\widetilde{L}(t,q,p) = L(t,q,\mathcal{V}(t,q,p)),} & {(3.9)} \\ \end{array}$$
+$$\begin{array}{ll} {\widetilde{L}(t,q,p) = L(t,q,\mathcal{V}(t,q,p)),} \tag{3.9} \\ \end{array}$$
 which is the Lagrangian reexpressed as a function of time, coordinates, and momenta.#Footnote(2) For the equations of motion we need ∂_{1}/L/ evaluated with the appropriate arguments. Consider
 
 #page(199)
-$$\begin{array}{lll} {\partial_{1}\widetilde{L}(t,q,p)} & {= \partial_{1}L(t,q,\mathcal{V}(t,q,p)) + \partial_{2}L(t,q,\mathcal{V}(t,q,p))\partial_{1}\mathcal{V}(t,q,p)} & \\  & {= \partial_{1}L(t,q,\mathcal{V}(t,q,p)) + p\partial_{1}\mathcal{V}(t,q,p),} & {(3.10)} \\ \end{array}$$
+$$\begin{array}{lll} {\partial_{1}\widetilde{L}(t,q,p)} & {= \partial_{1}L(t,q,\mathcal{V}(t,q,p)) + \partial_{2}L(t,q,\mathcal{V}(t,q,p))\partial_{1}\mathcal{V}(t,q,p)} & \\  & {= \partial_{1}L(t,q,\mathcal{V}(t,q,p)) + p\partial_{1}\mathcal{V}(t,q,p),} \tag{3.10} \\ \end{array}$$
 where we used the chain rule in the first step and the inverse property (#Eqn(chapter003,3.6,3.6)) of $\mathcal{V}$ in the second step. Introducing the momentum selector#Footnote(3)/P/ (/t/, /q/, /p/) = /p/, and using the property ∂_{1}/P/ = 0, we have
-$$\begin{array}{lll} {\partial_{1}L(t,q,\mathcal{V}(t,q,p))} & {= \partial_{1}\widetilde{L}(t,q,p) - P(t,q,p)\partial_{1}\mathcal{V}(t,q,p)} & \\  & {= \partial_{1}(\widetilde{L} - P\mathcal{V})(t,q,p)} & \\  & {= - \partial_{1}\, H(t,q,p),} & {(3.11)} \\ \end{array}$$
+$$\begin{array}{lll} {\partial_{1}L(t,q,\mathcal{V}(t,q,p))} & {= \partial_{1}\widetilde{L}(t,q,p) - P(t,q,p)\partial_{1}\mathcal{V}(t,q,p)} & \\  & {= \partial_{1}(\widetilde{L} - P\mathcal{V})(t,q,p)} & \\  & {= - \partial_{1}\, H(t,q,p),} \tag{3.11} \\ \end{array}$$
 where the /Hamiltonian H/ is defined by#Footnote(4)
-$$\begin{array}{ll} {H = P\mathcal{V} - \widetilde{L}.} & {(3.12)} \\ \end{array}$$
+$$\begin{array}{ll} {H = P\mathcal{V} - \widetilde{L}.} \tag{3.12} \\ \end{array}$$
 Using the algebraic result (#Eqn(chapter003,3.11,3.11)), the Lagrange equation (#Eqn(chapter003,3.7,3.7)) for /Dp/ becomes
-$$\begin{array}{ll} {Dp(t) = - \partial_{1}H(t,q(t),p(t)).} & {(3.13)} \\ \end{array}$$
+$$\begin{array}{ll} {Dp(t) = - \partial_{1}H(t,q(t),p(t)).} \tag{3.13} \\ \end{array}$$
 The equation for /Dq/ can also be written in terms of /H/. Consider
-$$\begin{array}{lll} {\partial_{2}H(t,q,p)} & {= \partial_{2}(P\mathcal{V} - \widetilde{L})(t,q,p)} & \\  & {= \mathcal{V}(t,q,p) + p\partial_{2}\mathcal{V}(t,q,p) - \partial_{2}\widetilde{L}(t,q,p).} & {(3.14)} \\ \end{array}$$
+$$\begin{array}{lll} {\partial_{2}H(t,q,p)} & {= \partial_{2}(P\mathcal{V} - \widetilde{L})(t,q,p)} & \\  & {= \mathcal{V}(t,q,p) + p\partial_{2}\mathcal{V}(t,q,p) - \partial_{2}\widetilde{L}(t,q,p).} \tag{3.14} \\ \end{array}$$
 To carry out the derivative of $\widetilde{L}$ we write it out in terms of /L/:
-$$\begin{array}{ll} {\partial_{2}\widetilde{L}(t,q,p) = \partial_{2}L(t,q,\mathcal{V}(t,q,p))\partial_{2}\mathcal{V}(t,q,p) = p\partial_{2}\mathcal{V}(t,q,p),} & {(3.15)} \\ \end{array}$$
+$$\begin{array}{ll} {\partial_{2}\widetilde{L}(t,q,p) = \partial_{2}L(t,q,\mathcal{V}(t,q,p))\partial_{2}\mathcal{V}(t,q,p) = p\partial_{2}\mathcal{V}(t,q,p),} \tag{3.15} \\ \end{array}$$
 again using the inverse property (#Eqn(chapter003,3.6,3.6)) of $\mathcal{V}$. So, putting equations (#Eqn(chapter003,3.14,3.14)) and (#Eqn(chapter003,3.15,3.15)) together, we obtain
-$$\begin{array}{ll} {\partial_{2}H(t,q,p) = \mathcal{V}(t,q,p).} & {(3.16)} \\ \end{array}$$
+$$\begin{array}{ll} {\partial_{2}H(t,q,p) = \mathcal{V}(t,q,p).} \tag{3.16} \\ \end{array}$$
 Using the algebraic result (#Eqn(chapter003,3.16,3.16)), equation (#Eqn(chapter003,3.8,3.8)) for /Dq/ becomes
-$$\begin{array}{ll} {Dq(t) = \partial_{2}H(t,q(t),\, p(t)).} & {(3.17)} \\ \end{array}$$
+$$\begin{array}{ll} {Dq(t) = \partial_{2}H(t,q(t),\, p(t)).} \tag{3.17} \\ \end{array}$$
 #page(200)
 
 Equations (#Eqn(chapter003,3.13,3.13)) and (#Eqn(chapter003,3.17,3.17)) give the derivatives of the coordinate and momentum path functions at each time in terms of the time, and the coordinates and momenta at that time. These equations are known as /Hamilton's equations/:#Footnote(5)
-$$\begin{array}{ll} {Dq(t) = \partial_{2}H(t,q(t),\, p(t))} & \\ {Dp(t) = - \partial_{1}H(t,q(t),\, p(t)).} & {(3.18)} \\ \end{array}$$
+$$\begin{array}{ll} {Dq(t) = \partial_{2}H(t,q(t),\, p(t))} & \\ {Dp(t) = - \partial_{1}H(t,q(t),\, p(t)).} \tag{3.18} \\ \end{array}$$
 The first equation is just a restatement of the relationship of the momenta to the velocities in terms of the Hamiltonian and holds for any path, whether or not it is a realizable path. The second equation holds only for realizable paths.
 
 Hamilton's equations have an especially simple and symmetrical form. Just as Lagrange's equations are constructed from a real-valued function, the Lagrangian, Hamilton's equations are constructed from a real-valued function, the Hamiltonian. The Hamiltonian function is#Footnote(6)
-$$\begin{array}{ll} {H(t,q,p) = p\mathcal{V}(t,q,p) - L(t,q,\mathcal{V}(t,q,p)).} & {(3.19)} \\ \end{array}$$
+$$\begin{array}{ll} {H(t,q,p) = p\mathcal{V}(t,q,p) - L(t,q,\mathcal{V}(t,q,p)).} \tag{3.19} \\ \end{array}$$
 The Hamiltonian has the same value as the energy function /ℰ/ (see equation #Eqn(chapter001,1.142,1.142)), except that the velocities are expressed in terms of time, coordinates, and momenta by $\mathcal{V}$:
-$$\begin{array}{ll} {H(t,q,p) = \mathcal{E}(t,q,\mathcal{V}(t,q,p)).} & {(3.20)} \\ \end{array}$$
+$$\begin{array}{ll} {H(t,q,p) = \mathcal{E}(t,q,\mathcal{V}(t,q,p)).} \tag{3.20} \\ \end{array}$$
 #### Illustration
 Let's try something simple: the motion of a particle of mass /m/ with potential energy /V/ (/x/, /y/). A Lagrangian is
-$$\begin{array}{ll} {L(t;x,y;v_{x},v_{y}) = \frac{1}{2}m(v_{x}^{2} + v_{y}^{2}) - V(x,y).} & {(3.21)} \\ \end{array}$$
+$$\begin{array}{ll} {L(t;x,y;v_{x},v_{y}) = \frac{1}{2}m(v_{x}^{2} + v_{y}^{2}) - V(x,y).} \tag{3.21} \\ \end{array}$$
 #page(201)
 
 To form the Hamiltonian we find the momenta /p/ = ∂_{2}/L/(/t/, /q/, /v/): /p_{x}/ = /mv_{x}/ and /p_{y}/ = /mv_{y}/. Solving for the velocities in terms of the momenta is easy here:$\upsilon_{x} = {p_{x}/m}$ and $\upsilon_{y} = {p_{y}/m}$. The Hamiltonian is /H/(/t/, /q/, /p/) = /pv/ − /L/(/t/, /q/, /v/), with /v/ reexpressed in terms of (/t/, /q/, /p/):
-$$\begin{array}{ll} {H(t;x,y;p_{x},p_{y}) = \frac{p_{x}^{2} + p_{y}^{2}}{2m} + V(x,y).} & {(3.22)} \\ \end{array}$$
+$$\begin{array}{ll} {H(t;x,y;p_{x},p_{y}) = \frac{p_{x}^{2} + p_{y}^{2}}{2m} + V(x,y).} \tag{3.22} \\ \end{array}$$
 The kinetic energy is a homogeneous quadratic form in the velocities, so the energy is /T/ + /V/ and the Hamiltonian is the energy expressed in terms of momenta rather than velocities. Hamilton's equations for /Dq/ are
-$$\begin{array}{ll} {D_{x}(t) = {{p_{x}(t)}/m}} & \\ {D_{y}(t) = {{p_{y}(t)}/m}.} & {(3.23)} \\ \end{array}$$
+$$\begin{array}{ll} {D_{x}(t) = {{p_{x}(t)}/m}} & \\ {D_{y}(t) = {{p_{y}(t)}/m}.} \tag{3.23} \\ \end{array}$$
 Note that these equations merely restate the relation between the momenta and the velocities. Hamilton's equations for /Dp/ are
-$$\begin{array}{ll} {Dp_{x}(t) = - \partial_{0}V(x(t),y(t))} & \\ {Dp_{y}(t) = - \partial_{1}V(x(t),y(t)).} & {(3.24)} \\ \end{array}$$
+$$\begin{array}{ll} {Dp_{x}(t) = - \partial_{0}V(x(t),y(t))} & \\ {Dp_{y}(t) = - \partial_{1}V(x(t),y(t)).} \tag{3.24} \\ \end{array}$$
 The rate of change of the linear momentum is minus the gradient of the potential energy.
 
 ### Exercise 3.1: Deriving Hamilton's equations
@@ -110,9 +110,9 @@ The Lagrangian state derivative is constructed from the Lagrange equations by so
 equations. The coordinate path and the momentum path components of the Hamiltonian state path satisfy Hamilton's equations. The Hamiltonian formulation and the Lagrangian formulation are equivalent.
 
 Given a path /q/, the Lagrangian state path and the Hamiltonian state paths can be deduced from it. The Lagrangian state path Γ[/q/] can be constructed from a path /q/ simply by taking derivatives. The Lagrangian state path satisfies:
-$$\begin{array}{ll} {\Gamma\lbrack q\rbrack(t) = (t,q(t),\, Dq(t)).} & {(3.25)} \\ \end{array}$$
+$$\begin{array}{ll} {\Gamma\lbrack q\rbrack(t) = (t,q(t),\, Dq(t)).} \tag{3.25} \\ \end{array}$$
 The Lagrangian state path is uniquely determined by the path /q/. The Hamiltonian state path Π/_{L}/[/q/] can also be constructed from the path /q/ but the construction requires a Lagrangian. The Hamiltonian state path satisfies
-$$\begin{array}{ll} {\Pi_{L}\lbrack q\rbrack(t) = (t,q(t),\,\partial_{2}L(t,q(t),\, Dq(t))) = (t,q(t),p(t)).} & {(3.26)} \\ \end{array}$$
+$$\begin{array}{ll} {\Pi_{L}\lbrack q\rbrack(t) = (t,q(t),\,\partial_{2}L(t,q(t),\, Dq(t))) = (t,q(t),p(t)).} \tag{3.26} \\ \end{array}$$
 The Hamiltonian state tuple is not uniquely determined by the path /q/ because it depends upon our choice of Lagrangian, which is not unique.
 
 The 2/n/-dimensional space whose elements are labeled by the /n/ generalized coordinates /q^{i}/ and the /n/ generalized momenta /p_{i}/ is called the /phase space/. The components of the generalized coordinates and momenta are collectively called the /phase-space components/.#Footnote(8) The dynamical state of the system is completely specified by the phase-space state tuple (/t/, /q/, /p/), given a Lagrangian or Hamiltonian to provide the map between velocities and momenta.
@@ -158,17 +158,17 @@ Given a real-valued function /F/, if we can find a real-valued function /G/ such
 #page(206)
 
 Locally, we can define the inverse function#Footnote(10)$\mathcal{V}$ of /DF/ so that $ DF \circ \mathcal{V} = I $, where /I/ is the identity function /I/(/w/) = /w/. Consider the composite function $\widetilde{F} = F \circ \mathcal{V}$. The derivative of $\widetilde{F}$ is
-$$\begin{array}{ll} {D\widetilde{F} = (DF \circ \mathcal{V})D\mathcal{V} = ID\mathcal{V}.} & {(3.27)} \\ \end{array}$$
+$$\begin{array}{ll} {D\widetilde{F} = (DF \circ \mathcal{V})D\mathcal{V} = ID\mathcal{V}.} \tag{3.27} \\ \end{array}$$
 Since
-$$\begin{array}{ll} {D(I\mathcal{V}) = \mathcal{V} + ID\mathcal{V},} & {(3.28)} \\ \end{array}$$
+$$\begin{array}{ll} {D(I\mathcal{V}) = \mathcal{V} + ID\mathcal{V},} \tag{3.28} \\ \end{array}$$
 we have
-$$\begin{array}{ll} {D\widetilde{F} = D(I\mathcal{V}) - \mathcal{V},} & {(3.29)} \\ \end{array}$$
+$$\begin{array}{ll} {D\widetilde{F} = D(I\mathcal{V}) - \mathcal{V},} \tag{3.29} \\ \end{array}$$
 or
-$$\begin{array}{ll} {\mathcal{V} = D(I\mathcal{V}) - D\widetilde{F} = D(I\mathcal{V} - \widetilde{F}).} & {(3.30)} \\ \end{array}$$
+$$\begin{array}{ll} {\mathcal{V} = D(I\mathcal{V}) - D\widetilde{F} = D(I\mathcal{V} - \widetilde{F}).} \tag{3.30} \\ \end{array}$$
 The integral is determined up to a constant of integration. If we define
-$$\begin{array}{ll} {G = I\mathcal{V} - \widetilde{F},} & {(3.31)} \\ \end{array}$$
+$$\begin{array}{ll} {G = I\mathcal{V} - \widetilde{F},} \tag{3.31} \\ \end{array}$$
 then we have
-$$\begin{array}{ll} {\mathcal{V} = DG.} & {(3.32)} \\ \end{array}$$
+$$\begin{array}{ll} {\mathcal{V} = DG.} \tag{3.32} \\ \end{array}$$
 The function /G/ has the desired property that /DG/ is the inverse function $\mathcal{V}$ of /DF/. The derivation just given applies equally well if the arguments of /F/ and /G/ have multiple components.#Footnote(11)
 
 Given a relation /w/ = /DF/ (/v/) for some given function /F/, then /v/ = /DG/(/w/) for $ G = I\mathcal{V} - F \circ \mathcal{V}$, where $\mathcal{V}$ is the inverse function of /DF/, provided it exists.
@@ -179,54 +179,54 @@ A picture may help (see [figure 3.1](#figure_3.1)). The curve is the graph of th
 
 #Image(Art_P626.jpg,figure_3.1)
 #Caption *Figure 3.1* The Legendre transform can be interpreted in terms of geometric areas. The curve is the graph of /DF/, and viewed sideways is the graph of /DG/ = (/DF/)^{−1}. This figure should remind you of the geometric interpretation of the product rule for derivatives, or alternatively integration by parts. #CaptionEnd
-$$\begin{array}{ll} {wv - w_{0}v_{0} = F(v) - F(v_{0}) + G(w) - G(w_{0}),} & {(3.33)} \\ \end{array}$$
+$$\begin{array}{ll} {wv - w_{0}v_{0} = F(v) - F(v_{0}) + G(w) - G(w_{0}),} \tag{3.33} \\ \end{array}$$
 which is the same as
-$$\begin{array}{ll} {wv - F(v) - G(w) = w_{0}v_{0} - G(w_{0}) - F(v_{0}).} & {(3.34)} \\ \end{array}$$
+$$\begin{array}{ll} {wv - F(v) - G(w) = w_{0}v_{0} - G(w_{0}) - F(v_{0}).} \tag{3.34} \\ \end{array}$$
 The left-hand side depends only on the point labeled by /w/ and /v/ and the right-hand side depends only on the point labeled by /w/_{0} and /v/_{0}, so these must be constant, independent of the variable endpoints. So as the point is changed the combination /G/(/w/) + /F/(/v/) − /wv/ is invariant. Thus
-$$\begin{array}{ll} {G(w) = wv - F(v) + C,} & {(3.35)} \\ \end{array}$$
+$$\begin{array}{ll} {G(w) = wv - F(v) + C,} \tag{3.35} \\ \end{array}$$
 with constant /C/. The requirement for /G/ depends only on /DG/ so we can choose to define /G/ with /C/ = 0.
 
 #page(208)
 
 #### Legendre transformations with passive arguments
 Let /F/ be a real-valued function of two arguments and
-$$\begin{array}{ll} {w = \partial_{1}F(x,v).} & {(3.36)} \\ \end{array}$$
+$$\begin{array}{ll} {w = \partial_{1}F(x,v).} \tag{3.36} \\ \end{array}$$
 If we can find a real-valued function /G/ such that
-$$\begin{array}{ll} {v = \partial_{1}G(x,w)} & {(3.37)} \\ \end{array}$$
+$$\begin{array}{ll} {v = \partial_{1}G(x,w)} \tag{3.37} \\ \end{array}$$
 we say that /F/ and /G/ are related by a Legendre transformation, that the second argument in each function is /active/, and that the first argument is /passive/ in the transformation.
 
 If the function ∂_{1}/F/ can be locally inverted with respect to the second argument we can define
-$$\begin{array}{ll} {v = \mathcal{V}(x,w),} & {(3.38)} \\ \end{array}$$
+$$\begin{array}{ll} {v = \mathcal{V}(x,w),} \tag{3.38} \\ \end{array}$$
 giving
-$$\begin{array}{ll} {w = \partial_{1}F(x,\mathcal{V}(x,w)) = W(x,w),} & {(3.39)} \\ \end{array}$$
+$$\begin{array}{ll} {w = \partial_{1}F(x,\mathcal{V}(x,w)) = W(x,w),} \tag{3.39} \\ \end{array}$$
 where /W/ = /I/_{1} is the selector function for the second argument.
 
 For the active arguments the derivation goes through as before. The first argument to /F/ and /G/ is just along for the ride---it is a passive argument. Let
-$$\begin{array}{ll} {\widetilde{F}(x,w) = F(x,\mathcal{V}(x,w)),} & {(3.40)} \\ \end{array}$$
+$$\begin{array}{ll} {\widetilde{F}(x,w) = F(x,\mathcal{V}(x,w)),} \tag{3.40} \\ \end{array}$$
 then define
-$$\begin{array}{ll} {G = W\mathcal{V} - \widetilde{F}.} & {(3.41)} \\ \end{array}$$
+$$\begin{array}{ll} {G = W\mathcal{V} - \widetilde{F}.} \tag{3.41} \\ \end{array}$$
 We can check that /G/ has the property $\mathcal{V} = \partial_{1}G $ by carrying out the derivative:
-$$\begin{array}{lll} {\partial_{1}G} & {= \partial_{1}(W\mathcal{V} - \widetilde{F})} & \\  & {= \mathcal{V} + W\partial_{1}\mathcal{V} - \partial_{1}\widetilde{F},} & {(3.42)} \\ \end{array}$$
+$$\begin{array}{lll} {\partial_{1}G} & {= \partial_{1}(W\mathcal{V} - \widetilde{F})} & \\  & {= \mathcal{V} + W\partial_{1}\mathcal{V} - \partial_{1}\widetilde{F},} \tag{3.42} \\ \end{array}$$
 but
-$$\begin{array}{lll} {\partial_{1}\widetilde{F}(x,w)} & {= \partial_{1}F(x,\mathcal{V}(x,w))\partial_{1}\mathcal{V}(x,w)} & \\  & {= W(x,w)\partial_{1}\mathcal{V}(x,w),} & {(3.43)} \\ \end{array}$$
+$$\begin{array}{lll} {\partial_{1}\widetilde{F}(x,w)} & {= \partial_{1}F(x,\mathcal{V}(x,w))\partial_{1}\mathcal{V}(x,w)} & \\  & {= W(x,w)\partial_{1}\mathcal{V}(x,w),} \tag{3.43} \\ \end{array}$$
 or
-$$\begin{array}{ll} {\partial_{1}\widetilde{F} = W\partial_{1}\mathcal{V}.} & {(3.44)} \\ \end{array}$$
+$$\begin{array}{ll} {\partial_{1}\widetilde{F} = W\partial_{1}\mathcal{V}.} \tag{3.44} \\ \end{array}$$
 #page(209)
 
 So, from equation (#Eqn(chapter003,3.42,3.42)),
-$$\begin{array}{ll} {\partial_{1}G = \mathcal{V},} & {(3.45)} \\ \end{array}$$
+$$\begin{array}{ll} {\partial_{1}G = \mathcal{V},} \tag{3.45} \\ \end{array}$$
 as required. The active argument may have many components.
 
 The partial derivatives with respect to the passive arguments are related in a remarkably simple way. Let's calculate the derivative ∂_{0}/G/ in pieces. First,
-$$\begin{array}{ll} {\partial_{0}(W\mathcal{V}) = W\partial_{0}\mathcal{V}} & {(3.46)} \\ \end{array}$$
+$$\begin{array}{ll} {\partial_{0}(W\mathcal{V}) = W\partial_{0}\mathcal{V}} \tag{3.46} \\ \end{array}$$
 because ∂_{0}/W/ = 0. We calculate $\partial_{0}\widetilde{F}$:
-$$\begin{array}{lll} {\partial_{0}\widetilde{F}(x,w)} & {= \partial_{0}F(x,\mathcal{V}(x,w)) + \partial_{1}F(x,\mathcal{V}(x,w))\partial_{0}\mathcal{V}(x,w)} & \\  & {= \partial_{0}F(x,\mathcal{V}(x,w)) + W(x,w)\partial_{0}\mathcal{V}(x,w).} & {(3.47)} \\ \end{array}$$
+$$\begin{array}{lll} {\partial_{0}\widetilde{F}(x,w)} & {= \partial_{0}F(x,\mathcal{V}(x,w)) + \partial_{1}F(x,\mathcal{V}(x,w))\partial_{0}\mathcal{V}(x,w)} & \\  & {= \partial_{0}F(x,\mathcal{V}(x,w)) + W(x,w)\partial_{0}\mathcal{V}(x,w).} \tag{3.47} \\ \end{array}$$
 Putting these together, we find
-$$\begin{array}{ll} {\partial_{0}G(x,w) = - \partial_{0}F(x,\mathcal{V}(x,w)) = - \partial_{0}F(x,v).} & {(3.48)} \\ \end{array}$$
+$$\begin{array}{ll} {\partial_{0}G(x,w) = - \partial_{0}F(x,\mathcal{V}(x,w)) = - \partial_{0}F(x,v).} \tag{3.48} \\ \end{array}$$
 The calculation is unchanged if the passive argument has many components.
 
 We can write the Legendre transformation more symmetrically:
-$$\begin{array}{rlll} w & = & {\partial_{1}F(x,v)} & \\ {wv} & = & {F(x,v) + G(x,w)} & \\ v & = & {\partial_{1}G(x,w)} & \\ 0 & = & {\partial_{0}F(x,v) + \partial_{0}G(x,w).} & {(3.49)} \\ \end{array}$$
+$$\begin{array}{rlll} w & = & {\partial_{1}F(x,v)} & \\ {wv} & = & {F(x,v) + G(x,w)} & \\ v & = & {\partial_{1}G(x,w)} & \\ 0 & = & {\partial_{0}F(x,v) + \partial_{0}G(x,w).} \tag{3.49} \\ \end{array}$$
 The last relation is not as trivial as it looks, because /x/ enters the equations connecting /w/ and /v/. With this symmetrical form, we see that the Legendre transform is its own inverse.
 
 ### Exercise 3.4: Simple Legendre transforms
@@ -245,35 +245,35 @@ For each of the following functions, find the function that is related to the gi
 We can use the Legendre transformation with the Lagrangian playing the role of /F/ and with the generalized velocity slot playing the role of the active argument. The Hamiltonian plays the role of /G/ with the momentum slot active. The coordinate and time slots are passive arguments.
 
 The Lagrangian /L/ and the Hamiltonian /H/ are related by a Legendre transformation:
-$$\begin{array}{ll} {e = (\partial_{2}L)(a,b,c)} & {(3.50)} \\ \end{array}$$
-$$\begin{array}{ll} {ec = L(a,b,c) + H(a,b,e)} & {(3.51)} \\ \end{array}$$
+$$\begin{array}{ll} {e = (\partial_{2}L)(a,b,c)} \tag{3.50} \\ \end{array}$$
+$$\begin{array}{ll} {ec = L(a,b,c) + H(a,b,e)} \tag{3.51} \\ \end{array}$$
 and
-$$\begin{array}{ll} {c = (\partial_{2}H)(a,b,e),} & {(3.52)} \\ \end{array}$$
+$$\begin{array}{ll} {c = (\partial_{2}H)(a,b,e),} \tag{3.52} \\ \end{array}$$
 with passive equations
-$$\begin{array}{ll} {0 = \partial_{0}L(a,b,c) + \partial_{0}H(a,b,e),} & {(3.53)} \\ \end{array}$$
-$$\begin{array}{ll} {0 = \partial_{1}L(a,b,c) + \partial_{1}H(a,b,e).} & {(3.54)} \\ \end{array}$$
+$$\begin{array}{ll} {0 = \partial_{0}L(a,b,c) + \partial_{0}H(a,b,e),} \tag{3.53} \\ \end{array}$$
+$$\begin{array}{ll} {0 = \partial_{1}L(a,b,c) + \partial_{1}H(a,b,e).} \tag{3.54} \\ \end{array}$$
 Presuming it exists, we can define the inverse of ∂_{2}/L/ with respect to the last argument:
-$$\begin{array}{ll} {c = \mathcal{V}(a,b,e),} & {(3.55)} \\ \end{array}$$
+$$\begin{array}{ll} {c = \mathcal{V}(a,b,e),} \tag{3.55} \\ \end{array}$$
 and write the Hamiltonian
-$$\begin{array}{ll} {H(a,b,c) = c\mathcal{V}(a,b,c) - L(a,b,\mathcal{V}(a,b,c)).} & {(3.56)} \\ \end{array}$$
+$$\begin{array}{ll} {H(a,b,c) = c\mathcal{V}(a,b,c) - L(a,b,\mathcal{V}(a,b,c)).} \tag{3.56} \\ \end{array}$$
 These relations are purely algebraic in nature.
 
 On a path /q/ we have the momentum /p/:
-$$\begin{array}{ll} {p(t) = \partial_{2}L(t,q(t),Dq(t)),} & {(3.57)} \\ \end{array}$$
+$$\begin{array}{ll} {p(t) = \partial_{2}L(t,q(t),Dq(t)),} \tag{3.57} \\ \end{array}$$
 and from the definition of $\mathcal{V}$ we find
-$$\begin{array}{ll} {Dq(t) = \mathcal{V}(t,q(t),p(t)).} & {(3.58)} \\ \end{array}$$
+$$\begin{array}{ll} {Dq(t) = \mathcal{V}(t,q(t),p(t)).} \tag{3.58} \\ \end{array}$$
 #page(211)
 
 The Legendre transform gives
-$$\begin{array}{ll} {Dq(t) = \partial_{2}H(t,q(t),p(t)).} & {(3.59)} \\ \end{array}$$
+$$\begin{array}{ll} {Dq(t) = \partial_{2}H(t,q(t),p(t)).} \tag{3.59} \\ \end{array}$$
 This relation is purely algebraic and is valid for any path. The passive equation (#Eqn(chapter003,3.54,3.54)) gives
-$$\begin{array}{ll} {\partial_{1}L(t,q(t),\, Dq(t)) = - \partial_{1}H(t,q(t),p(t)),} & {(3.60)} \\ \end{array}$$
+$$\begin{array}{ll} {\partial_{1}L(t,q(t),\, Dq(t)) = - \partial_{1}H(t,q(t),p(t)),} \tag{3.60} \\ \end{array}$$
 but the left-hand side can be rewritten using the Lagrange equations, so
-$$\begin{array}{ll} {Dp(t) = - \partial_{1}H(t,q(t),p(t)).} & {(3.61)} \\ \end{array}$$
+$$\begin{array}{ll} {Dp(t) = - \partial_{1}H(t,q(t),p(t)).} \tag{3.61} \\ \end{array}$$
 This equation is valid only for realizable paths, because we used the Lagrange equations to derive it. Equations (#Eqn(chapter003,3.59,3.59)) and (#Eqn(chapter003,3.61,3.61)) are Hamilton's equations.
 
 The remaining passive equation is
-$$\begin{array}{ll} {\partial_{0}L(t,q(t),\, Dq(t)) = - \partial_{0}H(t,q(t),p(t)).} & {(3.62)} \\ \end{array}$$
+$$\begin{array}{ll} {\partial_{0}L(t,q(t),\, Dq(t)) = - \partial_{0}H(t,q(t),p(t)).} \tag{3.62} \\ \end{array}$$
 This passive equation says that the Lagrangian has no explicit time dependence (∂_{0}/L/ = 0) if and only if the Hamiltonian has no explicit time dependence (∂_{0}/H/ = 0). We have found that if the Lagrangian has no explicit time dependence, then energy is conserved. So if the Hamiltonian has no explicit time dependence then it is a conserved quantity.
 
 ### Exercise 3.5: Conservation of the Hamiltonian
@@ -286,13 +286,13 @@ We cannot implement the Legendre transform in general because it involves findin
 #page(212)
 
 More generally, we can compute a Legendre transformation for polynomial functions where the leading term is a quadratic form:
-$$\begin{array}{ll} {F(v) = \frac{1}{2}v^{\mathcal{T}}Mv + bv + c.} & {(3.63)} \\ \end{array}$$
+$$\begin{array}{ll} {F(v) = \frac{1}{2}v^{\mathcal{T}}Mv + bv + c.} \tag{3.63} \\ \end{array}$$
 Because the first term is a quadratic form only the symmetric part of /M/ contributes to the result, so we can assume /M/ is symmetric.#Footnote(12) Let /w/ = /DF/ (/v/), then
-$$\begin{array}{ll} {w = DF(v) = Mv + b.} & {(3.64)} \\ \end{array}$$
+$$\begin{array}{ll} {w = DF(v) = Mv + b.} \tag{3.64} \\ \end{array}$$
 So if /M/ is invertible we can solve for /v/ in terms of /w/. Thus we may define a function $\mathcal{V}$ such that
-$$\begin{array}{ll} {v = \mathcal{V}(w) = M^{- 1}(w - b)} & {(3.65)} \\ \end{array}$$
+$$\begin{array}{ll} {v = \mathcal{V}(w) = M^{- 1}(w - b)} \tag{3.65} \\ \end{array}$$
 and we can use this to compute the value of the function /G/:
-$$\begin{array}{ll} {G(w) = w\mathcal{V}(w) - F(\mathcal{V}(w)).} & {(3.66)} \\ \end{array}$$
+$$\begin{array}{ll} {G(w) = w\mathcal{V}(w) - F(\mathcal{V}(w)).} \tag{3.66} \\ \end{array}$$
 #### Computing Hamiltonians
 We implement the Legendre transform for quadratic functions by the procedure#Footnote(13)
 ```Scheme
@@ -346,37 +346,37 @@ is ellipsoidal, with height /z/ = /ax/^{2} + /by/^{2}. Make a Hamiltonian for th
 The previous two derivations of Hamilton's equations made use of the Lagrange equations. Hamilton's equations can also be derived directly from the action principle.
 
 The action is the integral of the Lagrangian along a path:
-$$\begin{array}{ll} {S\lbrack q\rbrack(t_{1},t_{2}) = {\int_{t_{1}}^{t_{2}}{L \circ \Gamma\lbrack q\rbrack.}}} & {(3.67)} \\ \end{array}$$
+$$\begin{array}{ll} {S\lbrack q\rbrack(t_{1},t_{2}) = {\int_{t_{1}}^{t_{2}}{L \circ \Gamma\lbrack q\rbrack.}}} \tag{3.67} \\ \end{array}$$
 The action is stationary with respect to variations of a realizable path that preserve the configuration at the endpoints (for Lagrangians that are functions of time, coordinates, and velocities).
 
 We can rewrite the integrand in terms of the Hamiltonian
-$$\begin{array}{ll} {L(t,q(t),p(t)) = p(t)Dq(t) - H(t,q(t),p(t)),} & {(3.68)} \\ \end{array}$$
+$$\begin{array}{ll} {L(t,q(t),p(t)) = p(t)Dq(t) - H(t,q(t),p(t)),} \tag{3.68} \\ \end{array}$$
 with /p/(/t/) = ∂_{2}/L/(/t/, /q/(/t/), /Dq/(/t/)). The Legendre transformation construction gives
-$$\begin{array}{ll} {Dq(t) = \partial_{2}H(t,q(t),p(t)),} & {(3.69)} \\ \end{array}$$
+$$\begin{array}{ll} {Dq(t) = \partial_{2}H(t,q(t),p(t)),} \tag{3.69} \\ \end{array}$$
 which is one of Hamilton's equations, the one that does not depend on the path being a realizable path.
 
 In order to vary the action we should make the dependences on the path explicit. We introduce
-$$\begin{array}{ll} {\widetilde{p}\lbrack q\rbrack(t) = \partial_{2}L(t,q(t),Dq(t)),} & {(3.70)} \\ \end{array}$$
+$$\begin{array}{ll} {\widetilde{p}\lbrack q\rbrack(t) = \partial_{2}L(t,q(t),Dq(t)),} \tag{3.70} \\ \end{array}$$
 and#Footnote(14)
-$$\begin{matrix} {\Pi\lbrack q\rbrack(t) = (t,q(t),\widetilde{p}\lbrack q\rbrack(t)) = (t,q(t),p(t)).} & {(3.71)} \\ \end{matrix}$$
+$$\begin{matrix} {\Pi\lbrack q\rbrack(t) = (t,q(t),\widetilde{p}\lbrack q\rbrack(t)) = (t,q(t),p(t)).} \tag{3.71} \\ \end{matrix}$$
 The integrand of the action integral is then
-$$\begin{matrix} {L \circ \Gamma\lbrack q\rbrack = \widetilde{p}\lbrack q\rbrack Dq - H \circ \Pi\lbrack q\rbrack.} & {(3.72)} \\ \end{matrix}$$
+$$\begin{matrix} {L \circ \Gamma\lbrack q\rbrack = \widetilde{p}\lbrack q\rbrack Dq - H \circ \Pi\lbrack q\rbrack.} \tag{3.72} \\ \end{matrix}$$
 #page(216)
 
 Using the shorthand /δp/ for $\delta\widetilde{p}\lbrack q\rbrack $,#Footnote(15) and noting that $ p = \widetilde{p}\lbrack q\rbrack $, the variation of the action is
-$$\begin{array}{lll} {\delta S\lbrack q\rbrack} & {(t_{1},t_{2})} & \\  & {= {\int_{t_{1}}^{t_{2}}{(\delta p\, Dq\, + p\,\,\delta Dq - (DH \circ \Pi\lbrack q\rbrack)\delta\Pi\lbrack q\rbrack)}}} & \\  & \begin{array}{l} {= {\int_{t_{1}}^{t_{2}}\left\{ \delta p\, Dq\, + p\, D\delta q \right.}} \\ {\left. \,\,\,\,\,\,\,\,\, - (\partial_{1}H \circ \Pi\lbrack q\rbrack)\delta q - (\partial_{2}H \circ \Pi\lbrack q\rbrack)\delta p \right\}.} \\ \end{array} & {(3.73)} \\ \end{array}$$
+$$\begin{array}{lll} {\delta S\lbrack q\rbrack} & {(t_{1},t_{2})} & \\  & {= {\int_{t_{1}}^{t_{2}}{(\delta p\, Dq\, + p\,\,\delta Dq - (DH \circ \Pi\lbrack q\rbrack)\delta\Pi\lbrack q\rbrack)}}} & \\  & \begin{array}{l} {= {\int_{t_{1}}^{t_{2}}\left\{ \delta p\, Dq\, + p\, D\delta q \right.}} \\ {\left. \,\,\,\,\,\,\,\,\, - (\partial_{1}H \circ \Pi\lbrack q\rbrack)\delta q - (\partial_{2}H \circ \Pi\lbrack q\rbrack)\delta p \right\}.} \\ \end{array} \tag{3.73} \\ \end{array}$$
 Integrating the second term by parts, using /D/(/pδq/) = /Dpδq/ + /pDδq/, we get
-$$\begin{array}{lll} {\delta S\lbrack q\rbrack} & {(t_{1},t_{2}) = p\delta q|_{t_{1}}^{t_{2}}} & \\  & {+ {\int_{t_{1}}^{t_{2}}{\{\delta p\, Dq\, - Dp\,\,\delta q}}} & \\  & {\left. \,\,\,\,\,\, - (\partial_{1}H \circ \Pi\lbrack q\rbrack)\delta q - (\partial_{2}H \circ \Pi\lbrack q\rbrack)\delta p \right\}.} & {(3.74)} \\ \end{array}$$
+$$\begin{array}{lll} {\delta S\lbrack q\rbrack} & {(t_{1},t_{2}) = p\delta q|_{t_{1}}^{t_{2}}} & \\  & {+ {\int_{t_{1}}^{t_{2}}{\{\delta p\, Dq\, - Dp\,\,\delta q}}} & \\  & {\left. \,\,\,\,\,\, - (\partial_{1}H \circ \Pi\lbrack q\rbrack)\delta q - (\partial_{2}H \circ \Pi\lbrack q\rbrack)\delta p \right\}.} \tag{3.74} \\ \end{array}$$
 The variations are constrained so that /δq/(/t/_{1}) = /δq/(/t/_{2}) = 0, so the integrated part vanishes. Rearranging terms, the variation of the action is
-$$\begin{array}{ll} {\delta S\lbrack q\rbrack(t_{1},t_{2})} & \\ {\,\,\,\,\,\, = {\int_{t_{1}}^{t_{2}}{((Dq - \partial_{2}H \circ \Pi\lbrack q\rbrack)\,\delta p - (Dp + \partial_{1}H \circ \Pi\lbrack q\rbrack)\delta q).}}} & {(3.75)} \\ \end{array}$$
+$$\begin{array}{ll} {\delta S\lbrack q\rbrack(t_{1},t_{2})} & \\ {\,\,\,\,\,\, = {\int_{t_{1}}^{t_{2}}{((Dq - \partial_{2}H \circ \Pi\lbrack q\rbrack)\,\delta p - (Dp + \partial_{1}H \circ \Pi\lbrack q\rbrack)\delta q).}}} \tag{3.75} \\ \end{array}$$
 As a consequence of equation (#Eqn(chapter003,3.69,3.69)), the factor multiplying /δp/ is zero. We are left with
-$$\begin{matrix} {\delta S\lbrack q\rbrack(t_{1},t_{2}) = - {\int_{t_{1}}^{t_{2}}{(Dp + \partial_{1}H \circ \Pi\lbrack q\rbrack)\,\delta q.}}} & {(3.76)} \\ \end{matrix}$$
+$$\begin{matrix} {\delta S\lbrack q\rbrack(t_{1},t_{2}) = - {\int_{t_{1}}^{t_{2}}{(Dp + \partial_{1}H \circ \Pi\lbrack q\rbrack)\,\delta q.}}} \tag{3.76} \\ \end{matrix}$$
 For the variation of the action to be zero for arbitrary variations, except for the endpoint conditions, we must have
-$$\begin{matrix} {Dp = - \partial_{1}H \circ \Pi\lbrack q\rbrack,} & {(3.77)} \\ \end{matrix}$$
+$$\begin{matrix} {Dp = - \partial_{1}H \circ \Pi\lbrack q\rbrack,} \tag{3.77} \\ \end{matrix}$$
 #page(217)
 
 or
-$$\begin{matrix} {Dp = - \partial_{1}H(t,q(t),\, p(t)),} & {(3.78)} \\ \end{matrix}$$
+$$\begin{matrix} {Dp = - \partial_{1}H(t,q(t),\, p(t)),} \tag{3.78} \\ \end{matrix}$$
 which is the “dynamical” Hamilton equation.#Footnote(16)
 
 ##### 3.1.3 A Wiring Diagram
@@ -390,11 +390,11 @@ device) to the ∂_{1}/H/ terminal of the Hamiltonian device. The other is just 
 
 ### 3.2 Poisson Brackets
 Here we introduce the Poisson bracket, in terms of which Hamilton's equations have an elegant and symmetric expression. Consider a function /F/ of time, coordinates, and momenta. The value of /F/ along the path /σ/(/t/) = (/t/, /q/(/t/), /p/(/t/)) is (/F/ ∘ /σ/)(/t/) = /F/ (/t/, /q/(/t/), /p/(/t/)). The time derivative of /F/ ∘ /σ/ is
-$$\begin{array}{lll} {D(F \circ \sigma)} & {= (DF \circ \sigma)D\sigma} & \\  & {= \partial_{0}F \circ \sigma + (\partial_{1}F \circ \sigma)Dq + (\partial_{2}F \circ \sigma)Dp.} & {(3.79)} \\  & & \\ \end{array}$$
+$$\begin{array}{lll} {D(F \circ \sigma)} & {= (DF \circ \sigma)D\sigma} & \\  & {= \partial_{0}F \circ \sigma + (\partial_{1}F \circ \sigma)Dq + (\partial_{2}F \circ \sigma)Dp.} \tag{3.79} \\  & & \\ \end{array}$$
 If the phase-space path is a realizable path for a system with Hamiltonian /H/, then /Dq/ and /Dp/ can be reexpressed using Hamilton's equations:
-$$\begin{array}{lll} {D(F \circ \sigma)} & {= \partial_{0}F \circ \sigma + (\partial_{1}F \circ \sigma)(\partial_{2}H \circ \sigma) - (\partial_{2}F \circ \sigma)(\partial_{1}H \circ \sigma)} & \\  & {= \partial_{0}F \circ \sigma + (\partial_{1}F\partial_{2}H - \partial_{2}F\partial_{1}H) \circ \sigma} & \\  & {= \partial_{0}F \circ \sigma + \left\{ F,H \right\} \circ \sigma} & {(3.80)} \\ \end{array}$$
+$$\begin{array}{lll} {D(F \circ \sigma)} & {= \partial_{0}F \circ \sigma + (\partial_{1}F \circ \sigma)(\partial_{2}H \circ \sigma) - (\partial_{2}F \circ \sigma)(\partial_{1}H \circ \sigma)} & \\  & {= \partial_{0}F \circ \sigma + (\partial_{1}F\partial_{2}H - \partial_{2}F\partial_{1}H) \circ \sigma} & \\  & {= \partial_{0}F \circ \sigma + \left\{ F,H \right\} \circ \sigma} \tag{3.80} \\ \end{array}$$
 where the /Poisson bracket/ {F, H} of /F/ and /H/ is defined by#Footnote(17)
-$$\begin{array}{ll} {\left\{ F,H \right\} = \partial_{1}F\partial_{2}H - \partial_{2}F\partial_{1}H.} & {(3.81)} \\ \end{array}$$
+$$\begin{array}{ll} {\left\{ F,H \right\} = \partial_{1}F\partial_{2}H - \partial_{2}F\partial_{1}H.} \tag{3.81} \\ \end{array}$$
 Note that the Poisson bracket of two functions on the phase-state space is also a function on the phase-state space.
 
 #page(219)
@@ -405,31 +405,31 @@ Note that the Poisson bracket of two functions on the phase-state space is also 
 #page(220)
 
 The coordinate selector /Q/ = /I/_{1} is an example of a function on phase-state space: /Q/(/t/, /q/, /p/) = /q/. According to equation (#Eqn(chapter003,3.80,3.80)),
-$$\begin{array}{ll} {Dq = D(Q \circ \sigma) = \left\{ Q,H \right\} \circ \sigma = \partial_{2}H \circ \sigma,} & {(3.82)} \\ \end{array}$$
+$$\begin{array}{ll} {Dq = D(Q \circ \sigma) = \left\{ Q,H \right\} \circ \sigma = \partial_{2}H \circ \sigma,} \tag{3.82} \\ \end{array}$$
 but this is the same as Hamilton's equation
-$$\begin{array}{ll} {Dq(t) = \partial_{2}H(t,q(t),p(t)).} & {(3.83)} \\ \end{array}$$
+$$\begin{array}{ll} {Dq(t) = \partial_{2}H(t,q(t),p(t)).} \tag{3.83} \\ \end{array}$$
 Similarly, the momentum selector /P/ = /I/_{2} is a function on phase-state space: /P/ (/t/, /q/, /p/) = /p/. We have
-$$\begin{array}{ll} {Dp = D(P \circ \sigma) = \left\{ P,H \right\} \circ \sigma = - \partial_{1}H \circ \sigma,} & {(3.84)} \\ \end{array}$$
+$$\begin{array}{ll} {Dp = D(P \circ \sigma) = \left\{ P,H \right\} \circ \sigma = - \partial_{1}H \circ \sigma,} \tag{3.84} \\ \end{array}$$
 which is the same as Hamilton's other equation
-$$\begin{array}{ll} {Dp(t) = - \partial_{1}H(t,q(t),p(t)).} & {(3.85)} \\ \end{array}$$
+$$\begin{array}{ll} {Dp(t) = - \partial_{1}H(t,q(t),p(t)).} \tag{3.85} \\ \end{array}$$
 So the Poisson bracket provides a uniform way of writing Hamilton's equations:
-$$\begin{array}{ll} {D(Q \circ \sigma) = \left\{ Q,H \right\} \circ \sigma} & \\ {D(P \circ \sigma) = \left\{ P,H \right\} \circ \sigma.} & {(3.86)} \\ \end{array}$$
+$$\begin{array}{ll} {D(Q \circ \sigma) = \left\{ Q,H \right\} \circ \sigma} & \\ {D(P \circ \sigma) = \left\{ P,H \right\} \circ \sigma.} \tag{3.86} \\ \end{array}$$
 The Poisson bracket of any function with itself is zero, so we recover the conservation of energy for a system that has no explicit time dependence:
-$$\begin{matrix} {DE = D(H \circ \sigma) = (\partial_{0}H + \left\{ H,H \right\}) \circ \sigma = \partial_{0}H \circ \sigma.} & {(3.87)} \\ \end{matrix}$$
+$$\begin{matrix} {DE = D(H \circ \sigma) = (\partial_{0}H + \left\{ H,H \right\}) \circ \sigma = \partial_{0}H \circ \sigma.} \tag{3.87} \\ \end{matrix}$$
 #### Properties of the Poisson bracket
 Let /F/, /G/, and /H/ be functions of time, position, and momentum, and let /c/ be independent of position and momentum.
 
 The Poisson bracket is antisymmetric:
-$$\begin{matrix} {\left\{ F,G \right\} = - \left\{ G,F \right\}.} & {(3.88)} \\ \end{matrix}$$
+$$\begin{matrix} {\left\{ F,G \right\} = - \left\{ G,F \right\}.} \tag{3.88} \\ \end{matrix}$$
 It is bilinear (linear in each argument):
-$$\begin{array}{rll} \left\{ {F,G + H} \right\} & {= \left\{ {F,G} \right\} + \left\{ {F,H} \right\}} & {(3.89)} \\ \end{array}$$
-$$\begin{array}{rll} \left\{ {F,cG} \right\} & {= c\left\{ {F,G} \right\}} & {(3.90)} \\ \end{array}$$
-$$\begin{array}{rll} \left\{ {F + G,H} \right\} & {= \left\{ {F,H} \right\} + \left\{ {G,H} \right\}} & {(3.91)} \\ \end{array}$$
-$$\begin{array}{rll} \left\{ {cF,G} \right\} & {= c\left\{ {F,G} \right\}.} & {(3.92)} \\ \end{array}$$
+$$\begin{array}{rll} \left\{ {F,G + H} \right\} & {= \left\{ {F,G} \right\} + \left\{ {F,H} \right\}} \tag{3.89} \\ \end{array}$$
+$$\begin{array}{rll} \left\{ {F,cG} \right\} & {= c\left\{ {F,G} \right\}} \tag{3.90} \\ \end{array}$$
+$$\begin{array}{rll} \left\{ {F + G,H} \right\} & {= \left\{ {F,H} \right\} + \left\{ {G,H} \right\}} \tag{3.91} \\ \end{array}$$
+$$\begin{array}{rll} \left\{ {cF,G} \right\} & {= c\left\{ {F,G} \right\}.} \tag{3.92} \\ \end{array}$$
 #page(221)
 
 The Poisson bracket satisfies Jacobi's identity:
-$$\begin{matrix} {0 = \left\{ F,\left\{ \, G,H \right\} \right\} + \left\{ H,\left\{ F,G \right\} \right\} + \left\{ G,\left\{ H,F \right\} \right\}.} & {(3.93)} \\ \end{matrix}$$
+$$\begin{matrix} {0 = \left\{ F,\left\{ \, G,H \right\} \right\} + \left\{ H,\left\{ F,G \right\} \right\} + \left\{ G,\left\{ H,F \right\} \right\}.} \tag{3.93} \\ \end{matrix}$$
 All but the last of #Eqn(chapter003,3.88,3.88)--#Eqn(chapter003,3.93,3.93) can immediately be verified from the definition. Jacobi's identity requires a little more effort to verify. We can use the computer to avoid some work. Define some literal phase-space functions of Hamiltonian type:
 ```Scheme
 (define F (literal-function 'F (-> (UP Real (UP Real Real) (DOWN Real Real)) Real))) (define G (literal-function 'G (-> (UP Real (UP Real Real) (DOWN Real Real)) Real))) (define H (literal-function 'H (-> (UP Real (UP Real Real) (DOWN Real Real)) Real))) 
@@ -445,13 +445,13 @@ The residual is zero, so the Jacobi identity is satisfied for any three phase-sp
 
 #### Poisson brackets of conserved quantities
 The Poisson bracket of conserved quantities is conserved. Let /F/ and /G/ be time-independent phase-space state functions: ∂_{0}/F/ = ∂_{0}/G/ = 0. If /F/ and /G/ are conserved by the evolution under /H/ then
-$$\begin{array}{ll} {0 = D(F \circ \sigma) = \left\{ F,H \right\} \circ \sigma} & \\ {0 = D(G \circ \sigma) = \left\{ G,H \right\} \circ \sigma.} & {(3.94)} \\ \end{array}$$
+$$\begin{array}{ll} {0 = D(F \circ \sigma) = \left\{ F,H \right\} \circ \sigma} & \\ {0 = D(G \circ \sigma) = \left\{ G,H \right\} \circ \sigma.} \tag{3.94} \\ \end{array}$$
 So the Poisson brackets of /F/ and /G/ with /H/ are zero: {F, H} = {G, H} = 0. The Jacobi identity then implies
-$$\begin{array}{ll} {\left\{ \left\{ F,\, G \right\},\, H \right\} = 0,} & {(3.95)} \\ \end{array}$$
+$$\begin{array}{ll} {\left\{ \left\{ F,\, G \right\},\, H \right\} = 0,} \tag{3.95} \\ \end{array}$$
 #page(222)
 
 and thus
-$$\begin{array}{ll} {D(\left\{ F,\, G \right\} \circ \sigma) = 0,} & {(3.96)} \\ \end{array}$$
+$$\begin{array}{ll} {D(\left\{ F,\, G \right\} \circ \sigma) = 0,} \tag{3.96} \\ \end{array}$$
 so {/F, G/} is a conserved quantity. The Poisson bracket of two conserved quantities is also a conserved quantity.
 
 ### 3.3 One Degree of Freedom
@@ -480,11 +480,11 @@ Let /H/(/t/, /q/, /p/) be a Hamiltonian for some problem with an /n-/dimensional
 #Caption *Figure 3.4* Contours of the Hamiltonian for the undriven pendulum on the phase plane. The horizontal axis is the angle /θ/ and the vertical axis is the conjugate angular momentum /p_{θ}/. All realizable trajectories lie on contours of the Hamiltonian. There are three regions in this contour graph, displaying two distinct kinds of behavior. For small energy the pendulum oscillates, producing trajectories that are ovoid curves around the stable equilibrium point at the center. For larger energy the pendulum circulates, producing wavy tracks outside the eye-shaped region of oscillation. The oscillation region is separated from the circulation regions by the separatrix, which emanates from the unstable equilibrium at (±/π/, 0). The pendulum has length 1m and a bob of mass 1kg. The acceleration of gravity is 9.8 m s^{−2}. #CaptionEnd
 
 Contrast this result with analogous results for more general systems of differential equations. There are two independent situations. One situation is that we know a constant of the motion. In general, constants of the motion can be used to reduce by one the dimension of the unsolved part of the problem. To see this, let the system of equations be
-$$\begin{array}{ll} {Dz^{i}(t) = F^{i}(z^{0}(t),\, z^{1}(t),...,z^{m - 1}(t)),} & {(3.97)} \\ \end{array}$$
+$$\begin{array}{ll} {Dz^{i}(t) = F^{i}(z^{0}(t),\, z^{1}(t),...,z^{m - 1}(t)),} \tag{3.97} \\ \end{array}$$
 #page(226)
 
 where /m/ is the dimension of the system. Assume we know some constant of the motion
-$$\begin{array}{ll} {C(z^{0}(t),\, z^{1}(t),...,z^{m - 1}(t)) = 0.} & {(3.98)} \\ \end{array}$$
+$$\begin{array}{ll} {C(z^{0}(t),\, z^{1}(t),...,z^{m - 1}(t)) = 0.} \tag{3.98} \\ \end{array}$$
 At least locally, we expect that we can use this equation to solve for /z/^{m−1}(/t/) in terms of all the other variables, and use this solution to eliminate the dependence on /z/^{m−1}(/t/). The first /m/−1 equations then depend only upon the first /m/ − 1 variables. The dimension of the system of equations to be solved is reduced by one. After the solution for the other variables has been found, /z/^{m−1}(/t/) can be found using the constant of the motion.
 
 The second situation is that one of the variables, say /z^{i}/, does not appear in the equations of motion (but there is an equation for /Dz^{i}/). In this case the equations for the other variables form an independent set of equations of one dimension less than the original system. After these are solved, then the remaining equation for /z^{i}/ can be solved by definite integration.
@@ -497,11 +497,11 @@ So if there is a continuous symmetry it will probably be to our advantage to cho
 
 #### Motion in a central potential
 Consider the motion of a particle of mass /m/ in a central potential. A natural choice for generalized coordinates that reflects the symmetry is polar coordinates. A Lagrangian is (equation #Eqn(chapter001,1.69,1.69)):
-$$\begin{array}{ll} {L(t;r,\varphi;\dot{r},\dot{\varphi}) = \frac{1}{2}m({\dot{r}}^{2} + r^{2}{\dot{\varphi}}^{2}) - V(r).} & {(3.99)} \\ \end{array}$$
+$$\begin{array}{ll} {L(t;r,\varphi;\dot{r},\dot{\varphi}) = \frac{1}{2}m({\dot{r}}^{2} + r^{2}{\dot{\varphi}}^{2}) - V(r).} \tag{3.99} \\ \end{array}$$
 The momenta are /p_{r}/ = /mṙ/ and $ p_{\varphi} = mr^{2}\dot{\varphi}$. The kinetic energy is a homogeneous quadratic form in the velocities, so the Hamiltonian is /T/ + /V/ with the velocities rewritten in terms of the momenta:
-$$\begin{matrix} {H\left( {t;r,\varphi;p_{r},p_{\varphi}} \right) = \frac{p_{r}^{2}}{2m} + \frac{p_{\varphi}^{2}}{2mr^{2}} + V\left( r \right).} & {(3.100)} \\ \end{matrix}$$
+$$\begin{matrix} {H\left( {t;r,\varphi;p_{r},p_{\varphi}} \right) = \frac{p_{r}^{2}}{2m} + \frac{p_{\varphi}^{2}}{2mr^{2}} + V\left( r \right).} \tag{3.100} \\ \end{matrix}$$
 Hamilton's equations are
-$$\begin{array}{rcl} {Dr(t)} & {= \frac{p_{r}(t)}{m}} & \\ {D\varphi(t)} & {= \frac{p_{\varphi}(t)}{m{(r(t))}^{2}}} & \\ {Dp_{r}(t)} & {= \frac{{(p_{\varphi}(t))}^{2}}{m{(r(t))}^{3}} - DV(r(t))} & \\ {Dp_{\varphi}(t)} & {= 0.} & {(3.101)} \\ \end{array}$$
+$$\begin{array}{rcl} {Dr(t)} & {= \frac{p_{r}(t)}{m}} & \\ {D\varphi(t)} & {= \frac{p_{\varphi}(t)}{m{(r(t))}^{2}}} & \\ {Dp_{r}(t)} & {= \frac{{(p_{\varphi}(t))}^{2}}{m{(r(t))}^{3}} - DV(r(t))} & \\ {Dp_{\varphi}(t)} & {= 0.} \tag{3.101} \\ \end{array}$$
 The potential energy depends on the distance from the origin, /r/, as does the kinetic energy in polar coordinates, but neither the potential energy nor the kinetic energy depends on the polar angle /φ/. The angle /φ/ does not appear in the Lagrangian so we know that /p/_{φ}, the momentum conjugate to /φ/, is conserved along realizable trajectories. The fact that /p/_{φ} is constant along realizable paths is expressed by one of Hamilton's equations. That /p/_{φ} has a constant value is immediately made use of in the other Hamilton's equations: the remaining equations are a self-contained subsystem with constant /p/_{φ}. To make a lower-dimensional subsystem in the Lagrangian formulation we have to use each conserved momentum to eliminate one of the other state variables, as we did for the axisymmetric top (see [section 2.10](chapter002!section_2.10)).
 
 We can check our derivations with the computer. A procedure implementing the Lagrangian has already been introduced (below equation #Eqn(chapter001,1.69,1.69)). We can use this to get the Hamiltonian:
@@ -537,13 +537,13 @@ $\begin{array}{ll} \frac{\frac{1}{2}p_{\psi}^{2}}{C} & {+ \frac{\frac{1}{2}p_{\p
 For given values of /p/_{φ} and /p_{ψ}/ we must determine the evolution of /θ/ and /p_{θ}/. The effective Hamiltonian for /θ/ and /p_{θ}/ has one degree of freedom, and does not involve the time. Thus the value of the Hamiltonian is conserved along realizable trajectories. So the trajectories of /θ/ and /p_{θ}/ trace contours of the effective Hamiltonian. This gives us a big picture of the possible types of motion and their relationship, for given values of /p/_{φ} and /p_{ψ}/.
 
 If the top is standing vertically then /p/_{φ} = /p_{ψ}/. Let's concentrate on the case that /p/_{φ} = /p_{ψ}/, and define /p/ = /p_{ψ}/ = /p/_{φ}. The effective Hamiltonian becomes (after a little trigonometric simplification)
-$$\begin{array}{ll} {H_{p}(t,\theta,p_{\theta}) = \frac{p_{\theta}^{2}}{2A} + \frac{p^{2}}{2C} + \frac{p^{2}}{2A}{\tan}^{2}\frac{\theta}{2} + gMR\cos\theta.} & {(3.102)} \\ \end{array}$$
+$$\begin{array}{ll} {H_{p}(t,\theta,p_{\theta}) = \frac{p_{\theta}^{2}}{2A} + \frac{p^{2}}{2C} + \frac{p^{2}}{2A}{\tan}^{2}\frac{\theta}{2} + gMR\cos\theta.} \tag{3.102} \\ \end{array}$$
 Defining the effective potential energy
-$$\begin{array}{ll} {V_{p}(\theta) = \frac{p^{2}}{2C} + \frac{p^{2}}{2A}{\tan}^{2}\frac{\theta}{2} + gMR\cos\theta,} & {(3.103)} \\ \end{array}$$
+$$\begin{array}{ll} {V_{p}(\theta) = \frac{p^{2}}{2C} + \frac{p^{2}}{2A}{\tan}^{2}\frac{\theta}{2} + gMR\cos\theta,} \tag{3.103} \\ \end{array}$$
 which parametrically depends on /p/, the effective Hamiltonian is
-$$\begin{array}{ll} {H_{p}(t,\theta,p_{\theta}) = \frac{p_{\theta}^{2}}{2A} + V_{p}(\theta).} & {(3.104)} \\ \end{array}$$
+$$\begin{array}{ll} {H_{p}(t,\theta,p_{\theta}) = \frac{p_{\theta}^{2}}{2A} + V_{p}(\theta).} \tag{3.104} \\ \end{array}$$
 If /p/ is large, /V_{p}/ has a single minimum at /θ/ = 0, as seen in [figure 3.5](#figure_3.5) (top curve). For small /p/ (bottom curve) there is a minimum for finite positive /θ/ and a symmetrical minimum for negative /θ/; there is a local maximum at /θ/ = 0. There is a critical value of /p/ at which /θ/ = 0 changes from a minimum to a local maximum. Denote the critical value by /p_{c}/. A simple calculation shows $ p_{c} = \sqrt{4gMRA}$. For /θ/ = 0 we have /p/ = /Cω/, where /ω/ is the rotation rate. Thus to /p_{c}/ there corresponds a critical rotation rate
-$$\begin{array}{ll} {\omega_{c} = \sqrt{4gMRA}/C.} & {(3.105)} \\ \end{array}$$
+$$\begin{array}{ll} {\omega_{c} = \sqrt{4gMRA}/C.} \tag{3.105} \\ \end{array}$$
 #page(231)
 
 #Image(Art_P708.jpg,figure_3.5)
@@ -582,38 +582,38 @@ which the momenta conjugate to the cyclic coordinates are parameters. We can for
 Divide the tuple /q/ of coordinates into two subtuples /q/ = (/x/, /y/). Assume /L/(/t/; /x/, /y/; /v_{x}/, /v_{y}/) is a Lagrangian for the system. Define the /Routhian R/ as the Legendre transform of /L/ with respect to the /v_{y}/ slot:
 
 #page(235)
-$$\begin{aligned} {p_{y} = \partial_{2,1}L(t;x,y;v_{x},v_{y})} & {(3.106)} \\ \end{aligned}$$
-$$\begin{aligned} {p_{y}v_{y} = R(t;x,y;v_{x},p_{y}) + L(t;x,y;v_{x},v_{y})} & {(3.107)} \\ \end{aligned}$$
-$$\begin{aligned} {v_{y} = \partial_{2,1}R(t;x,y;v_{x},p_{y})} & {(3.108)} \\ \end{aligned}$$
-$$\begin{aligned} {0 = \partial_{0}R(t;x,y;v_{x},p_{y}) + \partial_{0}L(t;x,y;v_{x},v_{y})} & {(3.109)} \\ \end{aligned}$$
-$$\begin{aligned} {0 = \partial_{1}R(t;x,y;v_{x},p_{y}) + \partial_{1}L(t;x,y;v_{x},v_{y})} & {(3.110)} \\ \end{aligned}$$
-$$\begin{aligned} {0 = \partial_{2,0}R(t;x,y;v_{x},p_{y}) + \partial_{2,0}L(t;x,y;v_{x},v_{y}).} & {(3.111)} \\ \end{aligned}$$
+$$\begin{aligned} {p_{y} = \partial_{2,1}L(t;x,y;v_{x},v_{y})} \tag{3.106} \\ \end{aligned}$$
+$$\begin{aligned} {p_{y}v_{y} = R(t;x,y;v_{x},p_{y}) + L(t;x,y;v_{x},v_{y})} \tag{3.107} \\ \end{aligned}$$
+$$\begin{aligned} {v_{y} = \partial_{2,1}R(t;x,y;v_{x},p_{y})} \tag{3.108} \\ \end{aligned}$$
+$$\begin{aligned} {0 = \partial_{0}R(t;x,y;v_{x},p_{y}) + \partial_{0}L(t;x,y;v_{x},v_{y})} \tag{3.109} \\ \end{aligned}$$
+$$\begin{aligned} {0 = \partial_{1}R(t;x,y;v_{x},p_{y}) + \partial_{1}L(t;x,y;v_{x},v_{y})} \tag{3.110} \\ \end{aligned}$$
+$$\begin{aligned} {0 = \partial_{2,0}R(t;x,y;v_{x},p_{y}) + \partial_{2,0}L(t;x,y;v_{x},v_{y}).} \tag{3.111} \\ \end{aligned}$$
 To define the function /R/ we must solve equation (#Eqn(chapter003,3.106,3.106)) for /v_{y}/ in terms of the other variables, and substitute this into equation (#Eqn(chapter003,3.107,3.107)).
 
 Define the state path Ξ:
-$$\begin{array}{ll} {\Xi(t) = (t;x(t),y(t);Dx(t),p_{y}(t)),} & {(3.112)} \\ \end{array}$$
+$$\begin{array}{ll} {\Xi(t) = (t;x(t),y(t);Dx(t),p_{y}(t)),} \tag{3.112} \\ \end{array}$$
 where
-$$\begin{array}{ll} {p_{y}(t) = \partial_{2,1}L(t;x(t),y(t);Dx(t),Dy(t)).} & {(3.113)} \\ \end{array}$$
+$$\begin{array}{ll} {p_{y}(t) = \partial_{2,1}L(t;x(t),y(t);Dx(t),Dy(t)).} \tag{3.113} \\ \end{array}$$
 Realizable paths satisfy the equations of motion (see [exercise 3.9](#exercise_3.9))
-$$\begin{array}{ll} {D(\partial_{2,0}R \circ \Xi)(t) = \partial_{1,0}R \circ \Xi(t)} & {(3.114)} \\ \end{array}$$
-$$\begin{array}{ll} {Dy(t) = \partial_{2,1}R \circ \Xi(t)} & {(3.115)} \\ \end{array}$$
-$$\begin{array}{ll} {Dp_{y}(t) = - \partial_{1,1}R \circ \Xi(t),} & {(3.116)} \\ \end{array}$$
+$$\begin{array}{ll} {D(\partial_{2,0}R \circ \Xi)(t) = \partial_{1,0}R \circ \Xi(t)} \tag{3.114} \\ \end{array}$$
+$$\begin{array}{ll} {Dy(t) = \partial_{2,1}R \circ \Xi(t)} \tag{3.115} \\ \end{array}$$
+$$\begin{array}{ll} {Dp_{y}(t) = - \partial_{1,1}R \circ \Xi(t),} \tag{3.116} \\ \end{array}$$
 which are Lagrange's equations for /x/ and Hamilton's equations for /y/ and /p_{y}/.
 
 Now suppose that the Lagrangian is cyclic in /y/. Then ∂_{1,1}/L/ = ∂_{1,1}/R/ = 0, and /p_{y}/(/t/) is a constant /c/ on any realizable path. Equation (#Eqn(chapter003,3.114,3.114)) does not depend on /y/, by assumption, and we can replace /p_{y}/ by its constant value /c/. So equation (#Eqn(chapter003,3.114,3.114)) forms a closed subsystem for the path /x/. The Lagrangian /L_{c}/
-$$\begin{array}{ll} {L_{c}(t,x,v_{x}) = - R(t;x, \bullet ;v_{x},c)} & {(3.117)} \\ \end{array}$$
+$$\begin{array}{ll} {L_{c}(t,x,v_{x}) = - R(t;x, \bullet ;v_{x},c)} \tag{3.117} \\ \end{array}$$
 describes the motion of the subsystem (the minus sign is introduced for convenience, and ● indicates that the function's value is independent of this argument). The path /y/ can be found by integrating equation (#Eqn(chapter003,3.115,3.115)) using the independently determined path /x/.
 
 #page(236)
 
 Define the action
-$$\begin{array}{ll} {S_{c}^{\prime}\lbrack x\rbrack(t_{1},t_{2}) = {\int_{t_{1}}^{t_{2}}L_{c}} \circ \Gamma\lbrack x\rbrack.} & {(3.118)} \\ \end{array}$$
+$$\begin{array}{ll} {S_{c}^{\prime}\lbrack x\rbrack(t_{1},t_{2}) = {\int_{t_{1}}^{t_{2}}L_{c}} \circ \Gamma\lbrack x\rbrack.} \tag{3.118} \\ \end{array}$$
 The realizable paths /x/ satisfy the Lagrange equations with the Lagrangian /L_{c}/, so the action $ S_{c}^{\prime}$ is stationary with respect to variations /ξ/ of /x/ that are zero at the end times:
-$$\begin{array}{ll} {\delta_{\xi}S_{c}^{\prime}(t_{1},t_{2}) = 0.} & {(3.119)} \\ \end{array}$$
+$$\begin{array}{ll} {\delta_{\xi}S_{c}^{\prime}(t_{1},t_{2}) = 0.} \tag{3.119} \\ \end{array}$$
 For realizable paths /q/ the action $S[q](t_{1}, t_{2})$ is stationary with respect to variations /η/ of /q/ that are zero at the end times. Along these paths the momentum /p_{y}/(/t/) has the constant value /c/. For these same paths the action $ S_{c}^{\prime}\left\lbrack x \right\rbrack\left( {t_{1},t_{2}} \right)$ is stationary with respect to variations /ξ/ of /x/ that are zero at the end times. The dimension of /ξ/ is smaller than the dimension of /η/.
 
 The values of the actions $ S_{c}^{\prime}\left\lbrack x \right\rbrack\left( {t_{1},t_{2}} \right)$ and $S[q](t_{1}, t_{2})$ are related:
-$$\begin{array}{cll} {S\lbrack q\rbrack(t_{1},t_{2})} & {= S_{c}^{\prime}\lbrack x\rbrack - {\int_{t_{1}}^{t_{2}}{cv_{y}}}} & \\  & {= S_{c}^{\prime}\lbrack x\rbrack - c(y(t_{2}) - y(t_{1})).} & {(3.120)} \\ \end{array}$$
+$$\begin{array}{cll} {S\lbrack q\rbrack(t_{1},t_{2})} & {= S_{c}^{\prime}\lbrack x\rbrack - {\int_{t_{1}}^{t_{2}}{cv_{y}}}} & \\  & {= S_{c}^{\prime}\lbrack x\rbrack - c(y(t_{2}) - y(t_{1})).} \tag{3.120} \\ \end{array}$$
 ### Exercise 3.9: Routhian equations of motion
 
 Verify that the equations of motion are given by equations #Eqn(chapter003,3.114,3.114)--#Eqn(chapter003,3.116,3.116).
@@ -648,9 +648,9 @@ We are familiar with the fact that a given motion of a system is expressed diffe
 #page(239)
 
 We have already seen two different Lagrangians for the driven pendulum (see [section 1.6.4](chapter001!section_1.6.4)): one was found using /L/ = /T/ −/V/ and the other was found by inspection of the equations of motion. The two Lagrangians differ by a total time derivative. The momentum /p_{θ}/ conjugate to /θ/ depends on which Lagrangian we choose to work with, and the description of the evolution in the corresponding phase space also depends on the choice of Lagrangian, even though the behavior of the system is independent of the method used to describe it. The momentum conjugate to /θ/, using the /L/ = /T/ − /V/ Lagrangian for the periodically driven pendulum, is
-$$\begin{array}{ll} {p_{\theta} = ml^{2}\dot{\theta} - alm\omega\,\sin\,\theta\,\sin\,\omega t,} & {(3.121)} \\ \end{array}$$
+$$\begin{array}{ll} {p_{\theta} = ml^{2}\dot{\theta} - alm\omega\,\sin\,\theta\,\sin\,\omega t,} \tag{3.121} \\ \end{array}$$
 but with the alternative Lagrangian, it is
-$$\begin{array}{ll} {p_{\theta} = ml^{2}\dot{\theta}.} & {(3.122)} \\ \end{array}$$
+$$\begin{array}{ll} {p_{\theta} = ml^{2}\dot{\theta}.} \tag{3.122} \\ \end{array}$$
 The two momenta differ by an additive distortion that varies periodically in time and depends on /θ/. That the phase-space descriptions are different is illustrated in [figure 3.10](#figure_3.10). The evolution of the system is the same for each.
 
 ### 3.6 Surfaces of Section
@@ -747,34 +747,34 @@ We illustrated the use of Poincaré sections to visualize qualitative features o
 In the early '60s astronomers were up against a wall. Careful measurements of the motion of nearby stars in the galaxy had allowed particular statistical averages of the observed motions to be determined, and the averages were not at all what was expected. In particular, what was calculated was the velocity dispersion: the root mean square deviation of the velocity from the average. We use angle brackets to denote an average over nearby stars: < /w/ > is the average value of some quantity /w/ for the stars in the ensemble.
 #page(249)
 The average velocity is $< \,\dot{\overset{\rightarrow}{x}}\, >$. The components of the velocity dispersion are
-$$\begin{array}{ll} {\sigma_{x} = < \,{(\dot{x} - < \,\dot{x}\, > )}^{2}\, >^{1/2}} & {(3.123)} \\ \end{array}$$
-$$\begin{array}{ll} {\sigma_{y} = < \,{(\dot{y} - < \,\dot{y}\, > )}^{2}\, >^{1/2}} & {(3.124)} \\ \end{array}$$
-$$\begin{array}{ll} {\sigma_{z} = < \,{(\dot{z} - < \,\dot{z}\, > )}^{2}\, >^{1/2}.} & {(3.125)} \\ \end{array}$$
+$$\begin{array}{ll} {\sigma_{x} = < \,{(\dot{x} - < \,\dot{x}\, > )}^{2}\, >^{1/2}} \tag{3.123} \\ \end{array}$$
+$$\begin{array}{ll} {\sigma_{y} = < \,{(\dot{y} - < \,\dot{y}\, > )}^{2}\, >^{1/2}} \tag{3.124} \\ \end{array}$$
+$$\begin{array}{ll} {\sigma_{z} = < \,{(\dot{z} - < \,\dot{z}\, > )}^{2}\, >^{1/2}.} \tag{3.125} \\ \end{array}$$
 If we use cylindrical polar coordinates (/r/, /θ/, /z/) and align the axes with the galaxy so that /z/ is perpendicular to the galactic plane and /r/ increases with the distance to the center of the galaxy, then two particular components of the velocity dispersion are
-$$\begin{array}{ll} {\sigma_{z} = < \,{(\dot{z} - < \,\dot{z}\, > )}^{2}\, >^{1/2}} & {(3.126)} \\ \end{array}$$
-$$\begin{array}{ll} {\sigma_{r} = < \,{(\dot{r} - < \,\dot{r}\, > )}^{2}\, >^{1/2}.} & {(3.127)} \\ \end{array}$$
+$$\begin{array}{ll} {\sigma_{z} = < \,{(\dot{z} - < \,\dot{z}\, > )}^{2}\, >^{1/2}} \tag{3.126} \\ \end{array}$$
+$$\begin{array}{ll} {\sigma_{r} = < \,{(\dot{r} - < \,\dot{r}\, > )}^{2}\, >^{1/2}.} \tag{3.127} \\ \end{array}$$
 It was expected at the time that these two components of the velocity dispersion should be equal. In fact they were found to differ by about a factor of 2: /σ_{r}/ ≈ 2/σ_{z}/. What was the problem? In the literature at the time there was considerable discussion of what could be wrong. Was the problem some observational selection effect? Were the velocities measured incorrectly? Were the assumptions used in the derivation of the expected ratio not adequately satisfied? For example, the derivation assumed that the galaxy was approximately axisymmetric. Perhaps non-axisymmetric components of the galactic potential were at fault. It turned out that the problem was much deeper. The understanding of motion was wrong.
 
 Let's review the derivation of the expected relation among the components of the velocity dispersion. We wish to give a statistical description of the distribution of stars in the galaxy. We introduce the phase-space distribution function $ f\left( {\overset{\rightarrow}{x},\overset{\rightarrow}{p}} \right)$, which gives the probability density of finding a star at position $\overset{\rightarrow}{x}$ with momentum $\overset{\rightarrow}{p}$.#Footnote(28) Integrating this density over some finite volume of phase space gives the probability of finding a star in that phase-space volume (in that region of space within a specified region of
 #page(250)
 momenta). We assume the probability density is normalized so that the integral over all of phase space gives unit probability; the star is somewhere and has some momentum with certainty. In terms of /f/, the statistical average of any dynamical quantity /w/ over some volume of phase space /V/ is just
-$$\begin{array}{ll} {< \, w\, >_{V} = {\int_{V}{fw}}} & {(3.128)} \\ \end{array}$$
+$$\begin{array}{ll} {< \, w\, >_{V} = {\int_{V}{fw}}} \tag{3.128} \\ \end{array}$$
 where the integral extends over the phase-space volume /V/. In computing the velocity dispersion at some point $\overset{\rightarrow}{x}$, we would compute the averages by integrating over all momenta.
 
 Individual stars move in the gravitational potential of the rest of the galaxy. It is not unreasonable to assume that the overall distribution of stars in the galaxy does not change much with time, or changes only very slowly. The density of stars in the galaxy is actually very small and close encounters of stars are very rare. Thus, we can model the gravitational potential of the galaxy as a fixed external potential in which individual stars move. The galaxy is approximately axisymmetric. We assume that the deviation from exact axisymmetry is not a significant effect and thus we take the model potential to be exactly axisymmetric.
 
 Consider the motion of a point mass (a star) in an axisymmetric potential (of the galaxy). In cylindrical polar coordinates the Hamiltonian is
-$$\begin{array}{ll} {T + V = \frac{1}{2m}\left\lbrack {p_{r}^{2} + \frac{p_{\theta}^{2}}{r^{2}} + p_{z}^{2}} \right\rbrack + V(r,z),} & {(3.129)} \\ \end{array}$$
+$$\begin{array}{ll} {T + V = \frac{1}{2m}\left\lbrack {p_{r}^{2} + \frac{p_{\theta}^{2}}{r^{2}} + p_{z}^{2}} \right\rbrack + V(r,z),} \tag{3.129} \\ \end{array}$$
 where /V/ does not depend on /θ/. Since /θ/ does not appear, we know that the conjugate momentum /p_{θ}/ is constant. For the motion of any particular star we can treat /p_{θ}/ as a parameter. Thus the effective Hamiltonian has two degrees of freedom:
-$$\begin{array}{ll} {\frac{1}{2m}\left\lbrack {p_{r}^{2} + p_{z}^{2}} \right\rbrack + U(r,z)} & {(3.130)} \\ \end{array}$$
+$$\begin{array}{ll} {\frac{1}{2m}\left\lbrack {p_{r}^{2} + p_{z}^{2}} \right\rbrack + U(r,z)} \tag{3.130} \\ \end{array}$$
 where
-$$\begin{array}{ll} {U(r,z) = V(r,z) + \frac{p_{\theta}^{2}}{2mr^{2}}.} & {(3.131)} \\ \end{array}$$
+$$\begin{array}{ll} {U(r,z) = V(r,z) + \frac{p_{\theta}^{2}}{2mr^{2}}.} \tag{3.131} \\ \end{array}$$
 #page(251)
 
 The value /E/ of the Hamiltonian is constant since there is no explicit time dependence in the Hamiltonian. Thus, we have constants of the motion /E/ and /p_{θ}/.
 
 Jeans's “theorem” asserts that the distribution function /f/ depends only on the values of the conserved quantities, also known as /integrals of motion/. That is, we can introduce a different distribution function /f/′ that represents the same physical distribution:
-$$\begin{array}{ll} {f\prime(E,p_{\theta}) = f(\overset{\rightarrow}{x},\overset{\rightarrow}{p}).} & {(3.132)} \\ \end{array}$$
+$$\begin{array}{ll} {f\prime(E,p_{\theta}) = f(\overset{\rightarrow}{x},\overset{\rightarrow}{p}).} \tag{3.132} \\ \end{array}$$
 At the time, there was good reason to believe that this might be correct. First, it is clear that the distribution function surely depends at least on /E/ and /p_{θ}/. The problem is, “Given an energy /E/ and angular momentum /p_{θ}/, what motion is allowed?” The conserved quantities clearly confine the evolution. Does the evolution carry the system everywhere in the phase space subject to these known constraints? In the early part of the 20th century this appeared plausible. Statistical mechanics was successful, and statistical mechanics made exactly this assumption. Perhaps there are other conserved quantities of the motion that exist, but that we have not yet discovered?
 
 Poincaré proved an important theorem with regard to conserved quantities. Poincaré proved that most of the conserved quantities of a dynamical system typically do not persist upon perturbation of the system. That is, if a small perturbation is added to a problem, then most of the conserved quantities of the original problem do not have analogs in the perturbed problem. The conserved quantities are destroyed. However, conserved quantities that result from symmetries of the problem continue to be preserved if the perturbed system has the same symmetries. Thus angular momentum continues to be preserved upon application of any axisymmetric perturbation. Poincaré's theorem is correct, but what came next was not.
@@ -784,29 +784,29 @@ As a corollary to Poincaré's theorem, in 1920 Fermi published a proof of a theo
 this means that trajectories go everywhere they are allowed to go by the conservation constraints. Fermi's theorem was later shown to be incorrect, but on the basis of this theorem we could expect that typically systems fully explore the phase space, subject only to the constraints imposed by the conserved quantities resulting from symmetries. Suppose then that the evolution of stars in the galactic potential is subject only to the constraints of conserving /E/ and /p_{θ}/. We shall see that this is not true, but if it were we could then conclude that the distribution function for stars in the galaxy can also depend only on /E/ and /p_{θ}/.
 
 Given this form of the distribution function, we can deduce the stated ratios of the velocity dispersions. We note that /p_{z}/ and /p_{r}/ appear in the same way in the energy. Thus the average of any function of /p_{z}/ computed with the distribution function must equal the average of the same function of /p_{r}/. In particular, the velocity dispersions in the /z/ and /r/ directions must be equal:
-$$\begin{array}{ll} {\sigma_{z} = \sigma_{r}.} & {(3.133)} \\ \end{array}$$
+$$\begin{array}{ll} {\sigma_{z} = \sigma_{r}.} \tag{3.133} \\ \end{array}$$
 But this is not what was observed, which was
-$$\begin{array}{ll} {\sigma_{r} \approx 2\sigma_{z}.} & {(3.134)} \\ \end{array}$$
+$$\begin{array}{ll} {\sigma_{r} \approx 2\sigma_{z}.} \tag{3.134} \\ \end{array}$$
 Hénon and Heiles [22](bibliography!bib_22) approached this problem differently from others at the time. Rather than improving the models for the motion of stars in the galaxy, they concentrated on what turned out to be the central issue: What is the qualitative nature of motion? The problem had nothing to do with galactic dynamics in particular, but with the problem of motion. They abstracted the dynamical problem from the particulars of galactic dynamics.
 
 #### The system of Hénon and Heiles
 We have seen that the study of the motion of a point with mass /m/ and an axisymmetric potential energy reduces to the study of a reduced two-degree-of-freedom problem in /r/ and /z/ with potential energy /U/(/r/, /z/). Hénon and Heiles chose to study the motion in a two-degree-of-freedom system with a particularly simple potential energy so that the dynamics would be clear and the calculation uncluttered. The Hénon--Heiles Hamiltonian is
-$$\begin{array}{ll} {H(t;x,y;p_{x},p_{y}) = \frac{1}{2}(p_{x}^{2} + p_{y}^{2}) + V(x,y)} & {(3.135)} \\ \end{array}$$
+$$\begin{array}{ll} {H(t;x,y;p_{x},p_{y}) = \frac{1}{2}(p_{x}^{2} + p_{y}^{2}) + V(x,y)} \tag{3.135} \\ \end{array}$$
 #page(253)
 
 #Image(Art_P754.jpg,figure_3.15)
 #Caption *Figure 3.15* Contours of the Hénon--Heiles potential energy on the (/x/, /y/) plane. The contours shown, from the inside out, are for potential energies 1/100, 1/40, 1/20, 1/12, 1/8, and 1/6. #CaptionEnd
 
 with potential energy
-$$\begin{array}{ll} {V(x,y) = \frac{1}{2}(x^{2} + y^{2}) + x^{2}y - \frac{1}{3}y^{3}.} & {(3.136)} \\ \end{array}$$
+$$\begin{array}{ll} {V(x,y) = \frac{1}{2}(x^{2} + y^{2}) + x^{2}y - \frac{1}{3}y^{3}.} \tag{3.136} \\ \end{array}$$
 The potential energy is shaped like a distorted bowl. It has triangular symmetry, as is evident when it is rewritten in polar coordinates:
-$$\begin{array}{ll} {\frac{1}{2}r^{2} + \frac{1}{3}r^{3}\,\sin\, 3\theta.} & {(3.137)} \\ \end{array}$$
+$$\begin{array}{ll} {\frac{1}{2}r^{2} + \frac{1}{3}r^{3}\,\sin\, 3\theta.} \tag{3.137} \\ \end{array}$$
 Contours of the potential energy are shown in [figure 3.15](#figure_3.15). At small values of the potential energy the contours are approximately circular; as the value of the potential energy approaches 1/6 the contours become triangular, and at larger potential energies the contours open to infinity.
 
 #page(254)
 
 The Hamiltonian is independent of time, so energy is conserved. In this case this is the only known conserved quantity. We first determine the restrictions that conservation of energy imposes on the evolution. We have
-$$\begin{array}{ll} {E = \frac{1}{2}(p_{x}^{2} + p_{y}^{2}) + V(x,y) \geq V(x,y),} & {(3.138)} \\ \end{array}$$
+$$\begin{array}{ll} {E = \frac{1}{2}(p_{x}^{2} + p_{y}^{2}) + V(x,y) \geq V(x,y),} \tag{3.138} \\ \end{array}$$
 so the motion is confined to the region inside the contour /V/ = /E/ because the sum of the squares of the momenta cannot be negative.
 
 Let's compute some sample trajectories. For definiteness, we investigate trajectories with energy /E/ = 1/8. There is a large variety of trajectories. There are trajectories that circulate in a regular way around the bowl, and there are trajectories that oscillate back and forth ([figure 3.16](#figure_3.16)). There are also trajectories that appear more irregular ([figure 3.17](#figure_3.17)). There is no end to the trajectories that could be computed, but let's face it, surely there is more to life than looking at trajectories.
@@ -829,9 +829,9 @@ How does this address the issue of the number of conserved quantities? A priori,
 
 #### Interpretation
 On the section, the energy is
-$$\begin{array}{ll} {E = H(t;0,y;p_{x},p_{y}) = \frac{1}{2}(p_{x}^{2} + p_{y}^{2}) + V(0,y).} & {(3.139)} \\ \end{array}$$
+$$\begin{array}{ll} {E = H(t;0,y;p_{x},p_{y}) = \frac{1}{2}(p_{x}^{2} + p_{y}^{2}) + V(0,y).} \tag{3.139} \\ \end{array}$$
 Because $ p_{x}^{2}$ is positive, the trajectory is confined to regions of the section such that
-$$\begin{array}{ll} {E \geq \frac{1}{2}p_{y}^{2} + V(x = 0,y).} & {(3.140)} \\ \end{array}$$
+$$\begin{array}{ll} {E \geq \frac{1}{2}p_{y}^{2} + V(x = 0,y).} \tag{3.140} \\ \end{array}$$
 So, if there is no other conserved quantity, we might expect the points on the section eventually to fill the area enclosed by this bounding curve.
 
 On the other hand, suppose there is a hidden extra conserved quantity /I/(/x/, /y/; /p_{x}/, /p_{y}/) = 0. Then this conserved quantity would provide further constraints on the trajectories and their intersections with the section plane. An extra conserved quantity /I/ provides
@@ -937,7 +937,7 @@ exponentially whereas others diverge approximately linearly. Exponential diverge
 #Caption *Figure 3.23* The common logarithm of the phase-space distance between two chaotic trajectories divided by the initial phase-space distance as a function of time. The initial distance was 10^{−10}. The logarithm of the distance grows approximately linearly; the distance grows exponentially. The two-trajectory method saturates when the distance between trajectories becomes comparable to that allowed by conservation of energy. Also displayed is the distance between trajectories calculated by integrating the linearized variational equations. This method does not saturate. #CaptionEnd
 
 The rate of exponential divergence is quantified by the slope of the graph of log(/d/(/t/)//d/(0)). We can estimate the rate of exponential divergence of trajectories from a particular phase-space trajectory /σ/ by choosing a nearby trajectory /σ/′ and computing
-$$\begin{array}{ll} {\gamma(t) = \frac{\log(d(t)/d(t_{0}))}{t - t_{0}},} & {(3.141)} \\ \end{array}$$
+$$\begin{array}{ll} {\gamma(t) = \frac{\log(d(t)/d(t_{0}))}{t - t_{0}},} \tag{3.141} \\ \end{array}$$
 where /d/(/t/) = ‖/σ/′ (/t/)−/σ/(/t/)‖. A problem with this “two-trajectory” method is illustrated in [figure 3.23](#figure_3.23). For strongly chaotic trajectories two initially nearby trajectories soon find themselves as far apart as they can get. Once this happens the distance no longer grows. The estimate of the rate of divergence of trajectories is limited by this /saturation/.
 
 #page(266)
@@ -946,13 +946,13 @@ where /d/(/t/) = ‖/σ/′ (/t/)−/σ/(/t/)‖. A problem with this “two-tra
 #Caption *Figure 3.24* The phase-space distance between two regular trajectories divided by the initial phase-space distance as a function of time. The initial distance was 10^{−10}. The distance grows linearly. #CaptionEnd
 
 We can improve on this method by studying a variational system of equations. Let
-$$\begin{matrix} {Dz(t) = F(t,z(t))} & {(3.142)} \\ \end{matrix}$$
+$$\begin{matrix} {Dz(t) = F(t,z(t))} \tag{3.142} \\ \end{matrix}$$
 be the system of equations governing the evolution of the system. A nearby trajectory /z/′ satisfies
-$$\begin{matrix} {Dz\prime(t) = F(t,z\prime(t)).} & {(3.143)} \\ \end{matrix}$$
+$$\begin{matrix} {Dz\prime(t) = F(t,z\prime(t)).} \tag{3.143} \\ \end{matrix}$$
 The difference /ζ/ = /z/′ − /z/ between these trajectories satisfies
-$$\begin{array}{cll} {D\zeta(t)} & {= F(t,z\prime(t)) - F(t,z(t))} & \\  & {= F(t,z(t) + \zeta(t)) - F(t,z(t)).} & {(3.144)} \\ \end{array}$$
+$$\begin{array}{cll} {D\zeta(t)} & {= F(t,z\prime(t)) - F(t,z(t))} & \\  & {= F(t,z(t) + \zeta(t)) - F(t,z(t)).} \tag{3.144} \\ \end{array}$$
 If /ζ/ is small we can approximate the right-hand side by a derivative
-$$\begin{matrix} {D\zeta(t) = \partial_{1}F(t,z(t))\zeta(t).} & {(3.145)} \\ \end{matrix}$$
+$$\begin{matrix} {D\zeta(t) = \partial_{1}F(t,z(t))\zeta(t).} \tag{3.145} \\ \end{matrix}$$
 This set of ordinary differential equations is called the /variational equations/ for the system. It is linear in /ζ/ and driven by /z/.
 
 #page(267)
@@ -972,12 +972,12 @@ We will first illustrate the preservation of phase-space volume with a simple ex
 
 #### The phase flow for the pendulum
 Consider an undriven pendulum described by the Hamiltonian
-$$\begin{array}{ll} {H(t,\theta,p_{\theta}) = \frac{p_{\theta}^{2}}{2l^{2}m} + glm\,\cos\,\theta.} & {(3.146)} \\ \end{array}$$
+$$\begin{array}{ll} {H(t,\theta,p_{\theta}) = \frac{p_{\theta}^{2}}{2l^{2}m} + glm\,\cos\,\theta.} \tag{3.146} \\ \end{array}$$
 In [figure 3.25](#figure_3.25) we see the evolution of an elliptic region around a point on the /θ/-axis, in the oscillation region of the pendulum. Three later positions of the region are shown. The region is stretched and sheared by the flow, but the area is preserved. After many cycles, the starting region will be stretched to be a thin layer distributed in the phase angle of the pendulum. [Figure 3.26](#figure_3.26) shows a similar evolution (for smaller time intervals) of a region straddling the separatrix#Footnote(32) near the unstable equilibrium point. The phase-space region rapidly stretches along the separatrix, while preserving the area. The initial conditions that start in the oscillation region (inside of the separatrix) will continue to spread into a thin ring-shaped region, while the initial conditions that start outside of the separatrix will spread into a thin region of rotation on the outside of the separatrix.
 
 #### Proof of Liouville's theorem
 Consider a set of ordinary differential equations of the form
-$$\begin{matrix} {Dz(t) = F(t,z(t)),} & {(3.147)} \\ \end{matrix}$$
+$$\begin{matrix} {Dz(t) = F(t,z(t)),} \tag{3.147} \\ \end{matrix}$$
 #page(269)
 
 #Image(Art_P777.jpg,figure_3.25)
@@ -986,38 +986,38 @@ $$\begin{matrix} {Dz(t) = F(t,z(t)),} & {(3.147)} \\ \end{matrix}$$
 where /z/ is a tuple of /N/ state variables. Let /R/(/t/_{1}) be a region of the state space at time /t/_{1}. Each element of this region is an initial condition at time /t/_{1} for the system, and evolves to an element at time /t/_{2} according to the differential equations. The set of these elements at time /t/_{2} is the region /R/(/t/_{2}). Regions evolve to regions.
 
 The evolution of the system for a time interval Δ/t/ defines a map /g/_{t,Δt} from the state space to itself:
-$$\begin{array}{ll} {g_{t,\Delta t}(z(t)) = z(t + \Delta t).} & {(3.148)} \\ \end{array}$$
+$$\begin{array}{ll} {g_{t,\Delta t}(z(t)) = z(t + \Delta t).} \tag{3.148} \\ \end{array}$$
 Regions map to regions by mapping each element in the region:
-$$\begin{array}{ll} {g_{t,\Delta t}(R(t)) = R(t + \Delta t).} & {(3.149)} \\ \end{array}$$
+$$\begin{array}{ll} {g_{t,\Delta t}(R(t)) = R(t + \Delta t).} \tag{3.149} \\ \end{array}$$
 #page(270)
 
 #Image(Art_P780.jpg,figure_3.26)
 #Caption *Figure 3.26* The pendulum here is the same as in the previous figure, but now the swarm of initial points surrounds the unstable equilibrium point for the pendulum in phase space, where /θ/ = /π/ and /p_{θ}/ = 0. The swarm is stretched out along the separatrix. The time interval between successively plotted contours is 0.3 seconds. #CaptionEnd
 
 The volume /V/ (/t/) of a region /R/(/t/) is $\int_{R(t)}\,\widehat{1}$, where $\widehat{1}$ is the function whose value is one for every input. The volume of the evolved region /R/(/t/ + Δ/t/) is
-$$\begin{array}{lll} {V(t + \Delta t)} & {= {\int_{R(t + \Delta t)}\widehat{1}}} & \\  & {= {\int_{g_{t,\Delta t}(R(t))}\widehat{1}}} & \\  & {= {\int_{R(t)}{\text{Jac}(g_{t,\Delta t})}},} & {(3.150)} \\ \end{array}$$
+$$\begin{array}{lll} {V(t + \Delta t)} & {= {\int_{R(t + \Delta t)}\widehat{1}}} & \\  & {= {\int_{g_{t,\Delta t}(R(t))}\widehat{1}}} & \\  & {= {\int_{R(t)}{\text{Jac}(g_{t,\Delta t})}},} \tag{3.150} \\ \end{array}$$
 where Jac(/g/_{t,Δt}) is the Jacobian of the mapping /g/_{t,Δt}. The Jacobian is the determinant of the derivative of the mapping.
 
 For small Δ/t/
-$$\begin{array}{ll} {g_{t,\Delta t}(z(t)) = z(t) + \Delta tF(t,z(t)) + o(\Delta t^{2}),} & {(3.151)} \\ \end{array}$$
+$$\begin{array}{ll} {g_{t,\Delta t}(z(t)) = z(t) + \Delta tF(t,z(t)) + o(\Delta t^{2}),} \tag{3.151} \\ \end{array}$$
 #page(271)
 
 and thus
-$$\begin{array}{ll} {Dg_{t,\Delta t}(z(t)) = DI(z(t)) + \Delta t\partial_{1}F(t,z(t)) + o(\Delta t^{2}),} & {(3.152)} \\ \end{array}$$
+$$\begin{array}{ll} {Dg_{t,\Delta t}(z(t)) = DI(z(t)) + \Delta t\partial_{1}F(t,z(t)) + o(\Delta t^{2}),} \tag{3.152} \\ \end{array}$$
 where /I/ is the identity function, so /DI/(/z/(/t/)) is a unit multiplier. We can use the fact that if *A* is an /N/ × /N/ square matrix then
-$$\begin{array}{ll} {\det(\mathbf{1} + \mathit{\epsilon}\mathbf{A}) = 1 + \mathit{\epsilon}\,\text{trace}\,\mathbf{A} + o(\mathit{\epsilon}^{2})} & {(3.153)} \\ \end{array}$$
+$$\begin{array}{ll} {\det(\mathbf{1} + \mathit{\epsilon}\mathbf{A}) = 1 + \mathit{\epsilon}\,\text{trace}\,\mathbf{A} + o(\mathit{\epsilon}^{2})} \tag{3.153} \\ \end{array}$$
 to show that
-$$\begin{array}{ll} {\text{Jac}(g_{t,\Delta t})(z) = 1 + \Delta tG_{t}(z) + o(\Delta t^{2}),} & {(3.154)} \\ \end{array}$$
+$$\begin{array}{ll} {\text{Jac}(g_{t,\Delta t})(z) = 1 + \Delta tG_{t}(z) + o(\Delta t^{2}),} \tag{3.154} \\ \end{array}$$
 where
-$$\begin{array}{ll} {G_{t}(z) = \text{trace}\,(\partial_{1}F(t,z)).} & {(3.155)} \\ \end{array}$$
+$$\begin{array}{ll} {G_{t}(z) = \text{trace}\,(\partial_{1}F(t,z)).} \tag{3.155} \\ \end{array}$$
 Thus
-$$\begin{array}{lll} {V(t + \Delta t)} & {= {\int_{R(t)}{\lbrack\widehat{1} + \Delta tG_{t} + o(\Delta t^{2})\rbrack}}} & \\  & {= V(t) + \Delta t{\int_{R(t)}{G_{t} + o(\Delta t^{2}).}}} & {(3.156)} \\ \end{array}$$
+$$\begin{array}{lll} {V(t + \Delta t)} & {= {\int_{R(t)}{\lbrack\widehat{1} + \Delta tG_{t} + o(\Delta t^{2})\rbrack}}} & \\  & {= V(t) + \Delta t{\int_{R(t)}{G_{t} + o(\Delta t^{2}).}}} \tag{3.156} \\ \end{array}$$
 So the rate of change of the volume at time /t/ is
-$$\begin{array}{ll} {DV(t) = {\int_{R(t)}{G_{t}.}}} & {(3.157)} \\ \end{array}$$
+$$\begin{array}{ll} {DV(t) = {\int_{R(t)}{G_{t}.}}} \tag{3.157} \\ \end{array}$$
 Now we compute /G_{t}/ for a system described by a Hamiltonian /H/. The components of /z/ are the components of the coordinates and the momenta: /z^{k}/ = /q^{k}/ and /z/^{k+n} = /p_{k}/ for /k/ = 0, ..., /n/ − 1. The components of /F/ are
-$$\begin{array}{rll} {F^{k}(t,z)} & {= {(\partial_{2}H)}^{k}(t,q,p)} & \\ {F^{k + n}(t,z)} & {= - {(\partial_{1}H)}_{k}(t,q,p),} & {(3.158)} \\ \end{array}$$
+$$\begin{array}{rll} {F^{k}(t,z)} & {= {(\partial_{2}H)}^{k}(t,q,p)} & \\ {F^{k + n}(t,z)} & {= - {(\partial_{1}H)}_{k}(t,q,p),} \tag{3.158} \\ \end{array}$$
 for /k/ = 0, ..., /n/ − 1. The diagonal components of the derivative ∂_{1}/F/ are
-$$\begin{array}{rll} {{(\partial_{1})}_{k}F^{k}(t,z)} & {= {(\partial_{1})}_{k}{(\partial_{2})}^{k}H(t,q,p)} & \\ {{(\partial_{1})}_{k + n}F^{k + n}(t,z)} & {= - {(\partial_{2})}^{k}{(\partial_{1})}_{k}H(t,q,p).} & {(3.159)} \\ \end{array}$$
+$$\begin{array}{rll} {{(\partial_{1})}_{k}F^{k}(t,z)} & {= {(\partial_{1})}_{k}{(\partial_{2})}^{k}H(t,q,p)} & \\ {{(\partial_{1})}_{k + n}F^{k + n}(t,z)} & {= - {(\partial_{2})}^{k}{(\partial_{1})}_{k}H(t,q,p).} \tag{3.159} \\ \end{array}$$
 #page(272)
 
 The component partial derivatives commute, so the diagonal components with index /k/ and index /k/ + /n/ are equal and opposite. We see that the trace, which is the sum of these diagonal components, is zero. Thus the integral of /G_{t}/ over the region /R/(/t/) is zero, so the derivative of the volume at time /t/ is zero. Because /t/ is arbitrary, the volume does not change. This proves /Liouville's theorem/: the phase-space flow conserves phase-space volume.
@@ -1062,27 +1062,27 @@ The definition of a dissipative system is not so clear. For some, “dissipative
 #page(275)
 
 The damped harmonic oscillator is governed by the ordinary differential equation
-$$\begin{array}{ll} {mD^{2}x + \alpha Dx + kx = 0} & {(3.160)} \\ \end{array}$$
+$$\begin{array}{ll} {mD^{2}x + \alpha Dx + kx = 0} \tag{3.160} \\ \end{array}$$
 where /α/ is a coefficient of damping. We can formulate this system with the Lagrangian#Footnote(34)
-$$\begin{array}{ll} {L(t,x,\dot{x}) = (\frac{m}{2}{\dot{x}}^{2} - \frac{k}{2}x^{2})e^{\frac{\alpha}{m}t}.} & {(3.161)} \\ \end{array}$$
+$$\begin{array}{ll} {L(t,x,\dot{x}) = (\frac{m}{2}{\dot{x}}^{2} - \frac{k}{2}x^{2})e^{\frac{\alpha}{m}t}.} \tag{3.161} \\ \end{array}$$
 The Lagrange equation for this Lagrangian is
-$$\begin{array}{ll} {(mD^{2}x(t) + \alpha Dx(t) + kx(t))e^{\frac{\alpha}{m}t} = 0.} & {(3.162)} \\ \end{array}$$
+$$\begin{array}{ll} {(mD^{2}x(t) + \alpha Dx(t) + kx(t))e^{\frac{\alpha}{m}t} = 0.} \tag{3.162} \\ \end{array}$$
 Since the exponential is never zero this equation has the same trajectories as equation (#Eqn(chapter003,3.160,3.160)) above.
 
 The momentum conjugate to /x/ is
-$$\begin{array}{ll} {p = m\dot{x}e^{\frac{\alpha}{m}t},} & {(3.163)} \\ \end{array}$$
+$$\begin{array}{ll} {p = m\dot{x}e^{\frac{\alpha}{m}t},} \tag{3.163} \\ \end{array}$$
 and the Hamiltonian is
-$$\begin{array}{ll} {H(t,x,p) = (\frac{1}{2m}p^{2})e^{- \frac{\alpha}{m}t} + (\frac{k}{2}x^{2})e^{\frac{\alpha}{m}t}.} & {(3.164)} \\ \end{array}$$
+$$\begin{array}{ll} {H(t,x,p) = (\frac{1}{2m}p^{2})e^{- \frac{\alpha}{m}t} + (\frac{k}{2}x^{2})e^{\frac{\alpha}{m}t}.} \tag{3.164} \\ \end{array}$$
 For this system, the Hamiltonian is not the sum of the kinetic energy of the motion of the mass and the potential energy stored in the spring. The value of the Hamiltonian is not conserved (∂_{0}/H/ ≠ 0). Hamilton's equations are
-$$\begin{array}{ll} {Dx(t) = \frac{p(t)}{m}e^{- \frac{\alpha}{m}t}} & \\ {Dp(t) = - kx(t)e^{\frac{\alpha}{m}t}.} & {(3.165)} \\ \end{array}$$
+$$\begin{array}{ll} {Dx(t) = \frac{p(t)}{m}e^{- \frac{\alpha}{m}t}} & \\ {Dp(t) = - kx(t)e^{\frac{\alpha}{m}t}.} \tag{3.165} \\ \end{array}$$
 Let's consider a numerical case. Let /m/ = 5, /k/ = 1/4, /α/ = 3. Here the characteristic roots of the linear constant-coefficient ordinary differential equation (#Eqn(chapter003,3.160,3.160)) are /s/ = −1/10, −1/2. Thus the solutions are
-$$\begin{array}{ll} {\left( \begin{array}{l} {x(t)} \\ {p(t)} \\ \end{array} \right) = \left( \begin{array}{ll} e^{- \frac{1}{10}t} & e^{- \frac{1}{2}t} \\ {- \frac{1}{2}e^{+ \frac{1}{2}t}} & {- \frac{5}{2}e^{+ \frac{1}{10}t}} \\ \end{array} \right)\left( \begin{array}{l} A_{1} \\ A_{2} \\ \end{array} \right),} & {(3.166)} \\ \end{array}$$
+$$\begin{array}{ll} {\left( \begin{array}{l} {x(t)} \\ {p(t)} \\ \end{array} \right) = \left( \begin{array}{ll} e^{- \frac{1}{10}t} & e^{- \frac{1}{2}t} \\ {- \frac{1}{2}e^{+ \frac{1}{2}t}} & {- \frac{5}{2}e^{+ \frac{1}{10}t}} \\ \end{array} \right)\left( \begin{array}{l} A_{1} \\ A_{2} \\ \end{array} \right),} \tag{3.166} \\ \end{array}$$
 #page(276)
 
 for /A/_{1} and /A/_{2} determined by the initial conditions
-$$\begin{array}{ll} {\left( \begin{array}{l} {x(0)} \\ {p(0)} \\ \end{array} \right) = \left( \begin{array}{ll} 1 & 1 \\ {- \frac{1}{2}} & {- \frac{5}{2}} \\ \end{array} \right)\left( \begin{array}{l} A_{1} \\ A_{2} \\ \end{array} \right).} & {(3.167)} \\ \end{array}$$
+$$\begin{array}{ll} {\left( \begin{array}{l} {x(0)} \\ {p(0)} \\ \end{array} \right) = \left( \begin{array}{ll} 1 & 1 \\ {- \frac{1}{2}} & {- \frac{5}{2}} \\ \end{array} \right)\left( \begin{array}{l} A_{1} \\ A_{2} \\ \end{array} \right).} \tag{3.167} \\ \end{array}$$
 Thus we can form the transformation from the initial state to the final state:
-$$\begin{array}{ll} {\left( \begin{array}{l} {x(t)} \\ {p(t)} \\ \end{array} \right) = \left( \begin{array}{ll} e^{- \frac{1}{10}t} & e^{- \frac{1}{2}t} \\ {- \frac{1}{2}e^{+ \frac{1}{2}t}} & {- \frac{5}{2}e^{+ \frac{1}{10}t}} \\ \end{array} \right)\left( \begin{array}{ll} 1 & 1 \\ {- \frac{1}{2}} & {- \frac{5}{2}} \\ \end{array} \right)^{- 1}\left( \begin{array}{l} {x(0)} \\ {p(0)} \\ \end{array} \right).} & {(3.168)} \\ \end{array}$$
+$$\begin{array}{ll} {\left( \begin{array}{l} {x(t)} \\ {p(t)} \\ \end{array} \right) = \left( \begin{array}{ll} e^{- \frac{1}{10}t} & e^{- \frac{1}{2}t} \\ {- \frac{1}{2}e^{+ \frac{1}{2}t}} & {- \frac{5}{2}e^{+ \frac{1}{10}t}} \\ \end{array} \right)\left( \begin{array}{ll} 1 & 1 \\ {- \frac{1}{2}} & {- \frac{5}{2}} \\ \end{array} \right)^{- 1}\left( \begin{array}{l} {x(0)} \\ {p(0)} \\ \end{array} \right).} \tag{3.168} \\ \end{array}$$
 The transformation is linear, so the area is transformed by the determinant, which is 1 in this case. Thus, contrary to intuition, the phase-space volume is conserved. So why is this not a contradiction with the statement that there are no attractors in Hamiltonian systems? The answer is that the Poincaré recurrence argument is true only for bounded phase spaces. Here, the momentum expands exponentially with time (as the coordinate contracts), so it is unbounded.
 
 We shouldn't really be too surprised by the way the theory protects itself from an apparent paradox---that the phase volume is conserved even though all trajectories decay to zero velocity and coordinates. The proof of Liouville's theorem allows time-dependent Hamiltonians. In this case we are able to model the dissipation by just such a time-dependent Hamiltonian.
@@ -1099,13 +1099,13 @@ We know the state of a system only approximately. It is reasonable to model our 
 Let /f/(/t/, /q/, /p/) be a probability density function on the phase space at time /t/. For this to be a good probability density function we require that the integral of /f/ over all coordinates and momenta be 1---it is certain that the system is somewhere.
 
 There is a set of trajectories that pass through any particular region of phase space at a particular time. These trajectories are neither created nor destroyed, and they proceed as a bundle to another region of phase space at a later time. Liouville's theorem tells us that the volume of the source region is the same as the volume of the target region, so the density must remain constant. Thus /D/(/f/ ∘ /σ/) = 0. If we have a system described by the Hamiltonian /H/ then
-$$\begin{matrix} {D(f \circ \sigma) = \partial_{0}f \circ \sigma + \left\{ f,H \right\} \circ \sigma,} & {(3.169)} \\ \end{matrix}$$
+$$\begin{matrix} {D(f \circ \sigma) = \partial_{0}f \circ \sigma + \left\{ f,H \right\} \circ \sigma,} \tag{3.169} \\ \end{matrix}$$
 so we may conclude that
-$$\begin{matrix} {\partial_{0}f \circ \sigma + \left\{ f,H \right\} \circ \sigma = 0,} & {(3.170)} \\ \end{matrix}$$
+$$\begin{matrix} {\partial_{0}f \circ \sigma + \left\{ f,H \right\} \circ \sigma = 0,} \tag{3.170} \\ \end{matrix}$$
 or
-$$\begin{matrix} {(\partial_{0}f + \left\{ f,H \right\}) \circ \sigma = 0.} & {(3.171)} \\ \end{matrix}$$
+$$\begin{matrix} {(\partial_{0}f + \left\{ f,H \right\}) \circ \sigma = 0.} \tag{3.171} \\ \end{matrix}$$
 Since this must be true at each moment and since there is a solution trajectory that emanates from every point in phase space, we may abstract from solution paths and deduce a constraint on /f/:
-$$\begin{matrix} {\partial_{0}f + \left\{ f,H \right\} = 0.} & {(3.172)} \\ \end{matrix}$$
+$$\begin{matrix} {\partial_{0}f + \left\{ f,H \right\} = 0.} \tag{3.172} \\ \end{matrix}$$
 This linear partial differential equation governs the evolution of the density function, and thus shows how our state of knowledge evolves.
 
 ### 3.9 Standard Map
@@ -1114,8 +1114,8 @@ We have seen that the surfaces of section for a number of different problems are
 parameter is varied. Now we have learned that the map that takes points on a two-dimensional surface of section to new points on the surface of section is area preserving. The sole property that these maps of the section onto itself have in common (that we know of at this point) is that they preserve area. Otherwise they are quite distinct. Suppose we consider an abstract map of the section onto itself that is area preserving, without regard for whether the map is generated by some dynamical system. Do area-preserving maps typically show similar phenomena, or is the dynamical origin of the map crucial to the phenomena we have found?#Footnote(35)
 
 Consider a map of the phase plane onto itself defined in terms of the dynamical variables /θ/ and its “conjugate momentum” /I/. The map is
-$$\begin{matrix} {I\prime = (I + K\,\sin\,\theta)\,{mod}\, 2\pi} & {(3.173)} \\ \end{matrix}$$
-$$\begin{matrix} {\theta\prime = (\theta + I\prime)\,{mod}\, 2\pi.} & {(3.174)} \\ \end{matrix}$$
+$$\begin{matrix} {I\prime = (I + K\,\sin\,\theta)\,{mod}\, 2\pi} \tag{3.173} \\ \end{matrix}$$
+$$\begin{matrix} {\theta\prime = (\theta + I\prime)\,{mod}\, 2\pi.} \tag{3.174} \\ \end{matrix}$$
 This map is known as the “standard map.”#Footnote(36) A curious feature of the standard map is that the momentum variable /I/ is treated as an angular quantity. The derivative of the map has determinant one, implying the map is area preserving.
 
 We can implement the standard map:
