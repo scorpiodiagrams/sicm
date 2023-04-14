@@ -532,15 +532,15 @@ To form the Lagrange equations we collect all the position components of all the
 $$\begin{array}{l} {D(\partial_{2}L \circ \Gamma\lbrack x\rbrack) - \partial_{1}L \circ \Gamma\lbrack x\rbrack = 0.} \tag{1.56} \end{array}$$
 Observe that Newton's equations (#Eqn(chapter001,1.55,1.55)) are just the components of the Lagrange equations (#Eqn(chapter001,1.56,1.56)) if we choose /L/ to have the properties
 $$\begin{array}{lll} {(\partial_{2}L \circ \Gamma\lbrack x\rbrack)(t)} & {= \lbrack m_{0}D\mathbf{x}_{0}(t),\ldots,m_{N - 1}D\mathbf{x}_{N - 1}(t)\rbrack} & \\ {(\partial_{1}L \circ \Gamma\lbrack x\rbrack)(t)} & {= \lbrack - \partial_{1,0}V(t,x(t)),\ldots, - \partial_{1,N - 1}V(t,x(t))\rbrack;} \tag{1.57} \end{array}$$
-here /V/ (/t/, /x/(/t/)) = /V/ (/t/; *x*_{0}(/t/), ..., *x*_{N−1}(/t/)) and ∂_{1,/α/}/V/ (/t/, /x/(/t/)) is the tuple of the components of the derivative of /V/ with respect to the coordinates of the particle with index /α/, evaluated at time /t/ and coordinates /x/(/t/). These conditions are satisfied if for every *x*_{/α/} and *v*_{/α/}
+here /V/ (/t/, /x/(/t/)) = /V/ (/t/; *x*_{0}(/t/), ..., *x*_{N−1}(/t/)) and ∂_{1,/α/}/V/ (/t/, /x/(/t/)) is the tuple of the components of the derivative of /V/ with respect to the coordinates of the particle with index /α/, evaluated at time /t/ and coordinates /x/(/t/). These conditions are satisfied if for every *x*_{α} and *v*_{α}
 
 
 $$\begin{array}{l} {\partial_{2}L(t;\mathbf{x}_{0},\ldots,\mathbf{x}_{N - 1};\mathbf{v}_{0},\ldots,\mathbf{v}_{N - 1})} & \\ {\,\,\,\,\,\,\,\,\,\,{= \lbrack m_{0}\mathbf{v}_{0},\ldots,m_{N - 1}\mathbf{v}_{N - 1}\rbrack}} \tag{1.58} \end{array}$$
 and
 $$\begin{array}{l} {\partial_{1}L(t;\mathbf{x}_{0},\ldots,\mathbf{x}_{N - 1};\mathbf{v}_{0},\ldots,\mathbf{v}_{N - 1})} & \\ {\text{           } = \lbrack - \partial_{1,0}V(t,x),\ldots, - \partial_{1,N - 1}V(t,x)\rbrack,} \tag{1.59} \end{array}$$
-where /x/ = (*x*_{0}, ..., *x*_{N−1}). One choice for /L/ that has the required properties ([1.59](chapter001!disp_1.58][1.58]]--[[file:chapter001!disp_1.59)) is
+where /x/ = (*x*_{0}, ..., *x*_{N−1}). One choice for /L/ that has the required properties (#Eqn(chapter001,1.58,1.58)--#Eqn(chapter001,1.59,1.59)) is
 $$\begin{array}{l} {L(t,x,v) = \frac{1}{2}{\sum\limits_{\alpha}{m_{\alpha}v_{\alpha}^{2} - V(t,x),}}} \tag{1.60} \end{array}$$
-where $ v_{\alpha}^{2}$ is the sum of the squares of the components of *v*_{/α/}.#Footnote(59)
+where $ v_{\alpha}^{2}$ is the sum of the squares of the components of *v*_{α}.#Footnote(59)
 
 The first term is the kinetic energy, conventionally denoted /T/. So this choice for the Lagrangian is /L/(/t/, /x/, /v/) = /T/ (/t/, /x/, /v/)−/V/ (/t/, /x/), the difference of the kinetic and potential energy. We will often extend the arguments of the potential energy function to include the velocities so that we can write /L/ = /T/ − /V/.#Footnote(60)
 
