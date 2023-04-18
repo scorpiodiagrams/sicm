@@ -278,6 +278,10 @@ Index of where terms are used/explained)
 A collection of utilities written in Scheme for the calculations explored in this book. 
 
 Colin Smith has ported SCM Utils to modern Clojure, making Gerald Sussman's code runnable in the browser. )
-#Jump( fdg;preface \Diamond FDG Book
+#Jump( fdg;chapter001 \Diamond FDG Book
 # \Diamond FDG Book
 Functional Differential Geometry, adapted from Gerald Sussman's book)
+#Jump( slush;water \Slush Slush
+# \Slush Slush Repo
+Slush pile. All that text and those diagrams that are on the way out. This link is not available on-line. Only available in offline content-development mode.)
+

@@ -33,7 +33,7 @@ phase of the drive does not affect the evolution, but we consider the phase of t
 #Image(Art_P813.jpg,figure_4.2)
 #Caption *Figure 4.2* A surface of section for the driven pendulum, with zero-amplitude drive. The effect is to sample the trajectories of the undriven pendulum, which lie on the contours of the Hamiltonian. Only a small number of points are plotted for each trajectory to illustrate the fact that for zero-amplitude drive the surface of section samples the continuous trajectories of the undriven pendulum. #CaptionEnd
 
-For the driven pendulum we make stroboscopic surfaces of section by sampling the state at the drive period and plotting the angular momentum versus the angle (see [[chapter004!figure_4.2][figure 4.2]]). For zero-amplitude drive, the section points are confined to the curves traced by trajectories of the undriven pendulum. For each kind of orbit that we saw for the undriven pendulum, there are orbits of the driven pendulum that generate a corresponding pattern of points on the section.
+For the driven pendulum we make stroboscopic surfaces of section by sampling the state at the drive period and plotting the angular momentum versus the angle (see [figure 4.2](#figure_4.2)). For zero-amplitude drive, the section points are confined to the curves traced by trajectories of the undriven pendulum. For each kind of orbit that we saw for the undriven pendulum, there are orbits of the driven pendulum that generate a corresponding pattern of points on the section.
 
 The two stationary orbits at the equilibrium points of the pendulum appear as points on the surface of section. Equilibrium points are fixed points of the Poincaré map.
 
@@ -267,7 +267,7 @@ If the stable and unstable manifolds no longer coincide, where do they go? A sta
 
 Actually, the stable and unstable manifolds must cross at some point. The only other possibilities are that they run off to infinity or spiral around. We will see that in general there are barriers to running away. Area preservation excludes the existence of attractors, and this can be used to exclude the spiraling case. A finite region of initial conditions between two successive arms of the spiral will eventually run out of area as the spiral progresses.
 
-So the only possibility is that the stable and unstable manifolds cross, as is illustrated in [[chapter004!figure_4.7][figure 4.7]]. The point of crossing of a stable and unstable manifold is called a /homoclinic intersection/ if the stable and unstable manifolds belong to the same unstable
+So the only possibility is that the stable and unstable manifolds cross, as is illustrated in [figure 4.7](#figure_4.7). The point of crossing of a stable and unstable manifold is called a /homoclinic intersection/ if the stable and unstable manifolds belong to the same unstable
 #page(305)
 fixed point. It is called a /heteroclinic intersection/ if the stable and unstable manifolds belong to different fixed points.
 
@@ -430,7 +430,7 @@ The rotation number of the map /T/ is strictly monotonic. Suppose for definitene
 
 Now consider the map $ T_{\mathit{\epsilon}}^{k}$. In general, for small /ϵ/, points map to slightly different points under /T_{ϵ}/ than they do under /T/, but not too different. So we can expect that there is still some interval in /Ĵ/(0) near /Ĵ/^{∗} such that for /Ĵ/(0) in the upper end of the interval,$ T_{\mathit{\epsilon}}^{k}$ maps points to larger /θ/^{0}, and for points in the lower end of the interval,$ T_{\mathit{\epsilon}}^{k}$ maps points to smaller /θ/^{0}. If this is the case then for every $\widehat{\theta}{(0)}$ there is a point somewhere in the interval, some ${\widehat{J}}^{+}\left( {\widehat{\theta}{(0)}} \right)$, for which /θ/^{0} does not change, by continuity. These are not fixed points because the momentum /J/_{0} generally changes. See [figure 4.13](#figure_4.13).
 
-The map is continuous, so we can expect that /Ĵ/^{+} is a continuous function of the /θ/^{0}. The twist-map condition (see footnote [13](#endnote_13)) ensures that /Ĵ/^{+} is periodic, so /Ĵ/^{+}(0) = /Ĵ/^{+}(2/π/). The twist-map condition also guarantees that for sufficiently small perturbations there cannot be more than one radially-mapping point for any angle. So the set of points that do not change /θ/^{0} under $ T_{\mathit{\epsilon}}^{k}$ form some periodic function of /θ/^{0}. Call this curve /C/_{0}. See [figure 4.14](#figure_4.14).
+The map is continuous, so we can expect that /Ĵ/^{+} is a continuous function of the /θ/^{0}. The twist-map condition (see footnote [13](#footnote_13)) ensures that /Ĵ/^{+} is periodic, so /Ĵ/^{+}(0) = /Ĵ/^{+}(2/π/). The twist-map condition also guarantees that for sufficiently small perturbations there cannot be more than one radially-mapping point for any angle. So the set of points that do not change /θ/^{0} under $ T_{\mathit{\epsilon}}^{k}$ form some periodic function of /θ/^{0}. Call this curve /C/_{0}. See [figure 4.14](#figure_4.14).
 
 The map $ T_{\mathit{\epsilon}}^{k}$ takes the curve /C/_{0} to another curve /C/_{1} that, like /C/_{0}, is continuous and periodic. The two curves /C/_{0} and /C/_{1} must cross each other, as a consequence of area preservation. How do we see this? Typically, there is a lower boundary or upper boundary in /J/_{0} for the evolution. In some situations, we have such a lower boundary because /J/_{0} cannot be negative. For example, in action-angle variables for motion near an elliptic fixed point we will see
 #page(320)
@@ -454,7 +454,7 @@ We call points that map to the same angle “radially mapping points.” We find
 ```
 The procedure Tmap implements some map, which may be an iterate of some more primitive map. We give the procedure an angle phi to study, a range of actions Jmin to Jmax to search, and a tolerance eps for the solution.
 
-In [figure 4.16](#figure_4.16) we show the Poincaré--Birkhoff construction of the fixed points for the driven rotor. These particular curves are constructed for the two 1:1 commensurabilities between the rotation and the drive. One set of fixed points is constructed for each sense of rotation. The corresponding section is in [[chapter004!figure_4.17][figure 4.17]]. We see that the section shows the existence of fixed points exactly where the Poincaré--Birkhoff construction shows the crossing of the curves /C/_{0} and /C/_{1}. Indeed, the nature of the fixed point is
+In [figure 4.16](#figure_4.16) we show the Poincaré--Birkhoff construction of the fixed points for the driven rotor. These particular curves are constructed for the two 1:1 commensurabilities between the rotation and the drive. One set of fixed points is constructed for each sense of rotation. The corresponding section is in [figure 4.17](#figure_4.17). We see that the section shows the existence of fixed points exactly where the Poincaré--Birkhoff construction shows the crossing of the curves /C/_{0} and /C/_{1}. Indeed, the nature of the fixed point is
 #page(322)
 clearly reflected in the relative configuration of the /C/_{0} and /C/_{1} curves.
 
