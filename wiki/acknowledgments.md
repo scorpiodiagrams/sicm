@@ -10,7 +10,7 @@ Matthew Halfant started us on the development of the Scmutils system. He encoura
 
 Dan Zuras helped us with the invention of the unique organization of the Scmutils system. It is because of his insight that the system is organized around a generic extension of the chain rule for taking derivatives. He also helped in the heavy lifting that was required to make a really good polynomial GCD algorithm, based on ideas we learned from Richard Zippel.
 
-This book, and a great deal of other work of our laboratory, could not have been done without the outstanding work of Chris Hanson. Chris developed and maintained the Scheme system underlying this work. More recently, Taylor Campbell and others have continued the development of MIT/GNU Scheme. In addition, Chris took us through a pass of reorganization of the Scmutils system that forced the clarification of many of the ideas of types and of generic operations that make our system as good as it is.
+This book, and a great deal of other work of our laboratory, could not have been done without the outstanding work of Chris Hanson. Chris developed and maintained the Scheme system underlying this work. More recently, Taylor Campbell and others have continued the development of MIT#/GNU Scheme. In addition, Chris took us through a pass of reorganization of the Scmutils system that forced the clarification of many of the ideas of types and of generic operations that make our system as good as it is.
 #page(xx)
 Guillermo Juan Rozas, co-developer of the Scheme system, made major contributions to the Scheme compiler, and implemented a number of other arcane mechanisms that make our system efficient enough to support our work.
 
