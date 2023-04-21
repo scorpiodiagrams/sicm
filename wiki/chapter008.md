@@ -379,22 +379,24 @@ jack
 It is also possible to assign to the elements of a data structure, such as a list or vector. This is unnecessary in our work so we won't tell you about how to do it! In general, it is good practice to avoid assignments whenever possible, but if you need them they are available.#Footnote(10)
 
 ----
+
 #FootnoteRef(1)Many of the statements here are valid only assuming that no assignments are used.
-#FootnoteEnd
+
 #FootnoteRef(2)In examples we show the value that would be printed by the Scheme system using slanted characters following the input expression.
-#FootnoteEnd
+
 #FootnoteRef(3)In Scheme every parenthesis is essential: you cannot add extra parentheses or remove any.
-#FootnoteEnd
+
 #FootnoteRef(4)The logician Alonzo Church [13](bibliography!bib_13) invented /λ/-notation to allow the specification of an anonymous function of a named parameter: */λ/*/x/[expression in /x/]. This is read, “That function of one argument that is obtained by substituting the argument for /x/ in the indicated expression.”
-#FootnoteEnd
+
 #FootnoteRef(5)The definition of square given here is not the definition of square in the Scmutils system. In Scmutils, square is extended for tuples to mean the sum of the squares of the components of the tuple. However, for arguments that are not tuples the Scmutils square does multiply the argument by itself.
-#FootnoteEnd
+
 #FootnoteRef(6)The examples are indented to help with readability. Scheme does not care about extra white space, so we may add as much as we please to make things easier to read.
-#FootnoteEnd
+
 #FootnoteRef(7)These names are accidents of history. They stand for “Contents of the Address part of Register” and “Contents of the Decrement part of Register” of the IBM 704 computer, which was used for the first implementation of Lisp in the late 1950s. Scheme is a dialect of Lisp.
-#FootnoteEnd
+
 #FootnoteRef(8)Symbols may have any number of characters. A symbol may not contain whitespace or a delimiter character, such as parentheses, brackets, quotation marks, comma, or #.
-#FootnoteEnd
+
 #FootnoteRef(9)This is computer-science jargon: An effect is a change to something. For example, write-line changes the display by printing something to the display.
+
+#FootnoteRef(10)The discipline of programming without assignments is called /functional programming/. Functional programs are generally easier to understand, and have fewer bugs than /imperative programs/. 
 #FootnoteEnd
-#FootnoteRef(10)The discipline of programming without assignments is called /functional programming/. Functional programs are generally easier to understand, and have fewer bugs than /imperative programs/. #FootnoteEnd

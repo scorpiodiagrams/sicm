@@ -19,7 +19,9 @@ understanding. Traditional mathematical notation contributes to this problem. Sy
 Computation also enters into the presentation of the mathematical ideas underlying mechanics. We require that our
 #page(xv)
 mathematical notations be explicit and precise enough that they can be interpreted automatically, as by a computer. As a consequence of this requirement the formulas and equations that appear in the text stand on their own. They have clear meaning, independent of the informal context. For example, we write Lagrange's equations in functional notation as follows:#Footnote(3)
+
 $$D(∂_{2}L ∘ Γ[q]) − ∂_{1}L ∘ Γ[q] = 0$$
+
 The Lagrangian /L/ is a real-valued function of time /t/, coordinates /x/, and velocities /v/; the value is /L/(/t, x, v/). Partial derivatives are indicated as derivatives of functions with respect to particular argument positions; ∂_{2}/L/ indicates the function obtained by taking the partial derivative of the Lagrangian function /L/ with respect to the velocity argument position. The traditional partial derivative notation, which employs a derivative with respect to a “variable,” depends on context and can lead to ambiguity.#Footnote(4) The partial derivatives of the Lagrangian are then explicitly evaluated along a path function /q/. The time derivative is taken and the Lagrange equations formed. Each step is explicit; there are no implicit substitutions.
 
 Computational algorithms are used to communicate precisely some of the methods used in the analysis of dynamical phenomena. Expressing the methods of variational mechanics in a computer language forces them to be unambiguous and computationally effective. Computation requires us to be precise about the representation of mechanical and geometric notions as computational objects and permits us to represent explicitly the algorithms for manipulating these objects. Also, once formalized as a procedure, a mathematical idea becomes a tool that can be used directly to compute results.
@@ -62,8 +64,9 @@ We fixed myriad minor mistakes throughout. We hope that we have not introduced m
 
 
 ----
+
 #FootnoteRef(1)In his book on mathematical pedagogy [17](bibliography!bib_17), Hans Freudenthal argues that the reliance on ambiguous, unstated notational conventions in such expressions as /f/(/x/) and /df/(/x/)//dx/ makes mathematics, and especially introductory calculus, extremely confusing for beginning students; and he enjoins mathematics educators to use more formal modern notation.
-#FootnoteEnd
+
 #FootnoteRef(2)In his beautiful book /Calculus on Manifolds/ [40](bibliography!bib_40), Michael Spivak uses functional notation. On p. 44 he discusses some of the problems with classical notation. We excerpt a particularly juicy passage:
 
 The mere statement of [the chain rule] in classical notation requires the introduction of irrelevant letters. The usual evaluation for /D/_{1}(/f/ ∘ (/g, h/)) runs as follows:
@@ -73,7 +76,8 @@ If /f/(/u, v/) is a function and /u/ = /g/(/x, y/) and /v/ = /h/(/x, y/) then $\
 [The symbol $\frac{∂u}{∂x}$ means $\frac{∂}{∂x} g(x, y)$, and $\frac{∂}{∂u} f(u, v)$ means $D_{1}f(u, v) = D_{1}f(g(x, y), h(x, y))$.] 
 
 This equation is often written simply $\frac{\partial f}{\partial x} = \frac{\partial f}{\partial u}\frac{\partial u}{\partial x} + \frac{\partial f}{\partial v}\frac{\partial v}{\partial x}.$ Note that /f/ means something different on the two sides of the equation!
-#FootnoteEnd
+
 #FootnoteRef(3)This is presented here without explanation, to give the flavor of the notation. The text gives a full explanation.
+
+#FootnoteRef(4)“It is necessary to use the apparatus of partial derivatives, in which even the notation is ambiguous.” V.I. Arnold, /Mathematical Methods of Classical Mechanics/ [5](bibliography!bib_5), Section 47, p. 258. See also the footnote on that page. 
 #FootnoteEnd
-#FootnoteRef(4)“It is necessary to use the apparatus of partial derivatives, in which even the notation is ambiguous.” V.I. Arnold, /Mathematical Methods of Classical Mechanics/ [5](bibliography!bib_5), Section 47, p. 258. See also the footnote on that page. #FootnoteEnd
