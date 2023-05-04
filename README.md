@@ -8,7 +8,7 @@ An unofficial markdown version of "Structure and Interpretation of Classical Mec
 * Converted to @samritchie's [org-mode Port](https://github.com/tgvaughan/sicm) 
 * Converted to @jamescrook's markdown port (this version)
 
-View these files converted to html and diagrams at [scorpio diagrams](http://scorpiodiagrams.com/gitwrapped.html#sicm)
+View these files converted to html and diagrams at [scorpio diagrams](http://scorpiodiagrams.com/gitwrapped.html#sicm;chapter001)
 
 ## Sub directories
 
