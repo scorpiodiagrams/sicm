@@ -4,6 +4,7 @@
 ### Chapter 1
 #page(1)
 #Quote(The purpose of mechanics is to describe how bodies change their position in space with “time.” I should load my conscience with grave sins against the sacred spirit of lucidity were I to formulate the aims of mechanics in this way, without serious reflection and detailed explanations. Let us proceed to disclose these sins.)
+
 #Caption Albert Einstein, /Relativity, the Special and General Theory/ [16](bibliography!bib_16), [p.9](#p9) #CaptionEnd
 
 The subject of this book is motion and the mathematical tools used to describe it.
