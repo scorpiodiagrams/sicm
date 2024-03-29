@@ -3,7 +3,8 @@
 ### Chapter 7
 #page(457)
 #Quote(Having treated the motion of the moon about the earth, and having obtained an elliptical orbit, [Newton] considered the effect of the sun on the moon's orbit by taking into account the variations of the latter. However, the calculations caused him great difficulties ... Indeed, the problems he encountered were such that [Newton] was prompted to remark to the astronomer John Machin that “... his head never ached but with his studies on the moon.” )
-#Caption June Barrow-Green, /Poincaré and the Three Body Problem/ [7](bibliography!bib_7), [p.15](chapter001!p15) #CaptionEnd
+
+#Caption June Barrow-Green, /Poincaré and the Three Body Problem/ [7](bibliography!bib_7), [p.15](chapter001!p15)
 
 Closed-form solutions of dynamical systems can be found only rarely. However, some systems differ from a solvable system by the addition of a small effect. The goal of perturbation theory is to relate aspects of the motion of the given system to those of the nearby solvable system. We can try to find a way to transform the exact solution of this approximate problem into an approximate solution to the original problem. We can also use perturbation theory to try to predict qualitative features of the solutions by describing the characteristic ways in which solutions of the solvable system are distorted by the additional effects. For instance, we might want to predict where the largest resonance regions are located or the locations and sizes of the largest chaotic zones. Being able to predict such features can give insight into the behavior of the particular system of interest. 
 
